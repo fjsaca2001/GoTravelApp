@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/7_Ciclo/Plataformas/1Bimestre/Proyecto/GoTravelApp/app/src/main/res/drawable/splash_background.xml" value="0.2" />
+        <entry key="..\:/7_Ciclo/Plataformas/1Bimestre/Proyecto/GoTravelApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/7_Ciclo/Plataformas/1Bimestre/Proyecto/GoTravelApp/app/src/main/res/layout/activity_splash.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/drawable/boarder.xml" value="0.37135416666666665" />
         <entry key="app/src/main/res/drawable/ripple.xml" value="0.37135416666666665" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.37135416666666665" />
