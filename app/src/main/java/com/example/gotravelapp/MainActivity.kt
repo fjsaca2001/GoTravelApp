@@ -1,5 +1,6 @@
 package com.example.gotravelapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         clickIniciar()
+
+
+
     }
 
     fun clickIniciar(){
@@ -22,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         btn.setOnClickListener{
             var txt = txt1.text.toString()
             println(txt)
+
+                val saltar: Intent =Intent(this,Menu::class.java)
+                saltar.putExtra("Nombre", txt)
+                startActivity(saltar)
+                //startActivity(Intent(this, Lugares::class.java).putExtra("Nombre", Nombre))
+
         }
     }
 }
