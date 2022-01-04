@@ -228,7 +228,7 @@
         android:background="@drawable/borderfinish">
 
         <ImageButton
-            android:id="@+id/imageButton14"
+            android:id="@+id/btnHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -236,7 +236,7 @@
             app:srcCompat="@drawable/casa" />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/btnPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
