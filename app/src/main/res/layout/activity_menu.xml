@@ -12,13 +12,13 @@
         android:id="@+id/linearLayout"
         android:layout_width="414dp"
         android:layout_height="84dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstart"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/borderstart">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -35,7 +35,7 @@
             app:srcCompat="@drawable/icono" />
 
         <ImageButton
-            android:id="@+id/exitButtom"
+            android:id="@+id/btnExit"
             android:layout_width="102dp"
             android:layout_height="70dp"
             android:layout_weight="1"
@@ -45,7 +45,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/txtwelcome"
+        android:id="@+id/txtBienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -53,12 +53,13 @@
         android:text="Bienvenido : "
         android:textColor="#000000"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenido" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -156,21 +157,23 @@
                 app:srcCompat="@drawable/garbaje" />
         </TableRow>
     </TableLayout>
+    -->
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="339dp"
         android:layout_height="274dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/btnAddRecurso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E5E5E5"

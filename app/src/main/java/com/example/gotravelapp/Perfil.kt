@@ -21,7 +21,7 @@ class Perfil : AppCompatActivity() {
     private fun vista(email:String){
         val objIntent: Intent = intent
         title ="Perfíl"
-        var txtMail = findViewById<TextView>(R.id.txtwelcome)
+        var txtMail = findViewById<TextView>(R.id.txtBienvenido)
         txtMail.text=("Bienvenido: $email")
 
 
@@ -41,6 +41,13 @@ class Perfil : AppCompatActivity() {
         btnSalir.setOnClickListener(){
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
+        }
+
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
         }
     }
 }
