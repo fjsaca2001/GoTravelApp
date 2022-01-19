@@ -1,5 +1,6 @@
 package com.example.gotravelapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,16 +17,21 @@ class addRecurso01 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso01)
         val bundle: Bundle? =intent.extras
+        val respuesta: Array<String>? = bundle?.getStringArray("lista")
         val email:String? = bundle?.getString("email")
-        view(email?:"")
+        view(
+            email ?: "",
+            respuesta ?: arrayOf()
+        )
     }
 
-    private fun view(email:String){
+    private fun view(email:String,respuestas:Array<String>){
         val listaLineaProducto = listOf("Linea de producto al que pertenece","Cultura", "Naturaleza", "Aventura")
         val listaEscenario = listOf("Escenario donde se localiza","Prístimo", "Primitivo", "Rústico Natural")
         val listaTipoIn = listOf("Tipo de ingreso","Libre", "Restringido", "Pagado")
         val listaAtencion = listOf("Atención","Todos los dias", "Fines de semana y feriados", "Solo días habiles")
         val listaFormaP = listOf("Forma de pago","Efectivo", "Tarjeta Crédito", "Tarjeta Débito", "Cheque", "Transferencia")
+
 
         //val spLinea = findViewById<Spinner>(R.id.spLinea)
 
@@ -128,6 +134,14 @@ class addRecurso01 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
+            for (item: String in respuestas) {
+                println(item)
+            }
+            val inicio: Intent = Intent(this,Menu::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+            /*
             db.collection("atractivos").document(email).set(
                 hashMapOf("Clima" to txtClima.text.toString(),
                     "Temperatura" to txtTemp.text.toString(),
@@ -142,8 +156,12 @@ class addRecurso01 : AppCompatActivity() {
                     "Meses recomendados" to txtMeses.text.toString(),
                     "Observaciones" to txtObserva.text.toString()
 
+
+
                     )
             )
+            */
+
         }
     }
 }

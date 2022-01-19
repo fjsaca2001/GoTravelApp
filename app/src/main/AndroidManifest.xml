@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoTravelApp">
         <activity
+            android:name=".ListRecurso"
+            android:exported="false" />
+        <activity
             android:name=".addRecurso01"
             android:exported="false" />
         <activity

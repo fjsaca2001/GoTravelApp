@@ -21,6 +21,27 @@ class addRecurso : AppCompatActivity() {
 
     private fun vista(email: String) {
         btnGuardar01.setOnClickListener(){
+            /*
+            var listaDatos = arrayOf(
+                txtNombreLugar.text.toString(),
+                txtTipo.text.toString(),
+                txtCategoria.text.toString(),
+                txtSubtipo.text.toString(),
+                txtProvincia.text.toString(),
+                txtCanton.text.toString(),
+                txtParroquia.text.toString(),
+                txtCalleP.text.toString(),
+                txtNumero.text.toString(),
+                txtTrans.text.toString(),
+                txtBarrio.text.toString(),
+                txtLong.text.toString(),
+                txtAltura.text.toString(),
+                txtTipoAdmin.text.toString(),
+                txtNombreAdmin.text.toString(),
+                txtTelefono.text.toString()
+            )
+
+             */
             db.collection("atractivos").document(email).set(
                 hashMapOf(
                     "Nombre del Lugar" to txtNombreLugar.text.toString(),
@@ -41,8 +62,10 @@ class addRecurso : AppCompatActivity() {
                     "Telefono" to txtTelefono.text.toString()
                 )
             )
+
             val inicio: Intent = Intent(this,addRecurso01::class.java).apply {
                 putExtra("email", email)
+                //putExtra("listas",listaDatos)
             }
             startActivity(inicio)
 
