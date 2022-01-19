@@ -141,13 +141,7 @@
                 android:backgroundTint="#E5E5E5"
                 app:srcCompat="@drawable/recuperar" />
 
-            <ImageButton
-                android:id="@+id/btnSalir"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:backgroundTint="#E5E5E5"
-                app:srcCompat="@drawable/salir" />
-        </TableRow>
+            </TableRow>
 
     </TableLayout>
 

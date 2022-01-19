@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".addRecurso01"
     android:background="#FFFFFF"
     android:backgroundTint="#E5E5E5"
-    tools:context=".addRecurso">
-
-
-
+    >
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="414dp"
@@ -20,8 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -47,315 +44,16 @@
 
     </LinearLayout>
 
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.45"
-        tools:ignore="MissingConstraints">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="360dp"
-                android:layout_height="46dp"
-                android:layout_marginTop="10dp"
-                android:background="#CC242829"
-                android:padding="10dp"
-                android:text="Datos Generales"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/txtNombreLugar"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Nombre del lugar turístico"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtTipo"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Tipo"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtCategoria"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Categoría"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtSubtipo"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Subtipo"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="360dp"
-                android:layout_height="46dp"
-                android:layout_marginTop="8dp"
-                android:background="#CC242829"
-                android:padding="10dp"
-                android:text="Ubicación del atractivo"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/txtProvincia"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Provincia"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtCanton"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Cantón"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtParroquia"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Parroquia"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtCalleP"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Calle Principal"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtNumero"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Número"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtTrans"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Transversal"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtBarrio"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Barrio, sector o comúna"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtLong"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Longitud"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtAltura"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Altura"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="360dp"
-                android:layout_height="46dp"
-                android:layout_marginTop="8dp"
-                android:background="#CC242829"
-                android:padding="10dp"
-                android:text="Información del administrador"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/txtTipoAdmin"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Tipo de Administrador"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtNombreAdmin"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Nombre del Administrador"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-            <EditText
-                android:id="@+id/txtTelefono"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Teléfono / Celular"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
-
-
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="53dp"
-                android:layout_height="48dp"
-                android:backgroundTint="#00FFFFFF"
-                app:srcCompat="@drawable/next" />
-        </LinearLayout>
-
-    </ScrollView>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="409dp"
         android:layout_height="53dp"
-        android:background="@drawable/borderfinish"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+        android:background="@drawable/borderfinish">
 
         <ImageButton
             android:id="@+id/btnHome"
@@ -374,5 +72,255 @@
             app:srcCompat="@drawable/perfil" />
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.13"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="#CC242829"
+                android:padding="10dp"
+                android:text="Datos Generales"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/txtNombreLugar"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Nombre del lugar turístico"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <EditText
+                android:id="@+id/txtTipo"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Tipo"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+            <EditText
+                android:id="@+id/txtCategoria"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Categoría"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <EditText
+                android:id="@+id/txtSubtipo"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Subtipo"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:background="#CC242829"
+                android:padding="10dp"
+                android:text="Ubicación del atractivo"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/txtProvincia"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Provincia"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <EditText
+                android:id="@+id/txtCanton"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Cantón"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <EditText
+                android:id="@+id/txtParroquia"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Parroquia"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/txtCalleP"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Calle Principal"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/txtNumero"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Número"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/txtTrans"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Transversal"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/txtBarrio"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Barrio, sector o comúna"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/txtLong"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Longitud"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <EditText
+                android:id="@+id/txtAltura"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Altura"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/next" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
