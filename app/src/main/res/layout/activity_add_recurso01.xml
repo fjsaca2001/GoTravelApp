@@ -163,7 +163,7 @@
                 />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/txtUbicacion"
                 android:layout_width="360dp"
                 android:layout_height="46dp"
                 android:layout_marginTop="8dp"
@@ -314,7 +314,7 @@
 
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/btnGuardar01"
                 android:layout_width="53dp"
                 android:layout_height="48dp"
                 android:backgroundTint="#00FFFFFF"

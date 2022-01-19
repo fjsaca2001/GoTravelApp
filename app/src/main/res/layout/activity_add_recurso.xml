@@ -8,8 +8,6 @@
     android:backgroundTint="#E5E5E5"
     tools:context=".addRecurso">
 
-
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="414dp"
@@ -17,10 +15,12 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/borderstart"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         >
 
         <ImageButton
@@ -50,12 +50,12 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -83,7 +83,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Nombre del lugar turístico"
+                android:hint="Nombre del lugar turístico"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -98,7 +98,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Tipo"
+                android:hint="Tipo"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -113,7 +113,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Categoría"
+                android:hint="Categoría"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -128,14 +128,14 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Subtipo"
+                android:hint="Subtipo"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/txtUbicacion"
                 android:layout_width="360dp"
                 android:layout_height="46dp"
                 android:layout_marginTop="8dp"
@@ -153,7 +153,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Provincia"
+                android:hint="Provincia"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -168,7 +168,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Cantón"
+                android:hint="Cantón"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -183,7 +183,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Parroquia"
+                android:hint="Parroquia"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -198,7 +198,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Calle Principal"
+                android:hint="Calle Principal"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -213,7 +213,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Número"
+                android:hint="Número"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -228,7 +228,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Transversal"
+                android:hint="Transversal"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -243,7 +243,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Barrio, sector o comúna"
+                android:hint="Barrio, sector o comúna"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -258,7 +258,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Longitud"
+                android:hint="Longitud"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -273,7 +273,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Altura"
+                android:hint="Altura"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -298,7 +298,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Tipo de Administrador"
+                android:hint="Tipo de Administrador"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -313,7 +313,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Nombre del Administrador"
+                android:hint="Nombre del Administrador"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -328,20 +328,21 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Teléfono / Celular"
+                android:hint="Teléfono / Celular"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
-
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/btnGuardar01"
+                android:layout_marginTop="10dp"
                 android:layout_width="53dp"
                 android:layout_height="48dp"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/next" />
         </LinearLayout>
+
 
     </ScrollView>
 
