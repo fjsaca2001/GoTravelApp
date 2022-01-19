@@ -95,12 +95,12 @@
                 android:layout_marginTop="10dp"
                 android:background="#CC242829"
                 android:padding="10dp"
-                android:text="Datos Generales"
+                android:hint="Caracteristicas del atractivo"
                 android:textSize="20sp"
                 />
 
             <EditText
-                android:id="@+id/txtNombreLugar"
+                android:id="@+id/txtClima"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
@@ -108,7 +108,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Nombre del lugar turístico"
+                android:hint="Clima"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -116,7 +116,7 @@
                 />
 
             <EditText
-                android:id="@+id/txtTipo"
+                android:id="@+id/txtTemp"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
@@ -124,14 +124,14 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Tipo"
+                android:hint="Temperatura"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="italic"
                 />
             <EditText
-                android:id="@+id/txtCategoria"
+                android:id="@+id/txtPresi"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
@@ -139,15 +139,43 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Categoría"
+                android:hint="Precipitación Pluviométrica"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="italic"
                 />
 
+
+            <Spinner
+                android:id="@+id/spLinea"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <Spinner
+                android:id="@+id/spEscenario"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <Spinner
+                android:id="@+id/spTipoIn"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
             <EditText
-                android:id="@+id/txtSubtipo"
+                android:id="@+id/txtHoraIn"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
@@ -155,50 +183,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Subtipo"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <TextView
-                android:id="@+id/txtUbicacion"
-                android:layout_width="360dp"
-                android:layout_height="46dp"
-                android:layout_marginTop="8dp"
-                android:background="#CC242829"
-                android:padding="10dp"
-                android:text="Ubicación del atractivo"
-                android:textSize="20sp"
-                />
-
-            <EditText
-                android:id="@+id/txtProvincia"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Provincia"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <EditText
-                android:id="@+id/txtCanton"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Cantón"
+                android:hint="Hora ingreso"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
@@ -206,7 +191,7 @@
                 />
 
             <EditText
-                android:id="@+id/txtParroquia"
+                android:id="@+id/txtHoraSal"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
@@ -214,107 +199,63 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Parroquia"
+                android:hint="Hora Salida"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <Spinner
+                android:id="@+id/spAtencion"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <Spinner
+                android:id="@+id/spFormaP"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+            <EditText
+                android:id="@+id/txtMeses"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Meses recomendables"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                />
+
+            <EditText
+                android:id="@+id/txtObserva"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:hint="Observaciones"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="italic"/>
-
-            <EditText
-                android:id="@+id/txtCalleP"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Calle Principal"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"/>
-
-            <EditText
-                android:id="@+id/txtNumero"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Número"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"/>
-
-            <EditText
-                android:id="@+id/txtTrans"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Transversal"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"/>
-
-            <EditText
-                android:id="@+id/txtBarrio"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Barrio, sector o comúna"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"/>
-
-            <EditText
-                android:id="@+id/txtLong"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Longitud"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <EditText
-                android:id="@+id/txtAltura"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Altura"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
 
             <ImageButton
-                android:id="@+id/btnGuardar01"
+                android:id="@+id/btnSave"
                 android:layout_width="53dp"
                 android:layout_height="48dp"
                 android:backgroundTint="#00FFFFFF"
