@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addRecurso02"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E5E5E5">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstart"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="78dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/category" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="247dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icono" />
+
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="102dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/exit" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:background="#CC242829"
+                android:hint="Accesibilidad y Conectividad del Atractivo"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtPoblado"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Ciudad o Poblado más Cercano"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtDistanciaPoblado"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Distancia desde la ciudad o poblado más cercano"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtTiempoAuto"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint=" Tiempo Estimado de dezsplazamiento en auto"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+
+            <EditText
+                android:id="@+id/txtCoordenadas"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Coordenadas (Latitud/Longitud)"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtObservacionPoblado"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewTerrestre"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="3dp"
+                android:background="#CC242829"
+                android:hint="Via de acceso Terrestre"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spAcceso"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtCoordenadasInicio"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Coordenadas de Inicio"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtCoordenadasFinal"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Coordenadas de Fin"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtDistanciaAccesoTerrestre"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Distancia (Km)"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtAccesoTerrestreMaterial"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Material"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtAccesoTerrestreEstado"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Estado"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtAccesoTerrestreObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewAcuatico"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="3dp"
+                android:background="#CC242829"
+                android:hint="Via de acceso Acuatico"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spAcuatico"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtPuertoIncio"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Puerto/Muelle de Salida"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+
+            <EditText
+                android:id="@+id/txtPuertoLlegada"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Puerto/Muelle de LLegada"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtAccesoAcuaticoObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewAereo"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="3dp"
+                android:background="#CC242829"
+                android:hint="Via de acceso Aéreo"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spTipo"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtAccesoAereoObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewServicioTransporte"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="3dp"
+                android:background="#CC242829"
+                android:text="Servicio de Transporte"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spTransporte"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtTransporteObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtDetalleTransporte"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Cooperativa o Asociación que presta el servicio"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtEstacionTransporte"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Estación / Terminal"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spFrecuencia"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtDetallesTraslado"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Traslado origen / Destino"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spAccesibilidad"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtAccesibilidadObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spSeñalizaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtSeñalizacionObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/next" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:background="@drawable/borderfinish"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/casa" />
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/perfil" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addRecurso03"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E5E5E5">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstart"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="78dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/category" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="247dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icono" />
+
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="102dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/exit" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:background="#CC242829"
+                android:hint="Planta Turística / Complementarios"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spPlantaTuristica"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <Spinner
+                android:id="@+id/spAlojamiento"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtEstlacimientosRegistrados"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Establecimientos Registrados"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtNumeroHabitaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Número de Habitaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtNumeroPlazas"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint=" Número de Plazas"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtObservacionesEstablecimientos"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spAlimentosyBebidas"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtEstablecimientoAlimentos"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Establecimientos Registrados"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtNumeroMesasAlimentos"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Número de Mesas"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtNumeroPlazasAlimentos"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Número de Plazas"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtObservacionesAlimentos"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spGuia"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtObservacionesGuia"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewAereo"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="3dp"
+                android:background="#CC242829"
+                android:hint="Facilidades en el entorno al atractivo"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spCategoria"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <Spinner
+                android:id="@+id/spTipoFacilidad"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtFacilidadCantidad"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Cantidad"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtFacilidadCoordenadas"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Coordenadas"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtFacilidadUniversal"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Acceso Universal"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtFacilidadEstado"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Estado "
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtFacilidadObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewComplementarios"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="3dp"
+                android:background="#CC242829"
+                android:hint="Complementarios a la actividad turística"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spComplementarios"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtComplementariosObservaciones"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/next" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:background="@drawable/borderfinish"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+                android:id="@+id/btnPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E5E5E5"
+                app:srcCompat="@drawable/perfil" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/casa" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

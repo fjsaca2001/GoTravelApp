@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addRecurso01"
+    tools:context=".addRecurso04"
     android:background="#FFFFFF"
-    android:backgroundTint="#E5E5E5"
-    >
+    android:backgroundTint="#E5E5E5">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="414dp"
@@ -44,129 +44,34 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="409dp"
-        android:layout_height="53dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/borderfinish">
-
-        <ImageButton
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#E5E5E5"
-            app:srcCompat="@drawable/casa" />
-
-        <ImageButton
-            android:id="@+id/btnPerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#E5E5E5"
-            app:srcCompat="@drawable/perfil" />
-    </LinearLayout>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:id="@+id/scrollView3"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.13"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:gravity="center"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="360dp"
                 android:layout_height="46dp"
-                android:layout_marginTop="10dp"
                 android:background="#CC242829"
+                android:hint="Estado de Conservación e Integración Atracvivo"
                 android:padding="10dp"
-                android:hint="Caracteristicas del atractivo"
-                android:textSize="20sp"
-                />
-
-            <EditText
-                android:id="@+id/txtClima"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Clima"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <EditText
-                android:id="@+id/txtTemperatura"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Temperatura"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-            <EditText
-                android:id="@+id/txtPrecipitacion"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Precipitación Pluviométrica"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
+                android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/spLinea"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#5CA493"
-
-                />
-
-            <Spinner
-                android:id="@+id/spEscenario"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#5CA493"
-
-                />
-
-            <Spinner
-                android:id="@+id/spTipoIn"
+                android:id="@+id/spAtractivo"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
@@ -175,84 +80,125 @@
                 />
 
             <EditText
-                android:id="@+id/txtHoraIn"
+                android:id="@+id/txtObservacionesAtractivos"
                 android:layout_width="359dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="4dp"
                 android:background="#9900785D"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Hora ingreso"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <EditText
-                android:id="@+id/txtHoraSal"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Hora Salida"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <Spinner
-                android:id="@+id/spAtencion"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#5CA493"
-
-                />
-
-            <Spinner
-                android:id="@+id/spFormaP"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#5CA493"
-
-                />
-            <EditText
-                android:id="@+id/txtMeses"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:text="Meses recomendables"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic"
-                />
-
-            <EditText
-                android:id="@+id/txtObserva"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
                 android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"
-                android:textStyle="italic"/>
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spFactoresAlteracionNaturales"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <Spinner
+                android:id="@+id/spFactoresAlteracionAntropicos"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493"
+
+                />
+
+            <EditText
+                android:id="@+id/txtObservacionesAlteracion"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spEntorno"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtObservacionesEntorno"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spFactoresAlteracionNaturalesEntorno"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <Spinner
+                android:id="@+id/spFactoresAlteracionAntropicosEntorno"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtObservacionesAlteracionEntorno"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spDeclaratoria"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#5CA493" />
+
+            <EditText
+                android:id="@+id/txtObservacionesDeclaratoria"
+                android:layout_width="359dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:background="#9900785D"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
 
             <ImageButton
                 android:id="@+id/btnSave"
@@ -263,5 +209,33 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="53dp"
+        android:background="@drawable/borderfinish"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/perfil" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/casa" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

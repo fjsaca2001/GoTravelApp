@@ -6,10 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso01.*
-import kotlinx.android.synthetic.main.activity_perfil.*
 
 class addRecurso01 : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
@@ -155,8 +153,6 @@ class addRecurso01 : AppCompatActivity() {
                     "Formas de pago" to formaP,
                     "Meses recomendados" to txtMeses.text.toString(),
                     "Observaciones" to txtObserva.text.toString()
-
-
 
                     )
             )
