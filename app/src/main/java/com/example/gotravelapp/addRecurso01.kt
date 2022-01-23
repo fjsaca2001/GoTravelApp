@@ -6,13 +6,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso01.*
+import kotlinx.android.synthetic.main.activity_add_recurso01.btnExit
+import kotlinx.android.synthetic.main.activity_add_recurso01.btnPerfil
 
 class addRecurso01 : AppCompatActivity() {
+    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso01)
         var bundle: Bundle? =intent.extras
+        val isEdit: Boolean? = bundle?.getBoolean("isEdit")
         var respuestas01: Array<String>? = bundle?.getStringArray("respuestas")
         var email:String? = bundle?.getString("email")
         view(
@@ -20,6 +25,7 @@ class addRecurso01 : AppCompatActivity() {
             respuestas01?: arrayOf("No data")
         )
         botonera(email ?: "")
+        editar(email?:"", isEdit?:false)
     }
 
     private fun view(email:String,respuestas01:Array<String>){
@@ -146,6 +152,26 @@ class addRecurso01 : AppCompatActivity() {
                 putExtra("respuestas02", listaDatos)
             }
             startActivity(inicio)
+        }
+    }
+
+
+    private fun editar(email: String, isEdit: Boolean){
+        if(isEdit){
+            db.collection("atractivos").document(email).get().addOnSuccessListener {
+                txtClima.setText(it.get("Clima") as String?)
+                txtTemperatura.setText(it.get("Temperatura") as String?)
+                txtPrecipitacion.setText(it.get("Precipitacion pluvimetrica") as String?)
+                //spLinea,
+                //escenario,
+                //tipoIn,
+                txtHoraIn.setText(it.get("Hora de Ingreso") as String?)
+                txtHoraSal.setText(it.get("Hora de Salida") as String?)
+                //atencion,
+                //formaP,
+                txtMeses.setText(it.get("Meses recomendados") as String?)
+                txtObserva.setText(it.get("Observaciones") as String?)
+            }
         }
     }
 

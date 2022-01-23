@@ -15,19 +15,8 @@
         <entry key="..\:/Users/andre/Desktop/GoT/GoTravelApp/app/src/main/res/layout/activity_add_recurso.xml" value="0.14" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/drawable/borderbeta.xml" value="0.2203125" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/drawable/borderbetabottom.xml" value="0.2203125" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso.xml" value="0.15" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso01.xml" value="0.22" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso02.xml" value="0.18" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso03.xml" value="0.2" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso04.xml" value="0.2" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso05.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso06.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso07.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_add_recurso08.xml" value="0.18" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_list_recurso.xml" value="0.22" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_menu.xml" value="0.22" />
-        <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/layout/activity_reports.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/boarder.xml" value="0.37135416666666665" />
         <entry key="app/src/main/res/drawable/ripple.xml" value="0.37135416666666665" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.37135416666666665" />
@@ -41,10 +30,11 @@
         <entry key="app/src/main/res/layout/activity_add_recurso06.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_add_recurso07.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_add_recurso08.xml" value="0.16822916666666668" />
-        <entry key="app/src/main/res/layout/activity_list_recurso.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_list_recurso.xml" value="0.42988929889298894" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.6016427104722792" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/activity_perfil.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_reports.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22418478260869565" />
       </map>
     </option>

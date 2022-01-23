@@ -9,12 +9,14 @@ import kotlinx.android.synthetic.main.activity_list_recurso.*
 
 class ListRecurso : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
+    private var isEdit = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_list_recurso)
         val bundle: Bundle? =intent.extras
         val email:String? = bundle?.getString("email")
         vista(email?:"")
-        setContentView(R.layout.activity_list_recurso)
+        edit(email?:"")
         botonera(email?:"")
     }
 
@@ -24,9 +26,17 @@ class ListRecurso : AppCompatActivity() {
             obtenerProvincia.setText(it.get("Provincia") as String?)
             obtenerCanton.setText(it.get("Canton") as String?)
         }
+    }
 
-
-
+    private fun edit(email: String){
+        btnEditar.setOnClickListener(){
+            isEdit = true
+            val inicio: Intent = Intent(this, addRecurso::class.java).apply {
+                putExtra("email", email)
+                putExtra("isEdit", isEdit)
+            }
+            startActivity(inicio)
+        }
     }
 
     private fun botonera(email: String){

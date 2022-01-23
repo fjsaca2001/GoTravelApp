@@ -27,8 +27,8 @@ class addRecurso07 : AppCompatActivity() {
         val email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuestas01 ?: arrayOf("No data"),
-            respuestas02 ?: arrayOf("No data"),
+            respuestas01?: arrayOf("No data"),
+            respuestas02?: arrayOf("No data"),
             respuestas03?: arrayOf("No data"),
             respuestas04?: arrayOf("No data"),
             respuestas05?: arrayOf("No data"),

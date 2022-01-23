@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TableLayout
-        android:layout_width="409dp"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:background="#9900785D"
         android:padding="10dp"
@@ -111,10 +111,8 @@
                 android:layout_height="match_parent"
 
                 android:background="#5CA493"
-                android:gravity="center"
-                android:paddingLeft="4dp"
                 android:text="Nombre del Atractivo: "
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#FFFDFD"
                 android:textSize="20sp" />
 
@@ -122,11 +120,9 @@
                 android:id="@+id/obtenerAtractivo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:text="TextView"
                 android:background="#5CA493"
+                android:text="TextView"
                 android:textColor="#FFFDFD"
-                android:textAlignment="center"
                 android:textSize="20sp" />
         </TableRow>
 
@@ -139,7 +135,7 @@
                 android:layout_width="217dp"
                 android:layout_height="wrap_content"
                 android:background="#5CA493"
-                android:paddingLeft="22dp"
+
                 android:text="Provincia: "
                 android:textColor="#FFFDFD"
                 android:textSize="20sp" />
@@ -148,11 +144,24 @@
                 android:id="@+id/obtenerProvincia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:text="TextView"
                 android:background="#5CA493"
+                android:text="TextView"
                 android:textColor="#FFFDFD"
                 android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btnEditar"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="#5CA493"
+                android:fontFamily="@font/roboto_medium"
+                android:text=">"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:textColor="#FFFDFD"
+                android:textFontWeight="10"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -165,8 +174,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#5CA493"
-                android:paddingLeft="22dp"
                 android:text="Canton:"
+                android:textAlignment="viewStart"
                 android:textColor="#FFFDFD"
                 android:textSize="20sp" />
 
@@ -174,9 +183,8 @@
                 android:id="@+id/obtenerCanton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="18dp"
-                android:text="TextView"
                 android:background="#5CA493"
+                android:text="TextView"
                 android:textColor="#FFFDFD"
                 android:textSize="20sp" />
         </TableRow>
@@ -186,12 +194,7 @@
             android:layout_height="match_parent"
             android:background="#5CA493">
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:backgroundTint="#5CA493"
-                app:srcCompat="@drawable/next" />
+
         </TableRow>
     </TableLayout>
 
