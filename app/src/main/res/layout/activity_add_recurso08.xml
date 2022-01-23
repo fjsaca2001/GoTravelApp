@@ -229,13 +229,6 @@
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
-            android:id="@+id/btnPerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#E5E5E5"
-            app:srcCompat="@drawable/perfil" />
 
         <ImageButton
             android:id="@+id/btnHome"
@@ -244,6 +237,15 @@
             android:layout_weight="1"
             android:backgroundTint="#E5E5E5"
             app:srcCompat="@drawable/casa" />
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E5E5"
+            app:srcCompat="@drawable/perfil" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

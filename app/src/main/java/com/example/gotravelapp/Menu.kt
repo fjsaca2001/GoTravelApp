@@ -13,8 +13,20 @@ class Menu : AppCompatActivity() {
         begin()
         exit()
         perfil()
+        reportes()
         listarRecursos()
         clickAddRecurso()
+    }
+
+    private fun reportes() {
+        val objetoIntent: Intent =intent
+        var email=objetoIntent.getStringExtra("email")
+        btnReports.setOnClickListener{
+            val inicio: Intent= Intent(this,Reports::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
     }
 
     private fun listarRecursos (){
