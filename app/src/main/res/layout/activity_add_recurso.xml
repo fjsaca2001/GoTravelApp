@@ -145,50 +145,73 @@
                 android:text="Ubicación del atractivo"
                 android:textSize="20sp" />
 
-            <EditText
-                android:id="@+id/txtProvincia"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="2dp"
                 android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Provincia"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
+                android:ems="10">
 
-            <EditText
-                android:id="@+id/txtCanton"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Cantón"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/txtParroquia"
+                <AutoCompleteTextView
+                    android:id="@+id/provincia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Provincia"
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="2dp"
                 android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Parroquia"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
+                android:ems="10">
+
+                <AutoCompleteTextView
+                    android:id="@+id/canton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cantón"
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="359dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="2dp"
+                android:background="#9900785D"
+                android:ems="10">
+
+                <AutoCompleteTextView
+                    android:id="@+id/parroquia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Parroquia"
+                    android:inputType="none"
+                    android:scrollbarSize="4dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <EditText
                 android:id="@+id/txtCalleP"

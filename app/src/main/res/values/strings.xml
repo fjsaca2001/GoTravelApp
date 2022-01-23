@@ -1,3 +1,2605 @@
 <resources>
     <string name="app_name">GoTravelApp</string>
+
+    <string-array name="array_provincias">
+        <item>AZUAY</item>
+        <item>BOLÍVAR</item>
+        <item>CAÑAR</item>
+        <item>CARCHI</item>
+        <item>COTOPAXI</item>
+        <item>CHIMBORAZO</item>
+        <item>EL ORO</item>
+        <item>ESMERALDAS</item>
+        <item>GUAYAS</item>
+        <item>IMBABURA</item>
+        <item>LOJA</item>
+        <item>LOS RÍOS</item>
+        <item>MANABI</item>
+        <item>MORONA SANTIAGO</item>
+        <item>NAPO</item>
+        <item>PASTAZA</item>
+        <item>PICHINCHA</item>
+        <item>TUNGURAHUA</item>
+        <item>ZAMORA CHINCHIPE</item>
+        <item>GALÁPAGOS</item>
+        <item>SUCUMBÍOS</item>
+        <item>ORELLANA</item>
+        <item>SANTO DOMINGO DE LOS TSACHILAS</item>
+        <item>SANTA ELENA</item>
+        <item>ZONAS EN ESTUDIO</item>
+    </string-array>
+
+    <!-- Cantones de Azuay -->
+    <string-array name="array_azuay_cantones">
+        <item>CUENCA</item>
+        <item>GIRÓN</item>
+        <item>GUALACEO</item>
+        <item>NABÓN</item>
+        <item>PAUTE</item>
+        <item>PUCARA</item>
+        <item>SAN FERNANDO</item>
+        <item>SANTA ISABEL</item>
+        <item>SIGSIG</item>
+        <item>OÑA</item>
+        <item>CHORDELEG</item>
+        <item>EL PAN</item>
+        <item>SEVILLA DE ORO</item>
+        <item>GUACHAPALA</item>
+        <item>CAMILO PONCE ENRIQUEZ</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón Cuenca -->
+    <string-array name="array_azuay_cant_cuenca">
+        <item>BELLAVISTA</item>
+        <item>CAÑARIBAMBA</item>
+        <item>EL BATÁN</item>
+        <item>EL SAGARIO</item>
+        <item>EL VECINO</item>
+        <item>GIL RAMÍREZ DÁVALOS</item>
+        <item>HUAYNACÁPAC</item>
+        <item>MACHÁNGARA</item>
+        <item>MONAY</item>
+        <item>SAN BLAS</item>
+        <item>SAN SEBASTIÁN</item>
+        <item>SUCRE</item>
+        <item>TOTORACOCHA</item>
+        <item>YANUCAY</item>
+        <item>HERMANO MIGUEL</item>
+        <item>CUENCA</item>
+        <item>BAÑOS</item>
+        <item>CUMBE</item>
+        <item>CHAUCHA</item>
+        <item>CHECA</item>
+        <item>CHIQUINTAD</item>
+        <item>LLACAO</item>
+        <item>MOLLETURO</item>
+        <item>NULTI</item>
+        <item>OCTAVIO CORDERO PALACIOS</item>
+        <item>PACCHA</item>
+        <item>QUINGEO</item>
+        <item>RICAURTE</item>
+        <item>SAN JOAQUÍN</item>
+        <item>SANTA ANA</item>
+        <item>SAYAUSÍ</item>
+        <item>SIDCAY</item>
+        <item>SININCAY</item>
+        <item>TARQUI</item>
+        <item>TURI</item>
+        <item>VALLE</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón Girón -->
+    <string-array name="array_azuay_cant_girón">
+        <item>GIRÓN</item>
+        <item>ASUNCIÓN</item>
+        <item>SAN GERARDO</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón Gualaceo -->
+    <string-array name="array_azuay_cant_gualaceo">
+        <item>GUALACEO</item>
+        <item>CHORDELEG</item>
+        <item>DANIEL CÓRDOVA TORAL</item>
+        <item>JADÁN</item>
+        <item>MARIANO MORENO</item>
+        <item>PRINCIPAL</item>
+        <item>REMIGIO CRESPO TORAL</item>
+        <item>SAN JUAN</item>
+        <item>ZHIDMAD</item>
+        <item>LUIS CORDERO VEGA</item>
+        <item>SIMÓN BOLÍVAR</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón Nabón -->
+    <string-array name="array_azuay_cant_nabón">
+        <item>NABÓN</item>
+        <item>COCHAPATA</item>
+        <item>EL PROGRESO</item>
+        <item>LAS NIEVES</item>
+        <item>OÑA</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón Paute -->
+    <string-array name="array_azuay_cant_paute">
+        <item>PAUTE</item>
+        <item>AMALUZA</item>
+        <item>BULÁN</item>
+        <item>CHICÁN</item>
+        <item>EL CABO</item>
+        <item>GUACHAPALA</item>
+        <item>GUARAINAG</item>
+        <item>PALMAS</item>
+        <item>PAN</item>
+        <item>SAN CRISTÓBAL</item>
+        <item>SEVILLA DE ORO</item>
+        <item>TOMEBAMBA</item>
+        <item>DUG DUG</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón Pucara -->
+    <string-array name="array_azuay_cant_pucara">
+        <item>PUCARÁ</item>
+        <item>CAMILO PONCE ENRÍQUEZ</item>
+        <item>SAN RAFAEL DE SAHARUG</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón SAN FERNANDO -->
+    <string-array name="array_azuay_cant_san_fernando">
+        <item>SAN FERNANDO</item>
+        <item>CHUMBLÍN</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón SANTA ISABEL -->
+    <string-array name="array_azuay_cant_santa_isabel">
+        <item>SANTA ISABEL</item>
+        <item>ABDÓN CALDERÓN</item>
+        <item>EL CARMEN DE PIJILLÍ</item>
+        <item>ZHAGLLI</item>
+        <item>SAN SALVADOR DE CAÑARIBAMBA</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón SIGSIG -->
+    <string-array name="array_azuay_cant_sigsig">
+        <item>SIGSIG</item>
+        <item>CUCHIL</item>
+        <item>GIMA</item>
+        <item>GUEL</item>
+        <item>LUDO</item>
+        <item>SAN BARTOLOMÉ</item>
+        <item>SAN JOSÉ DE RARANGA</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón OÑÁ -->
+    <string-array name="array_azuay_cant_onia">
+        <item>SAN FELIPE DE OÑA CABECERA CANTONAL</item>
+        <item>SUSUDEL</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón CHORDELEG -->
+    <string-array name="array_azuay_cant_chordeleg">
+        <item>CHORDELEG</item>
+        <item>PRINCIPAL</item>
+        <item>LA UNNIÓN</item>
+        <item>LUIS GALARZA ORELLANA</item>
+        <item>SAN MARTÍN DE PUZHIO</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón EL PAN -->
+    <string-array name="array_azuay_cant_el_pan">
+        <item>EL PAN</item>
+        <item>AMALUZA</item>
+        <item>PALMAS</item>
+        <item>SAN VICENTE</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón SEVILLA DE ORO -->
+    <string-array name="array_azuay_cant_sevilla_oro">
+        <item>SEVILLA DE ORO</item>
+        <item>AMALUZA</item>
+        <item>PALMAS</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón GUACHAPALA -->
+    <string-array name="array_azuay_cant_guachapala">
+        <item>GUACHAPALA</item>
+    </string-array>
+
+    <!-- Cantones de Azuay Cantón CAMILO PONCE ENRÍQUEZ -->
+    <string-array name="array_azuay_cant_camilo_enriquez">
+        <item>CAMILO PONCE ENRÍQUEZ</item>
+        <item>EL CARMEN DE PIJILÍ</item>
+    </string-array>
+
+    <!-- Cantones de BOLIVAR -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_bolivar_cantones">
+        <item>GUARANDA</item>
+        <item>CHILLANES</item>
+        <item>CHIMBO</item>
+        <item>ECHEANDÍA</item>
+        <item>SAN MIGUEL</item>
+        <item>CALUMA</item>
+        <item>LAS NAVES</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón GUARANDA -->
+    <string-array name="array_bolivar_guaranda">
+        <item>ÁNGEL POLIBIO CHÁVEZ</item>
+        <item>GABRIEL IGNACIO VEINTIMILLA</item>
+        <item>GUANUJO</item>
+        <item>GUARANDA</item>
+        <item>FACUNDO VELA</item>
+        <item>JULIO E. MORENO</item>
+        <item>LAS NAVES</item>
+        <item>SALINAS</item>
+        <item>SAN LORENZO</item>
+        <item>SAN SIMÓN</item>
+        <item>SANTA FÉ</item>
+        <item>SIMIÁTUG</item>
+        <item>SAN LUIS DE PAMBIL</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón CHILLANES -->
+    <string-array name="array_bolivar_chillanes">
+        <item>CHILLANES</item>
+        <item>SAN JOSÉ DEL TAMBO</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón CHIMBO -->
+    <string-array name="array_bolivar_chimbo">
+        <item>SAN JOSÉ DE CHIMBO</item>
+        <item>ASUNCIÓN</item>
+        <item>CALUMA</item>
+        <item>MAGDALENA</item>
+        <item>SAN SEBASTIÁN</item>
+        <item>TELIMBELA</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón ECHEANDÍA -->
+    <string-array name="array_bolivar_echeandia">
+        <item>ECHEANDÍA</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón SAN MIGUEL -->
+    <string-array name="array_bolivar_san_miguel">
+        <item>SAN MIGUEL</item>
+        <item>BALSAPAMBA</item>
+        <item>BILOVÁN</item>
+        <item>RÉGULO DE MORA</item>
+        <item>SAN PABLO</item>
+        <item>SANTIAGO</item>
+        <item>SAN VICENTE</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón CALUMA -->
+    <string-array name="array_bolivar_caluma">
+        <item>CALUMA</item>
+    </string-array>
+
+    <!-- Cantones de BOLÍVAR Cantón LAS NAVES -->
+    <string-array name="array_bolivar_las_naves">
+        <item>LAS MERCEDES</item>
+        <item>LAS NAVES</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_caniar_cantones">
+        <item>AZOGUES</item>
+        <item>BIBLIÁN</item>
+        <item>CAÑAR.</item>
+        <item>LA TRONCAL</item>
+        <item>EL TAMBO</item>
+        <item>DÉLEG</item>
+        <item>SUSCAL</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón AZOGUES -->
+    <string-array name="array_caniar_azogues">
+        <item>AURELIO BAYAS MARTINEZ</item>
+        <item>AZOGUES</item>
+        <item>BORRERO</item>
+        <item>SAN FRANCISCO</item>
+        <item>COJITAMBO</item>
+        <item>DÉLEG</item>
+        <item>GUAPÁN</item>
+        <item>JAVIER LOYOLA</item>
+        <item>LUIS CORDERO</item>
+        <item>PINDILIG</item>
+        <item>RIVERA</item>
+        <item>SAN MIGUEL</item>
+        <item>SOLANO</item>
+        <item>SADAY</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón BIBLIÁN -->
+    <string-array name="array_caniar_biblian">
+        <item>BIBLIÁN</item>
+        <item>NAZÓN</item>
+        <item>SAN FRANCISCO DE SAGEO</item>
+        <item>TURUPAMBA</item>
+        <item>JERUSALÉN</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón CAÑÁR -->
+    <string-array name="array_caniar_caniar">
+        <item>CAÑAR</item>
+        <item>CHONTAMARCA</item>
+        <item>CHOROCOPTE</item>
+        <item>GENERAL MORALES</item>
+        <item>GUALLETURO</item>
+        <item>HONORATO VÁSQUEZ</item>
+        <item>INGAPIRCA</item>
+        <item>JUNCAL</item>
+        <item>SAN ANTONIO</item>
+        <item>SUSCAL</item>
+        <item>TAMBO</item>
+        <item>ZHUD</item>
+        <item>VENTURA</item>
+        <item>DUCUR</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón LA TRONCAL -->
+    <string-array name="array_caniar_la_troncal">
+        <item>LA TRONCAL</item>
+        <item>MANUEL J. CALLE</item>
+        <item>PANCHO NEGRO</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón EL TAMBO -->
+    <string-array name="array_caniar_el_tambo">
+        <item>EL TAMBO</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón DÉLEG -->
+    <string-array name="array_caniar_deleg">
+        <item>DÉLEG</item>
+        <item>SOLANO</item>
+    </string-array>
+
+    <!-- Cantones de CAÑAR Cantón SUSCAL -->
+    <string-array name="array_caniar_suscal">
+        <item>SUSCAL</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_carchi_cantones">
+        <item>TULCÁN</item>
+        <item>BOLÍVAR</item>
+        <item>ESPEJO</item>
+        <item>MIRA</item>
+        <item>MONTÚFAR</item>
+        <item>SAN PEDRO DE HUACA</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI Cantón TULCÁN -->
+    <string-array name="array_carchi_tulcan">
+        <item>GONZALES SUÁREZ</item>
+        <item>TULCÁN</item>
+        <item>EL CARMELO</item>
+        <item>HUACA</item>
+        <item>JULIO ANDRADE</item>
+        <item>MALDONADO</item>
+        <item>PIOTER</item>
+        <item>TOBAR DONOSO</item>
+        <item>TUFIÑO</item>
+        <item>URBINA</item>
+        <item>EL CHICAL</item>
+        <item>MARISCAL SUCRE</item>
+        <item>SANTA MARTHA DE CUBA</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI Cantón BOLÍVAR -->
+    <string-array name="array_carchi_bolivar">
+        <item>BOLÍVAR</item>
+        <item>GARCÍA MORENO</item>
+        <item>LOS ANDES</item>
+        <item>MONTE OLIVO</item>
+        <item>SAN VICENE DE PUSIR</item>
+        <item>SAN RAFAEL</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI Cantón ESPEJO -->
+    <string-array name="array_carchi_espejo">
+        <item>EL ÁNGEL</item>
+        <item>27 DE SEPTIEMBRE</item>
+        <item>EL GOALTAL</item>
+        <item>LA LIBERTAD</item>
+        <item>SAN ISIDRO</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI Cantón MIRA -->
+    <string-array name="array_carchi_mira">
+        <item>MIRA</item>
+        <item>CONCEPCIÓN</item>
+        <item>JIJÓN Y CAAMAÑO</item>
+        <item>JUAN MONTALVO</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI Cantón MONTÚFAR -->
+    <string-array name="array_carchi_montufar">
+        <item>GONZÁLES SUÁREZ</item>
+        <item>SAN JOSÉ</item>
+        <item>SAN GABRIEL</item>
+        <item>CRISTÓBAL COLÓN</item>
+        <item>CHITÁN DE NAVARRETE</item>
+        <item>FERNÁNDEZ SALVADOR</item>
+        <item>LA PAZ</item>
+        <item>PIARTAL</item>
+    </string-array>
+
+    <!-- Cantones de CARCHI Cantón SAN PEDRO DE HUACA -->
+    <string-array name="array_carchi_pedro_huaca">
+        <item>HUACA</item>
+        <item>MARISCAL SUCRE</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_cotopaxi_cantones">
+        <item>LATACUNGA</item>
+        <item>LA MANÁ</item>
+        <item>PANGUA</item>
+        <item>PUJILI</item>
+        <item>SALCEDO</item>
+        <item>SAQUISILÍ</item>
+        <item>SIGCHOS</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón LATACUNGA -->
+    <string-array name="array_cotopaxi_latacunga">
+        <item>ELOY ALFARO</item>
+        <item>IGNACIO FLORES</item>
+        <item>JUAN MONTALVO</item>
+        <item>LA MATRIZ</item>
+        <item>SAN BUENAVENTURA</item>
+        <item>LATACUNGA</item>
+        <item>ALAQUES</item>
+        <item>BELISARIO QUEVEDO</item>
+        <item>GUAITACAMA</item>
+        <item>JOSEGUANGO BAJO </item>
+        <item>LAS PAMPAS</item>
+        <item>MULALÓ</item>
+        <item>11 DE NOVIEMBRE</item>
+        <item>POALÓ</item>
+        <item>SAN JUAN DE PASTOCALLE</item>
+        <item>SIGCHOS</item>
+        <item>TANICUCHÍ</item>
+        <item>TOACASO</item>
+        <item>PALO QUEMADO</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón LA MANÁ -->
+    <string-array name="array_cotopaxi_la_mana">
+        <item>EL CARMEN</item>
+        <item>LA MANÁ</item>
+        <item>EL TRIUNFO</item>
+        <item>GUASAGANDA</item>
+        <item>PUCAYACU</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón PANGUA -->
+    <string-array name="array_cotopaxi_pangua">
+        <item>EL CORAZÓN</item>
+        <item>MORASPUNGO</item>
+        <item>PINLLOPATA</item>
+        <item>RAMÓN CAMPAÑÁ</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón PUJILI -->
+    <string-array name="array_cotopaxi_pujili">
+        <item>PUJILI</item>
+        <item>ANGAMARCA</item>
+        <item>CHUCCHILÁN</item>
+        <item>GUANGAJE</item>
+        <item>ISINLIBÍ</item>
+        <item>LA VICTORIA</item>
+        <item>PILALÓ</item>
+        <item>TINGO</item>
+        <item>ZUMBAHUA</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón SALCEDO -->
+    <string-array name="array_cotopaxi_salcedo">
+        <item>SAN MIGUEL</item>
+        <item>ANTONIO JOSÉ HOLGUÍN</item>
+        <item>CUSUBAMBA</item>
+        <item>MULALILLO</item>
+        <item>MULLIQUINDIL</item>
+        <item>PANSALEO</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón SAQUISILÍ -->
+    <string-array name="array_cotopaxi_saquisili">
+        <item>SAQUISILÍ</item>
+        <item>CANCHAGUA</item>
+        <item>CHANTILÍN</item>
+        <item>COCHAPAMBA</item>
+    </string-array>
+
+    <!-- Cantones de COTOPAXI Cantón SIGCHOS -->
+    <string-array name="array_cotopaxi_sigchos">
+        <item>SIGCHOS</item>
+        <item>CHUGCHILÁN</item>
+        <item>ISINLIBÍ</item>
+        <item>LAS PAMBAS</item>
+        <item>PALO QUEMADO</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_chimborazo_cantones">
+        <item>RIOBAMBA</item>
+        <item>ALAUSI</item>
+        <item>COLTA</item>
+        <item>CHAMBO</item>
+        <item>CHUNCHI</item>
+        <item>GUAMOTE</item>
+        <item>GUANO</item>
+        <item>PALLATANGA</item>
+        <item>PENIPE</item>
+        <item>CUMANDÁ</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón RIOBAMBA -->
+    <string-array name="array_chimborazo_riobamba">
+        <item>LIZARZABURU</item>
+        <item>MALDONADO</item>
+        <item>VELASCO</item>
+        <item>VELOZ</item>
+        <item>YARUQUÍES</item>
+        <item>RIOBAMBA</item>
+        <item>CACHA</item>
+        <item>CALPI</item>
+        <item>CUBIJÍES</item>
+        <item>FLORES</item>
+        <item>LICÁN</item>
+        <item>LICTO</item>
+        <item>PUNGALÁ</item>
+        <item>PUNÍN</item>
+        <item>QUIMIAG</item>
+        <item>SAN JUAN</item>
+        <item>SAN LUIS</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón ALAUSI -->
+    <string-array name="array_chimborazo_alausi">
+        <item>ALAUSÍ</item>
+        <item>ACHUPALLAS</item>
+        <item>CUMANDÁ</item>
+        <item>GUASUNTOS</item>
+        <item>HUIGRA</item>
+        <item>MULTITUD</item>
+        <item>PISTISHÍ</item>
+        <item>PUMALLACTA</item>
+        <item>SEVILLA</item>
+        <item>SIBAMBE</item>
+        <item>TIXÁN</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón COLTA -->
+    <string-array name="array_chimborazo_colta">
+        <item>CAJABAMBA</item>
+        <item>SICALPA</item>
+        <item>VILLA LA UNIÓN</item>
+        <item>CAÑI</item>
+        <item>COLUMBE</item>
+        <item>JUAN DE VELASCO</item>
+        <item>SANTIAGO DE QUITO</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón CHAMBO -->
+    <string-array name="array_chimborazo_chambo">
+        <item>CHAMBO</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón CHUNCHI -->
+    <string-array name="array_chimborazo_chunchi">
+        <item>CHUNCHI</item>
+        <item>CAPZOL</item>
+        <item>COMPUD</item>
+        <item>GONZOL</item>
+        <item>LLAGOS</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón GUAMOTE -->
+    <string-array name="array_chimborazo_guamote">
+        <item>GUAMOTE</item>
+        <item>CEBADAS</item>
+        <item>PALMIRA</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón GUANO -->
+    <string-array name="array_chimborazo_guano">
+        <item>EL ROSARIO</item>
+        <item>LA MATRIZ</item>
+        <item>GUANO</item>
+        <item>GUANANDO</item>
+        <item>ILAPO</item>
+        <item>LA PROVIDENCIA</item>
+        <item>SAN ANDRÉS</item>
+        <item>SAN GERARDO DE PACAICAGUÁN</item>
+        <item>SAN ISIDRO DE PATULÚ</item>
+        <item>SAN JOSE DEL CHAZO</item>
+        <item>SANTA FE DE GALÁN</item>
+        <item>VALPARAÍSO</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón PALLATANGA -->
+    <string-array name="array_chimborazo_pallatanga">
+        <item>PALLATANGA</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón PENIPE -->
+    <string-array name="array_chimborazo_penipe">
+        <item>PENIPE</item>
+        <item>EL ALTAR</item>
+        <item>MATUS</item>
+        <item>PUELA</item>
+        <item>SAN ANTONIO DE BAYUSHIG</item>
+        <item>LA CANDELARIA</item>
+        <item>BILBAO</item>
+    </string-array>
+
+    <!-- Cantones de CHIMBORAZO Cantón CUMANDÁ -->
+    <string-array name="array_chimborazo_cumanda">
+        <item>CUMANDÁ</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_oro_cantones">
+        <item>MACHALA</item>
+        <item>ARENILLAS</item>
+        <item>ATAHUALPA</item>
+        <item>BALSAS</item>
+        <item>CHILLA</item>
+        <item>EL GUABO</item>
+        <item>HUAQUILLAS</item>
+        <item>MARCABELÍ</item>
+        <item>PASAJE</item>
+        <item>PIÑAS</item>
+        <item>PORTOVELO</item>
+        <item>SANTA ROSA</item>
+        <item>ZARUMA</item>
+        <item>LAS LAJAS</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón MACHALA -->
+    <string-array name="array_oro_machala">
+        <item>LA PROVIDENCIA</item>
+        <item>MACHALA</item>
+        <item>PUERTO BOLÍVAR</item>
+        <item>NUEVE DE MAYO</item>
+        <item>EL CAMBIO</item>
+        <item>EL RETIRO</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón ARENILLAS -->
+    <string-array name="array_oro_arenillas">
+        <item>ARENILLAS</item>
+        <item>CHACRAS</item>
+        <item>LA LIBERTAD</item>
+        <item>LAS LAJAS</item>
+        <item>PALMALES</item>
+        <item>CARCABÓN</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón ATAHUALPA -->
+    <string-array name="array_oro_atahualpa">
+        <item>PACCHA</item>
+        <item>AYAPAMBA</item>
+        <item>CORDOCILLO</item>
+        <item>MILAGRO</item>
+        <item>SAN JOSÉ</item>
+        <item>SAN JUAN DE CERRO AZUL</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón BALSAS -->
+    <string-array name="array_oro_balsas">
+        <item>BALSAS</item>
+        <item>BELLAMARÍA</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón CHILLA -->
+    <string-array name="array_oro_chilla">
+        <item>CHILLA</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón EL GUABO -->
+    <string-array name="array_oro_guabo">
+        <item>EL GUABO</item>
+        <item>BARBONES</item>
+        <item>LA IBERIA</item>
+        <item>TENDALES</item>
+        <item>RÍO BONITO</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón HUAQUILLAS -->
+    <string-array name="array_oro_huaquillas">
+        <item>ECUADOR</item>
+        <item>EL PARAÍSO</item>
+        <item>HUALTACO</item>
+        <item>MILTON REYES</item>
+        <item>UNIÓN LOJANA</item>
+        <item>HUAQUILLAS</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón MARCABELÍ -->
+    <string-array name="array_oro_marcabeli">
+        <item>MARCABELÍ</item>
+        <item>EL INGENIO</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón PASAJE -->
+    <string-array name="array_oro_pasaje">
+        <item>BOLÍVAR</item>
+        <item>LOMA DE FRANCO</item>
+        <item>OCHOA LEÓN</item>
+        <item>TRES CERRITOS</item>
+        <item>PASAJE</item>
+        <item>BUENAVISTA</item>
+        <item>CASACAY</item>
+        <item>LA PEAÑA</item>
+        <item>PROGRESO</item>
+        <item>UZHCURRUMI</item>
+        <item>CAÑAQUEMADA</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón PIÑAS -->
+    <string-array name="array_oro_pinias">
+        <item>LA MATRIZ</item>
+        <item>LA SUSAYA</item>
+        <item>PIÑAS GRANDE</item>
+        <item>PIÑÁS</item>
+        <item>CAPIRO</item>
+        <item>LA BOCANA</item>
+        <item>MOROMORO</item>
+        <item>PIEDRAS</item>
+        <item>SAN ROQUE</item>
+        <item>ZARACAY</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón PORTOVELO -->
+    <string-array name="array_oro_portovelo">
+        <item>PORTOVELO</item>
+        <item>CURTINCAPA</item>
+        <item>MORALES</item>
+        <item>SALATÍ</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón SANTA ROSA -->
+    <string-array name="array_oro_santa_rosa">
+        <item>SANTA ROSA</item>
+        <item>PUERTO JELÍ</item>
+        <item>BALNEARIO JAMBELÍ</item>
+        <item>JUMÓN</item>
+        <item>NUEVO SANTA ROSA</item>
+        <item>SANTA ROSA</item>
+        <item>BELLAVISTA</item>
+        <item>JAMBELÍ</item>
+        <item>LA AVANZADA</item>
+        <item>SAN ANTONIO</item>
+        <item>TORATA</item>
+        <item>VICTORIA</item>
+        <item>BELLAMARÍA</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón ZARUMA -->
+    <string-array name="array_oro_zaruma">
+        <item>ZARUMA</item>
+        <item>ABAÑÍN</item>
+        <item>ARCAPAMBA</item>
+        <item>GUANAZÁN</item>
+        <item>GUIZHAGUIÑA</item>
+        <item>HUERTAS</item>
+        <item>MALVAS</item>
+        <item>MULUNCAY GRANDE</item>
+        <item>SIANSAO</item>
+        <item>SALVIAS</item>
+    </string-array>
+
+    <!-- Cantones de EL ORO Cantón LAS LAJAS -->
+    <string-array name="array_oro_lajas">
+        <item>LA VICTORIA</item>
+        <item>PLATANILLOS</item>
+        <item>VALLE HERMOSO</item>
+        <item>LA LIBERTAD</item>
+        <item>EL PARAÍSO </item>
+        <item>SAN ISIDRO</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_esmeraldas_cantones">
+        <item>ESMERALDAS</item>
+        <item>ELOY ALFARO</item>
+        <item>MUISNE</item>
+        <item>QUININDÉ</item>
+        <item>SAN LORENZO</item>
+        <item>ATACAMES</item>
+        <item>RIOVERDE</item>
+        <item>LA CONCORDIA</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón ESMERALDAS -->
+    <string-array name="array_esmeraldas_esmeraldas">
+        <item>BARTOLOMÉ RUIZ</item>
+        <item>5 DE AGOSTO</item>
+        <item>ESMERALDAS</item>
+        <item>LUIS TELLO</item>
+        <item>SIMÓN PLATA TORRES</item>
+        <item>ATACAMES</item>
+        <item>CAMARONES</item>
+        <item>CRNEL. CARLOS CONCHA TORRES</item>
+        <item>CHINCA</item>
+        <item>CHONTADURO</item>
+        <item>CHUMUNDÉ</item>
+        <item>LAGARTO</item>
+        <item>LA UNIÓN</item>
+        <item>MAJUA</item>
+        <item>MONTALVO</item>
+        <item>RÍO VERDE</item>
+        <item>ROCAFUERTE</item>
+        <item>SAN MATEO</item>
+        <item>SÚA</item>
+        <item>TABIAZO</item>
+        <item>TACHINA</item>
+        <item>TOCHIGUE</item>
+        <item>VUELTA LARGA</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón ELOY ALFARO -->
+    <string-array name="array_esmeraldas_elo_alfaro">
+        <item>VALDEZ</item>
+        <item>ANCHAYACU</item>
+        <item>ATAHUALPA</item>
+        <item>BORBÓN</item>
+        <item>LA TOLA</item>
+        <item>LUIS VARGAS TORRES</item>
+        <item>MALDONADO</item>
+        <item>PAMPANAL DE BOLÍVAR</item>
+        <item>SAN FRANCISO DE ONZOLE</item>
+        <item>SANTO DOMINGO DE ONZOLE</item>
+        <item>SELVA ALEGRE</item>
+        <item>TELEMBÍ</item>
+        <item>COLÓN ELOY DEL MARÍA</item>
+        <item>SAN JOSE DE CAYAPAS</item>
+        <item>TIMBIRÉ</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón MUISNE -->
+    <string-array name="array_esmeraldas_muisne">
+        <item>MUISNE</item>
+        <item>BOLÍVAR</item>
+        <item>DAULE</item>
+        <item>GALERA</item>
+        <item>QUINGUE</item>
+        <item>SALIMA</item>
+        <item>SAN FRANCISCO</item>
+        <item>SAN GREGORIO</item>
+        <item>SAN JOSÉ DE CHAMANGA</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón QUININDÉ -->
+    <string-array name="array_esmeraldas_quininde">
+        <item>ROSA ZÁRATE</item>
+        <item>CUBE</item>
+        <item>CHURA</item>
+        <item>MALIMPIA</item>
+        <item>VICHE</item>
+        <item>LA UNIÓN</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón SAN LORENZO -->
+    <string-array name="array_esmeraldas_san_lorenzo">
+        <item>SAN LORENZO</item>
+        <item>ALTO TAMBO</item>
+        <item>ANCÓN</item>
+        <item>CALDERÓN</item>
+        <item>CARONDELET</item>
+        <item>5 DE JUNIO</item>
+        <item>CONCEPCIÓN</item>
+        <item>MATAJE</item>
+        <item>SAN JAVIER DE CACHAVÍ</item>
+        <item>SANTA RITA</item>
+        <item>TAMBILLO</item>
+        <item>TULULBÍ</item>
+        <item>URBINA</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón ATACAMES -->
+    <string-array name="array_esmeraldas_atacames">
+        <item>ATACAMES</item>
+        <item>LA UNIÓN</item>
+        <item>SÚA</item>
+        <item>TONCHIGUE</item>
+        <item>TONSUPA</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón RIOVERDE -->
+    <string-array name="array_esmeraldas_rioverde">
+        <item>RIOVERDE</item>
+        <item>CHONTADURO</item>
+        <item>CHUMUNDÉ</item>
+        <item>LAGARTO</item>
+        <item>MONTALVO</item>
+        <item>ROCAFUERTE</item>
+    </string-array>
+
+    <!-- Cantones de ESMERALDAS Cantón LA CONCORDIA -->
+    <string-array name="array_esmeraldas_concordia">
+        <item>LA CONCORDIA</item>
+        <item>MONTERREY</item>
+        <item>LA VILLEGAS</item>
+        <item>PLAN PILOTO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_guayas_cantones">
+        <item>GUAYAQUIL</item>
+        <item>ALFREDO BAQUERIZO MORENO</item>
+        <item>BALAO</item>
+        <item>BALZAR</item>
+        <item>COLIMES</item>
+        <item>DAULE</item>
+        <item>DURÁN</item>
+        <item>EL EMPALME</item>
+        <item>EL TRIUNFO</item>
+        <item>MILAGRO</item>
+        <item>NARANJAL</item>
+        <item>NARANJITO</item>
+        <item>PALESTINA</item>
+        <item>PEDRO CARBO</item>
+        <item>SAMBORONDÓN</item>
+        <item>SANTA LUCIA</item>
+        <item>SALITRE</item>
+        <item>SAN JACINTO DE YAGUACHI</item>
+        <item>PLAYAS</item>
+        <item>SIMÓN BOLÍVAR</item>
+        <item>CRNEL. MARCELINO MARIDUEÑA</item>
+        <item>LOMAS DE SARGENTILLO</item>
+        <item>NOBOL</item>
+        <item>GRAL. ANTONIO ELIZALDE</item>
+        <item>ISIDRO AYORA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón GUAYAQUIL -->
+    <string-array name="array_guayas_guayaquil">
+        <item>AYACUCHO</item>
+        <item>BOLÍVAR</item>
+        <item>CARBO</item>
+        <item>FEBRES</item>
+        <item>GARCÍA MORENO</item>
+        <item>LETAMENDI</item>
+        <item>NUEVE DE OCTUBRE</item>
+        <item>OLMEDO</item>
+        <item>ROCA</item>
+        <item>ROCAFUERTE</item>
+        <item>SUCRE</item>
+        <item>TARQUI</item>
+        <item>URDANETA</item>
+        <item>XIMENA</item>
+        <item>PASCUALES</item>
+        <item>GUAYAQUIL</item>
+        <item>CHONGÓN</item>
+        <item>JUAN GÓMEZ RENDÓN</item>
+        <item>MORRO</item>
+        <item>PASCUALES</item>
+        <item>PLAYAS</item>
+        <item>POSORJA</item>
+        <item>PUNÁ</item>
+        <item>TENGUEL</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón ALFREDO BAQUERIZO MORENO -->
+    <string-array name="array_guayas_alfredo_baquerizo">
+        <item>ALFREDO BAQUERIZO MORENO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón BALAO -->
+    <string-array name="array_guayas_balao">
+        <item>BALAO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón BALZAR -->
+    <string-array name="array_guayas_balzar">
+        <item>BALZAR</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón COLIMES -->
+    <string-array name="array_guayas_colimes">
+        <item>COLIMES</item>
+        <item>SAN JACINTO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón DAULE -->
+    <string-array name="array_guayas_daule">
+        <item>DAULE</item>
+        <item>LA AURORA</item>
+        <item>BANIFE</item>
+        <item>EMILIANO CAICEDO MARCOS</item>
+        <item>MAGRO</item>
+        <item>PADRE JUAN BAUTISTA AGUIRRE</item>
+        <item>SANTA CLARA</item>
+        <item>VICENTE PIEDRAHITA</item>
+        <item>DAULE</item>
+        <item>ISIDRO AYORA</item>
+        <item>JUAN BAUTISTA AGUIRRE</item>
+        <item>LAUREL</item>
+        <item>LIMONAL</item>
+        <item>LOMAS DE SARGENILLO</item>
+        <item>LOS LOJAS</item>
+        <item>PIEDRAHITA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón DURÁN -->
+    <string-array name="array_guayas_duran">
+        <item>ELOY ALFARO</item>
+        <item>EL RECREO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón EL EMPALME -->
+    <string-array name="array_guayas_empalme">
+        <item>VELASCO IBARRA</item>
+        <item>GUAYAS</item>
+        <item>EL ROSARIO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón EL TRIUNFO -->
+    <string-array name="array_guayas_triunfo">
+        <item>EL TRIUNFO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón MILAGRO -->
+    <string-array name="array_guayas_milagro">
+        <item>MILAGRO</item>
+        <item>CHOBO</item>
+        <item>GENERAL ELIZALDE</item>
+        <item>MARISCAL SUCRE</item>
+        <item>ROBERTO ASTUDILLO</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón NARANJAL -->
+    <string-array name="array_guayas_naranjal">
+        <item>NARANJAL</item>
+        <item>JESÚS MARÍA</item>
+        <item>SAN CARLOS</item>
+        <item>SANTA ROSA DE FLANDES</item>
+        <item>TAURA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón NARANJITO -->
+    <string-array name="array_guayas_naranjito">
+        <item>NARANJITOA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón PALESTINA -->
+    <string-array name="array_guayas_palestina">
+        <item>PALESTINA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón PEDRO CARBO -->
+    <string-array name="array_guayas_pedro_carbo">
+        <item>PEDRO CARBO</item>
+        <item>VALLE DE LA VIRGEN</item>
+        <item>SABANILLA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón SAMBORONDÓN -->
+    <string-array name="array_guayas_samborondon">
+        <item>SAMBORONDÓN</item>
+        <item>LA PUNTILLA</item>
+        <item>TARIFA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón SANTA LUCIA -->
+    <string-array name="array_guayas_santa_lucia">
+        <item>SANTA LUCIA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón SALITRE -->
+    <string-array name="array_guayas_salitre">
+        <item>BOCANA</item>
+        <item>CANDILEJOS</item>
+        <item>CENTRAL</item>
+        <item>PARAÍSO</item>
+        <item>SAN MATEO</item>
+        <item>EL SALITRE</item>
+        <item>GRAL. VERNAZA</item>
+        <item>LA VICTORIA</item>
+        <item>JUNQUILLAL</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón SAN JACINTO DE YAGUACHI -->
+    <string-array name="array_guayas_jacinto_yaguachi">
+        <item>SAN JACINTO DE YAGUACHI</item>
+        <item>CRNEL. LORENZO DE GARAICOA</item>
+        <item>CRNEL. MARCELINO MARIDUEÑA</item>
+        <item>GRAL. PEDRO J. MONTERO</item>
+        <item>SIMÓN BOLÍVAR</item>
+        <item>YAGUACHI VIEJO</item>
+        <item>VIRGEN DE FÁTIMA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón PLAYAS -->
+    <string-array name="array_guayas_playas">
+        <item>GENERAL VILLAMIL</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón SIMÓN BOLÍVAR -->
+    <string-array name="array_guayas_simon_bolivar">
+        <item>SIMÓN BOLÍVAR</item>
+        <item>CRNEL. LORENZO DE GARAICOA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón CRNEL. MARCELINO MARIDUEÑA -->
+    <string-array name="array_guayas_marcelino_mariduenia">
+        <item>CRNEL. MARCELINO MARIDUEÑA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón LOMAS DE SARGENTILLO -->
+    <string-array name="array_guayas_lomas_sargentillo">
+        <item>LOMAS DE SARGENTILLO</item>
+        <item>ISIDRO AYORA</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón NOBOL -->
+    <string-array name="array_guayas_nobol">
+        <item>NARCISA DE JESÚS</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón GRAL. ANTONIO ELIZALDE -->
+    <string-array name="array_guayas_antonio_elizalde">
+        <item>GRAL. ANTONIO ELIZALDE</item>
+    </string-array>
+
+    <!-- Cantones de GUAYAS Cantón GRAL. ISIDRO AYORA -->
+    <string-array name="array_guayas_isidro_ayora">
+        <item>ISIDRO AYORA</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_imbabura_cantones">
+        <item>IBARRA</item>
+        <item>ANTONIO ANTE</item>
+        <item>COTACACHI</item>
+        <item>OTAVALO</item>
+        <item>PIMAMPIRO</item>
+        <item>SAN MIGUEL DE URCUQUÍ</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA Cantón IBARRA -->
+    <string-array name="array_imababura_ibarra">
+        <item>CARANQUI</item>
+        <item>GUAYAQUIL DE ALPACHACA</item>
+        <item>SAGRARIO</item>
+        <item>SAN FRANCISCO</item>
+        <item>LA DOLOROSA DEL PRIORITARIO</item>
+        <item>SAN MIGUEL DE IBARRA</item>
+        <item>AMBUQUÍ</item>
+        <item>ANGOCHACA</item>
+        <item>CAROLINA</item>
+        <item>LA ESPERANZA</item>
+        <item>LITA</item>
+        <item>SALINAS</item>
+        <item>SAN ANTONIO</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA Cantón ANTONIO ANTE -->
+    <string-array name="array_imababura_antonio_ante">
+        <item>ANDRADE MARÍN</item>
+        <item>ATUNTAQUI</item>
+        <item>IMBAYA</item>
+        <item>SAN FRANCISCO DE NATABUELA</item>
+        <item>SAN JOSÉ DE CHALTURA</item>
+        <item>SAN ROQUE</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA Cantón COTACACHI -->
+    <string-array name="array_imababura_cotacachi">
+        <item>SAGRARIO</item>
+        <item>SAN FRANCISCO</item>
+        <item>COTACACHI</item>
+        <item>APUELA</item>
+        <item>GARCÍA MORENO</item>
+        <item>IMANTAG</item>
+        <item>PEÑAHERRERA</item>
+        <item>PLAZA GUTIÉRREZ</item>
+        <item>QUIROGA</item>
+        <item>6 DE JULIO DE CUELLAJE</item>
+        <item>VACAS GALINDO</item>
+        <item>SALINAS</item>
+        <item>SAN ANTONIO</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA Cantón OTAVALO -->
+    <string-array name="array_imababura_otavalo">
+        <item>JORDÁN</item>
+        <item>SAN LUIS</item>
+        <item>OTAVALO</item>
+        <item>DR. MIGUEL EGAS CABEZAS</item>
+        <item>EUGENIO ESPEJO</item>
+        <item>GONZÁLES SUÁREZ</item>
+        <item>PATAQUÍ</item>
+        <item>SAN JOSÉ DE QUICHINCHE</item>
+        <item>SAN JUAN DE ILUMÁN</item>
+        <item>SAN PABLO</item>
+        <item>SAN RAFAEL</item>
+        <item>SELVA ALEGRE</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA Cantón PIMAMPIRO -->
+    <string-array name="array_imababura_pimampiro">
+        <item>PIMAMPIRO</item>
+        <item>CHUGÁ</item>
+        <item>MARIANO ACOSTA</item>
+        <item>SAN FRANCISCO DE SIGSIPAMBA</item>
+    </string-array>
+
+    <!-- Cantones de IMBABURA Cantón SAN MIGUEL DE URCUQUÍ -->
+    <string-array name="array_imababura_miguel_urcuqui">
+        <item>URCUQUÍ CABECERA CANTONAL</item>
+        <item>CAHUASQUÍ</item>
+        <item>LA MERCED DE BUENOS AIRES</item>
+        <item>PABLO ARENAS</item>
+        <item>SAN BLAS</item>
+        <item>TUMBABIRO</item>
+    </string-array>
+
+    <!-- Cantones de LOJA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_loja_cantones">
+        <item>LOJA</item>
+        <item>CALVAS</item>
+        <item>CATAMAYO</item>
+        <item>CELICA</item>
+        <item>CHAGUARPAMBA</item>
+        <item>ESPÍNDOLA</item>
+        <item>GONZANAMÁ</item>
+        <item>MACARÁ</item>
+        <item>PALTAS</item>
+        <item>PUYANGO</item>
+        <item>SARAGURO</item>
+        <item>SOZORANGA</item>
+        <item>ZAPOTILLO</item>
+        <item>PINDAL</item>
+        <item>QUILANGA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón LOJA -->
+    <string-array name="array_loja_loja">
+        <item>EL SAGRARIO</item>
+        <item>SAN SEBASTIÁN</item>
+        <item>SUCRE</item>
+        <item>VALLE</item>
+        <item>LOJA</item>
+        <item>CHANTACO</item>
+        <item>CHUQUIRIBAMBA</item>
+        <item>EL CISNE</item>
+        <item>GUALEL</item>
+        <item>JIMBILLA</item>
+        <item>MALACATOS</item>
+        <item>SAN LUCAS</item>
+        <item>SAN PEDRO DE VILCABAMBA</item>
+        <item>SANTIAGO</item>
+        <item>TAQUIL</item>
+        <item>VILCABAMBA</item>
+        <item>YANGANA</item>
+        <item>QUINARA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón CALVAS -->
+    <string-array name="array_loja_calvas">
+        <item>CARIAMANGA</item>
+        <item>CHILE</item>
+        <item>SAN VICENTE</item>
+        <item>COLAISACA</item>
+        <item>EL LUCERO</item>
+        <item>UTUANA</item>
+        <item>SANGUILLÍN</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón CATAMAYO -->
+    <string-array name="array_loja_catamayo">
+        <item>CATAMAYO</item>
+        <item>SAN JOSÉ</item>
+        <item>EL TAMBO</item>
+        <item>GUAYQUICHUMA</item>
+        <item>SAN PEDRO DE LA BENDITA</item>
+        <item>ZAMBI</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón CELICA -->
+    <string-array name="array_loja_celica">
+        <item>CELICA</item>
+        <item>CRUZPAMBA</item>
+        <item>CHAQUINAL</item>
+        <item>12 DE DICIEMBRE</item>
+        <item>PINDAL</item>
+        <item>POZUL</item>
+        <item>SABANILLA</item>
+        <item>TNTE. MAXIMILIANO RODRIGUEZ LOAIZA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón CHAGUARPAMBA -->
+    <string-array name="array_loja_chaguarpamba">
+        <item>CHAGUARPAMBA</item>
+        <item>BUENAVISTA</item>
+        <item>EL ROSARIO</item>
+        <item>SANTA RUFINA</item>
+        <item>AMARILLOS</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón ESPÍNDOLA -->
+    <string-array name="array_loja_espindola">
+        <item>AMALUZA</item>
+        <item>BELLAVISTA</item>
+        <item>JIMBURA</item>
+        <item>SANTA TERESITA</item>
+        <item>27 DE ABRIL</item>
+        <item>EL INGENIO</item>
+        <item>EL AIRO</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón GONZANAMÁ -->
+    <string-array name="array_loja_gonzanama">
+        <item>GONZANAMÁ</item>
+        <item>CHANGAIMINA</item>
+        <item>NAMBACOLA</item>
+        <item>PURUNUMA</item>
+        <item>SACAPALCA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón MACARÁ -->
+    <string-array name="array_loja_macara">
+        <item>GENERAL ELOY ALFARO</item>
+        <item>MACARÁ</item>
+        <item>LARAMA</item>
+        <item>LA VICTORIA</item>
+        <item>SABIANGO</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón PALATAS -->
+    <string-array name="array_loja_paltas">
+        <item>CATACOCHA</item>
+        <item>LOURDES</item>
+        <item>CANGONAMÁ</item>
+        <item>GUACHANAMÁ</item>
+        <item>LA TINGUE</item>
+        <item>LAURO GUERRERO</item>
+        <item>OLMEDO</item>
+        <item>ORIANGA</item>
+        <item>SAN ANTONIO</item>
+        <item>CASANGA</item>
+        <item>YAMANA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón PUYANGO -->
+    <string-array name="array_loja_puyango">
+        <item>ALAMOR</item>
+        <item>CIANO</item>
+        <item>EL ARENAL</item>
+        <item>EL LIMO</item>
+        <item>MERCADILLO</item>
+        <item>VICENTINO</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón SARAGURO -->
+    <string-array name="array_loja_saraguro">
+        <item>SARAGURO</item>
+        <item>EL PARÍSO DE CELÉN</item>
+        <item>EL TABLÓN</item>
+        <item>LLUZHAPA</item>
+        <item>MANÚ</item>
+        <item>SAN ANTONIO DE QUMBE</item>
+        <item>SAN PABLO DE TENTA</item>
+        <item>SAN SEBASTIÁN DE YÚLUC</item>
+        <item>SELVA ALEGRE</item>
+        <item>URDANETA</item>
+        <item>SUMAYPAMBA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón SOZORANGA -->
+    <string-array name="array_loja_sozoranga">
+        <item>SOZORANGA</item>
+        <item>NUEVA FÁTIMA</item>
+        <item>TACAMOROS</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón ZAPOTILLO -->
+    <string-array name="array_loja_zapotillo">
+        <item>ZAPOTILLO</item>
+        <item>MANGAHURCO</item>
+        <item>GARZAREAL</item>
+        <item>LIMONES</item>
+        <item>PALETILLAS</item>
+        <item>BOLASPAMBA</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón PINDAL -->
+    <string-array name="array_loja_pindal">
+        <item>PINDAL</item>
+        <item>CHAQUINAL</item>
+        <item>12 DE DICIEMBRE</item>
+        <item>MILAGROS</item>
+    </string-array>
+
+    <!-- Cantones de LOJA Cantón QUILANGA -->
+    <string-array name="array_loja_quilanga">
+        <item>QUILANGA</item>
+        <item>FUNDOCHAMBA</item>
+        <item>SAN ANTONIO DE LA ARADAS</item>
+        <item>OLMEDO</item>
+        <item>LA TINGUE</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_rios_cantones">
+        <item>BABAHOYO</item>
+        <item>BABA</item>
+        <item>MONTALVO</item>
+        <item>PUEBLOVIEJO</item>
+        <item>QUEVEDO</item>
+        <item>URDANETA</item>
+        <item>VENTANAS</item>
+        <item>VÍNCES</item>
+        <item>PALENQUE</item>
+        <item>BUENA FÉ</item>
+        <item>VALENCIA</item>
+        <item>MOCACHE</item>
+        <item>QUINSALOMA</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón BABAHOYO -->
+    <string-array name="array_rios_babahoyo">
+        <item>CLEMENTE BAQUERIZO</item>
+        <item>DR. CAMILO PONCE</item>
+        <item>BARREIRO</item>
+        <item>EL SALTO</item>
+        <item>BABAHOYO</item>
+        <item>BARREIRO</item>
+        <item>CARACOL</item>
+        <item>FEBRES CORDERO</item>
+        <item>PIMOCHA</item>
+        <item>LA UNIÓN</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón BABA -->
+    <string-array name="array_rios_baba">
+        <item>BABA</item>
+        <item>GUARE</item>
+        <item>ISLA DE BEJUCAL</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón MONTALVO -->
+    <string-array name="array_rios_montalvo">
+        <item>MONTALVO</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón PUEBLOVIEJO -->
+    <string-array name="array_rios_puebloviejo">
+        <item>PUEBLOVIEJO</item>
+        <item>PUERTO PECHICHE</item>
+        <item>SAN JUAN</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón QUEVEDO -->
+    <string-array name="array_rios_quevedo">
+        <item>QUEVEDO</item>
+        <item>SAN CAMILO</item>
+        <item>GUAYACÁN</item>
+        <item>NICOLÁS INFANTE DÍAS</item>
+        <item>SAN CRISTÓBAL</item>
+        <item>SIETE DE OCTUBRE</item>
+        <item>24 DE MAYO</item>
+        <item>VENUS DEL RÍO QUEVEDO</item>
+        <item>VIVA ALFARO</item>
+        <item>BUENA FÉ</item>
+        <item>MOCACHE</item>
+        <item>SAN CARLOS</item>
+        <item>VALENCIA</item>
+        <item>LA ESPERANZA</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón URDANETA -->
+    <string-array name="array_rios_urdaneta">
+        <item>CATARAMA</item>
+        <item>RICAURTE</item>]
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón VENTANAS -->
+    <string-array name="array_rios_ventanas">
+        <item>10 DE NOVIEMBRE</item>
+        <item>VENTANAS</item>
+        <item>QUINSALOMA</item>
+        <item>ZAPOTAL</item>
+        <item>CHACARITA</item>
+        <item>LOS ÁNGELES</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón VÍNCES -->
+    <string-array name="array_rios_vinces">
+        <item>VINCES</item>
+        <item>ANTONIO SOTOMAYOR</item>
+        <item>PALENQUE</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón PALENQUE -->
+    <string-array name="array_rios_palenque">
+        <item>PALENQUE</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón BUENA FÉ -->
+    <string-array name="array_rios_buena_fe">
+        <item>SAN JACINTO DE BUENA FÉ</item>
+        <item>7 DE AGOSTO</item>
+        <item>11 DE OCTUBRE</item>
+        <item>PATRICIA PILAR</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón VALENCIA -->
+    <string-array name="array_rios_valencia">
+        <item>VALENCIA</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón MOCACHE -->
+    <string-array name="array_rios_mocache">
+        <item>MOCACHE</item>
+    </string-array>
+
+    <!-- Cantones de LOS RIOS Cantón QUINSALOMA -->
+    <string-array name="array_rios_quinsaloma">
+        <item>QUINSALOMA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_manabi_cantones">
+        <item>PORTOVIEJO</item>
+        <item>BOLÍVAR</item>
+        <item>CHONE</item>
+        <item>EL CARMEN</item>
+        <item>FLAVIO ALFARO</item>
+        <item>JIPIJAPA</item>
+        <item>JUNÍN</item>
+        <item>MANTA</item>
+        <item>MONTECRISTI</item>
+        <item>PAJÁN</item>
+        <item>PICHINCHA</item>
+        <item>ROCAFUERTE</item>
+        <item>SANTA ANA</item>
+        <item>SUCRE</item>
+        <item>TOSAGUA</item>
+        <item>24 DE MAYO</item>
+        <item>PEDERNALES</item>
+        <item>OLMEDO</item>
+        <item>PUERTO LÓPEZ</item>
+        <item>JAMA</item>
+        <item>JARAMIJÓ</item>
+        <item>SAN VICENTE</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón PORTOVIEJO -->
+    <string-array name="array_manabi_portoviejo">
+        <item>PORTOVIEJO</item>
+        <item>12 DE MARZO</item>
+        <item>COLÓN</item>
+        <item>PICOAZÁ</item>
+        <item>SAN PABLO</item>
+        <item>ANDRÉS VERA</item>
+        <item>FRANCISCO PACHECO</item>
+        <item>18 DE OCTUBRE</item>
+        <item>SIMÓN BOLÍVAR</item>
+        <item>ABDÓN CALDERÓN</item>
+        <item>ALHAJUELA</item>
+        <item>CRUCITA</item>
+        <item>PUEBLO NUEVO</item>
+        <item>RIOCHICO</item>
+        <item>SAN PLÁCIDO</item>
+        <item>CHIRIJOS</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón BOLÍVAR -->
+    <string-array name="array_manabi_bolivar">
+        <item>CALCETA</item>
+        <item>MEMBRILLO</item>
+        <item>QUIROGA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón CHONE -->
+    <string-array name="array_manabi_chone">
+        <item>CHONE</item>
+        <item>SANTA RITA</item>
+        <item>BOYACÁ</item>
+        <item>CANUTO</item>
+        <item>CONVENTO</item>
+        <item>CHIBUNGA</item>
+        <item>ELOY ALFARO</item>
+        <item>RICAURTE</item>
+        <item>SAN ANTONIO</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón EL CARMEN -->
+    <string-array name="array_manabi_carmen">
+        <item>EL CARMEN</item>
+        <item>4 DE DICIEMBRE</item>
+        <item>WILFRIDO LOOR MOREIRA</item>
+        <item>SAN PEDRO DE SUMA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón FLAVIO ALFARO -->
+    <string-array name="array_manabi_flavio_alfaro">
+        <item>FLAVIO ALFARO</item>
+        <item>SAN FRANCISCO DE NOVILLO</item>
+        <item>ZAPALLO</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón JIPIJAPA -->
+    <string-array name="array_manabi_jipijapa">
+        <item>DR. MIGUEL MORÁN LUCIO</item>
+        <item>MANUEL INOCENCIO PARRALES Y GUALES</item>
+        <item>SAN LORENZO DE JIPIJAPA</item>
+        <item>JIPIJAPA</item>
+        <item>AMÉRICA</item>
+        <item>EL ANEGADO</item>
+        <item>JULCUY</item>
+        <item>LA UNIÓN</item>
+        <item>MACHALILLA</item>
+        <item>MEMBRILLAL</item>
+        <item>PEDRO PABLO GÓMEZ</item>
+        <item>PUERTO DE CAYO</item>
+        <item>PUERTO LÓPEZ</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón JUNÍN -->
+    <string-array name="array_manabi_junin">
+        <item>JUNÍN</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón MANTA -->
+    <string-array name="array_manabi_manta">
+        <item>LOS ESTEROS</item>
+        <item>MANTA</item>
+        <item>SAN MATEO</item>
+        <item>TARQUI</item>
+        <item>ELOY ALFARO</item>
+        <item>SAN LORENZO</item>
+        <item>SANTA MARIANITA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón MONTECRISTI -->
+    <string-array name="array_manabi_montecristi">
+        <item>ANIBAL SAN ANDRÉS</item>
+        <item>MONTECRISTI</item>
+        <item>EL COLORADO</item>
+        <item>GRAL ELOY ALFARO</item>
+        <item>LEONIDAS PROAÑO</item>
+        <item>JARAMIJÓ</item>
+        <item>LA PILA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón PAJÁN -->
+    <string-array name="array_manabi_pajan">
+        <item>PAJÁN</item>
+        <item>CAMPOZANO</item>
+        <item>CASCOL</item>
+        <item>GUALE</item>
+        <item>LASCANO</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón PICHINCHA -->
+    <string-array name="array_manabi_pichincha">
+        <item>PICHINCHA</item>
+        <item>BARRAGANETE</item>
+        <item>SAN SEBASTIÁN</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón ROCAFUERTE -->
+    <string-array name="array_manabi_rocafuerte">
+        <item>ROCAFUERTE</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón SANTA ANA -->
+    <string-array name="array_manabi_santa_ana">
+        <item>SANTA ANA</item>
+        <item>LODANA</item>
+        <item>SANTA ANA DE VUELTA LARGA</item>
+        <item>AYACUCHO</item>
+        <item>HONORATO VÁSQUEZ</item>
+        <item>LA UNIÓN</item>
+        <item>OLMEDO</item>
+        <item>SAN PABLO</item>
+    </string-array>
+
+    !-- Cantones de MANABI Cantón SUCRE -->
+    <string-array name="array_manabi_sucre">
+        <item>BAHÍA DE CARÁQUEZ</item>
+        <item>LEONIDAZ PLAZA GUIÉRREZ</item>
+        <item>CANOA</item>
+        <item>COJIMÍES</item>
+        <item>CHARAPOTÓ</item>
+        <item>10 DE AGOSTO</item>
+        <item>JAMA</item>
+        <item>PEDERNALES</item>
+        <item>SAN ISIDRO</item>
+        <item>SAN VICENTE</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón TOSAHUA -->
+    <string-array name="array_manabi_tosahua">
+        <item>TOSAHUA</item>
+        <item>BACHILLERO</item>
+        <item>ANGEL PEDRO GILER</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón 24 DE MAYO -->
+    <string-array name="array_manabi_24_mayo">
+        <item>SUCRE</item>
+        <item>BELLAVISTA</item>
+        <item>NOBOA</item>
+        <item>ARQ. SIXTO DURÁN BALLÉN</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón PEDERNALES -->
+    <string-array name="array_manabi_pedernales">
+        <item>PEDERNALES</item>
+        <item>COJIMÍES</item>
+        <item>10 DE AGOSTO</item>
+        <item>ATAHUALPA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón OLMEDO -->
+    <string-array name="array_manabi_olmedo">
+        <item>OLMEDO</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón PUERTO LÓPEZ -->
+    <string-array name="array_manabi_puerto_lopez">
+        <item>PUERTO LÓPEZ</item>
+        <item>MACHALILLA</item>
+        <item>SALANGO</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón JAMA -->
+    <string-array name="array_manabi_jama">
+        <item>JAMA</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón JARAMIJÓ -->
+    <string-array name="array_manabi_jaramijo">
+        <item>JARAMIJÓ</item>
+    </string-array>
+
+    <!-- Cantones de MANABI Cantón SAN VICENTE -->
+    <string-array name="array_manabi_puerto_vicente">
+        <item>SAN VICENTE</item>
+        <item>CANOA</item>
+    </string-array>
+
+    <!-- Cantones de Morona Santiago -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_morona_cantones">
+        <item>MORONA</item>
+        <item>GUALAQUIZA</item>
+        <item>LIMÓN INDANZA</item>
+        <item>PALORA</item>
+        <item>SANTIAGO</item>
+        <item>SUCÚA</item>
+        <item>HUAMBOYA</item>
+        <item>SAN JUAN BOSCO</item>
+        <item>TAISHA</item>
+        <item>LOGROÑO</item>
+        <item>PABLO SEXTO</item>
+        <item>TIWINTZA</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón MORONA -->
+    <string-array name="array_morona_morona">
+        <item>MACAS</item>
+        <item>ALSHI</item>
+        <item>CHIGUAZA</item>
+        <item>GENERAL PROAÑO</item>
+        <item>HUASAGA</item>
+        <item>MACUMA</item>
+        <item>SAN ISIDRO</item>
+        <item>SEVILLA DON BOSCO</item>
+        <item>SINAÍ</item>
+        <item>TAISHA</item>
+        <item>ZUÑA</item>
+        <item>TUUTINENTZA</item>
+        <item>CUCHAENTZA</item>
+        <item>SAN JOSE DE MORONA</item>
+        <item>RÍO BLANCO</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón GUALAQUIZA -->
+    <string-array name="array_morona_gualaquiza">
+        <item>GUALAQUIZA</item>
+        <item>MERCEDES MOLINA</item>
+        <item>AMAZONAS</item>
+        <item>BERMEJOS</item>
+        <item>BOMBOIZA</item>
+        <item>CHIGUINDA</item>
+        <item>EL ROSARIO</item>
+        <item>NUEVA TARQUI</item>
+        <item>SAN MIGUEL DE CUYES</item>
+        <item>EL IDEAL</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón LIMÓN INDANZA -->
+    <string-array name="array_morona_limon">
+        <item>GRAL. LEONIDAS PLAZA GUTIÉRREZ</item>
+        <item>INDANZA</item>
+        <item>PAN DE AZÚCAR</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN CARLOS DE LIMÓN</item>
+        <item>SAN JUAN BOSCO</item>
+        <item>SAN MIGUEL DE CONCHAY</item>
+        <item>SANTA SUSANA DE CHIVIAZA</item>
+        <item>YUNGANZA</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón PALORA -->
+    <string-array name="array_morona_palora">
+        <item>PALORA</item>
+        <item>ARAPICOS</item>
+        <item>CUMANDÁ</item>
+        <item>HUAMBOYA</item>
+        <item>SANGAY</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón SANTIAGO -->
+    <string-array name="array_morona_santiago">
+        <item>SANTIAGO MÉNDEZ</item>
+        <item>COPAL</item>
+        <item>CHUPIANZA</item>
+        <item>PATUCA</item>
+        <item>SAN LUIS DE EL ACHO</item>
+        <item>SANTIAGO</item>
+        <item>TAYUZA</item>
+        <item>SAN FRANCISCO DE CHINIMBIMI</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón SUCÚA -->
+    <string-array name="array_morona_sucua">
+        <item>SUCÚA</item>
+        <item>ASUNCIÓN</item>
+        <item>HUAMBI</item>
+        <item>LOGROÑO</item>
+        <item>YAUPI</item>
+        <item>SANTA MARIANITA DE JESÚS</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón HUAMBOYA -->
+    <string-array name="array_morona_huamboya">
+        <item>HUAMBOYA</item>
+        <item>CHIGUAZA</item>
+        <item>PABLO SEXTO</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón SAN JUAN BOSCO -->
+    <string-array name="array_morona_juan_bosco">
+        <item>SAN JUAN BOSCO</item>
+        <item>PAN DE AZÚCAR</item>
+        <item>SAN CARLOS DE LIMÓN</item>
+        <item>SAN JACINTO DE WAKAMBEIS</item>
+        <item>SANTIAGO DE PANANZA</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón TAISHA -->
+    <string-array name="array_morona_taisha">
+        <item>TAISHA</item>
+        <item>HUASAGA</item>
+        <item>MACUMA</item>
+        <item>TUUTINENTZA</item>
+        <item>PUMPUENTSA</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón LOGROÑO -->
+    <string-array name="array_morona_logronio">
+        <item>LOGROÑO</item>
+        <item>YAUPI</item>
+        <item>SHIMPIS</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón PABLO SEXTO -->
+    <string-array name="array_morona_pablo_sexto">
+        <item>PABLO SEXTO</item>
+    </string-array>
+
+    <!-- Cantones de Monorona Santiago Cantón TIWINTZA -->
+    <string-array name="array_morona_tiwintza">
+        <item>SANTIAGO</item>
+        <item>SAN JOSÉ DE MORONA</item>
+    </string-array>
+
+    <!-- Cantones de NAPO -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_napo_cantones">
+        <item>TENA</item>
+        <item>ARCHIDONA</item>
+        <item>EL CHACO</item>
+        <item>QUIJOS</item>
+        <item>CARLOS JULIO AROSEMENA TOLA</item>
+    </string-array>
+
+    <!-- Cantones de NAPO Cantón TENA -->
+    <string-array name="array_napo_tena">
+        <item>TENA</item>
+        <item>AHUANO</item>
+        <item>CARLOS JULIO AROSEMENA TOLA</item>
+        <item>CHONTAPUNTA</item>
+        <item>PANO</item>
+        <item>PUERTO MISAHUALLI</item>
+        <item>PUERTO NAPO</item>
+        <item>TÁLAG</item>
+        <item>SAN JUAN DE MUYUNA</item>
+    </string-array>
+
+    <!-- Cantones de NAPO Cantón ARCHIDONA -->
+    <string-array name="array_napo_archidona">
+        <item>ARCHIDONA</item>
+        <item>AVILA</item>
+        <item>COTUNDO</item>
+        <item>LORETO</item>
+        <item>SAN PABLO DE USHPAYACU</item>
+        <item>PUERTO MURIALDO</item>
+    </string-array>
+
+    <!-- Cantones de NAPO Cantón EL CHACO -->
+    <string-array name="array_napo_chaco">
+        <item>EL CHACO</item>
+        <item>GONZALO DÍAS DE PINEDA</item>
+        <item>LINARES</item>
+        <item>OYACACHI</item>
+        <item>SANTA ROSA</item>
+        <item>SARDINAS</item>
+    </string-array>
+
+    <!-- Cantones de NAPO Cantón QUIJOS -->
+    <string-array name="array_napo_quijos">
+        <item>BAEZA</item>
+        <item>COSANGA</item>
+        <item>CUYAJA</item>
+        <item>PAPALLACTA</item>
+        <item>SAN FRANCISCO DE BORJA</item>
+        <item>SAN JOSÉ DEL PAYAMINO</item>
+        <item>SUMACO</item>
+    </string-array>
+
+    <!-- Cantones de NAPO Cantón CARLOS JULIO AROSEMENA TOLA -->
+    <string-array name="array_napo_carlos_julio_arosemena">
+        <item>CARLOS JULIO AROSEMENA TOLA</item>
+    </string-array>
+
+    <!-- Cantones de PASTAZA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_pastaza_cantones">
+        <item>PASTAZA</item>
+        <item>MERA</item>
+        <item>SANTA CLARA</item>
+        <item>ARAJUNO</item>
+    </string-array>
+
+    <!-- Cantones de PASTAZA Cantón PASTAZA -->
+    <string-array name="array_pastaza_pastaza">
+        <item>PUYO</item>
+        <item>ARAJUNO</item>
+        <item>CANELOS</item>
+        <item>CURARAY</item>
+        <item>DIEZ DE AGOSTO</item>
+        <item>FÁTIMA</item>
+        <item>MONTALVO</item>
+        <item>POMONA</item>
+        <item>RÍO CORRIENTES</item>
+        <item>RÍO TIGRE</item>
+        <item>SANTA CLARA</item>
+        <item>SARACAY</item>
+        <item>SIMÓN BOLÍVAR</item>
+        <item>TARQUI</item>
+        <item>TENIENTE HUGO ORTIZ</item>
+        <item>VERACRUZ</item>
+        <item>EL TRIUNFO</item>
+    </string-array>
+
+    <!-- Cantones de PASTAZA Cantón MERA -->
+    <string-array name="array_pastaza_mera">
+        <item>MERA</item>
+        <item>MADRE TIERRRA</item>
+        <item>SHELL</item>
+    </string-array>
+
+    <!-- Cantones de PASTAZA Cantón SANTA CLARA -->
+    <string-array name="array_pastaza_santa_clara">
+        <item>SANTA CALRA</item>
+        <item>SAN JOSÉ</item>
+    </string-array>
+
+    <!-- Cantones de PASTAZA Cantón ARAJUNO -->
+    <string-array name="array_pastaza_arajuno">
+        <item>ARAJUNO</item>
+        <item>CURARAY</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_pichincha_cantones">
+        <item>QUITO</item>
+        <item>CAYAMBE</item>
+        <item>MEJÍA</item>
+        <item>PEDRO MONCAYO</item>
+        <item>RUMIÑAHUI</item>
+        <item>SAN MIGUEL DE LOS BANCOS</item>
+        <item>PUERTO QUITO</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón QUITO -->
+    <string-array name="array_pichincha_quito">
+        <item>BELISARIO QUEVEDO</item>
+        <item>CARCELÉN</item>
+        <item>CENTRO HISTÓRICO</item>
+        <item>COCHAPAMBA</item>
+        <item>COMITÉ DEL PUEBLO</item>
+        <item>COTOCOLLAO</item>
+        <item>CHILIBULO</item>
+        <item>CHILLOGALLO</item>
+        <item>CHIMBACALLE</item>
+        <item>EL CONDADO</item>
+        <item>GUAMANÍ</item>
+        <item>IÑAQUITO</item>
+        <item>ITCHIMBÍA</item>
+        <item>JIPIJAPA</item>
+        <item>KENNEDEY</item>
+        <item>LA ARGELIA</item>
+        <item>LA CONCEPCIÓN</item>
+        <item>LA ECUATORIANA</item>
+        <item>LA FERROVIARIA</item>
+        <item>LA LIBERTAD</item>
+        <item>LA MAGDALENA</item>
+        <item>LA MENA</item>
+        <item>MARISCAL SUCRE</item>
+        <item>PONCEANO</item>
+        <item>PUENGASÍ</item>
+        <item>QUITUMBE</item>
+        <item>RUMIPAMBA</item>
+        <item>SAN BARTOLO</item>
+        <item>SAN ISIDRO DEL INCA</item>
+        <item>SAN JUAN</item>
+        <item>SOLANDA</item>
+        <item>TURUBAMBA</item>
+        <item>QUITO DISTRITO METROPOLITANO</item>
+        <item>ALANGASÍ</item>
+        <item>AMAGUAÑA</item>
+        <item>ATAHUALPA</item>
+        <item>CALACALÍ</item>
+        <item>CALDERÓN</item>
+        <item>CONOCOTO</item>
+        <item>CUMBAYÁ</item>
+        <item>CHAVEZPAMBA</item>
+        <item>CHECA</item>
+        <item>EL QUINCHE</item>
+        <item>GUALEA</item>
+        <item>GUANGOPOLO</item>
+        <item>GUAYLLABAMBA</item>
+        <item>LA MERCED</item>
+        <item>LLANO CHICO</item>
+        <item>LLOA</item>
+        <item>MINDO</item>
+        <item>NANEGAL</item>
+        <item>NANEGALITO</item>
+        <item>NAYÓN</item>
+        <item>NONO</item>
+        <item>PACTO</item>
+        <item>PEDRO VICENTE MALDONADO</item>
+        <item>PERUCHO</item>
+        <item>PIFO</item>
+        <item>PÍNTAG</item>
+        <item>POMASQUI</item>
+        <item>PUÉLLARO</item>
+        <item>PUEMBO</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN JOSÉ DE MINAS</item>
+        <item>SAN MIGUEL DE LOS BANCOS</item>
+        <item>TABABELA</item>
+        <item>TUMBACO</item>
+        <item>YARUQUI</item>
+        <item>ZAMBIZA</item>
+        <item>PUERTO QUITO</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón CAYAMBE -->
+    <string-array name="array_pichincha_cayambe">
+        <item>AYORA</item>
+        <item>CAYAMBE</item>
+        <item>JUAN MONTALVO</item>
+        <item>ASCÁZUBI</item>
+        <item>CANGAHUA</item>
+        <item>OLMEDO</item>
+        <item>OTÓN</item>
+        <item>SANTA ROSA DE CUZUBAMBA</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón MEJÍA -->
+    <string-array name="array_pichincha_mejia">
+        <item>MACHACHI</item>
+        <item>ALÓAG</item>
+        <item>ALOASÍ</item>
+        <item>CUTUGLAHUA</item>
+        <item>EL CHAUPI</item>
+        <item>MANUEL CORNEJO ASTORGA</item>
+        <item>TAMBILLO</item>
+        <item>UYUMBICHO</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón PEDRO MONCAYO -->
+    <string-array name="array_pichincha_pedro_moncayo">
+        <item>TABACUNDO</item>
+        <item>LA ESPERANZA</item>
+        <item>MALCHINGUI</item>
+        <item>TOCACHI</item>
+        <item>TUPIGACHI</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón RUMIÑAHUI -->
+    <string-array name="array_pichincha_ruminiahui">
+        <item>SANGOLQUÍ</item>
+        <item>SAN PEDRO DE TABOADA</item>
+        <item>SAN RAFAEL</item>
+        <item>COTOGCHOA</item>
+        <item>RUMIPAMBA</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón SAN MIGUEL DE LOS BANCOS -->
+    <string-array name="array_pichincha_miguel_bancos">
+        <item>SAN MIGUEL DE LOS BANCOS</item>
+        <item>MINDO</item>
+        <item>PEDRO VICENTE MALDONADO</item>
+        <item>PUERTO QUITO</item>
+        <item>RUMIPAMBA</item>
+    </string-array>
+
+    <!-- Cantones de PICHINCHA Cantón PUERTO QUITO -->
+    <string-array name="array_pichincha_puerto_quito">
+        <item>PUERTO QUITO</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_tungurahua_cantones">
+        <item>AMBATO</item>
+        <item>BAÑOS DE AGUA SANTA</item>
+        <item>CEVALLOS</item>
+        <item>MOCHA</item>
+        <item>PATATE</item>
+        <item>QUERO</item>
+        <item>SAN PEDRO DE PELILEO</item>
+        <item>SANTIAGO DE PÍLLARO</item>
+        <item>TISALEO</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón AMBATO -->
+    <string-array name="array_tungurahua_ambato">
+        <item>ATOCHA-FICOA</item>
+        <item>CELIANO MONGE</item>
+        <item>HUACHI CHICO</item>
+        <item>LA MERCED</item>
+        <item>LA PENÍNSULA</item>
+        <item>MATRIZ</item>
+        <item>PISHILATA</item>
+        <item>SAN FRANCISCO</item>
+        <item>AMBATO</item>
+        <item>AMBATILLO</item>
+        <item>ATAHUALPA</item>
+        <item>AUGUSTO N. MARTINEZ</item>
+        <item>CONSTANTINO FERNÁNDEZ</item>
+        <item>HUACHI GRANDE</item>
+        <item>IZAMBA</item>
+        <item>JUAN BEIGNO VELA</item>
+        <item>MONTALVO</item>
+        <item>PASA</item>
+        <item>PICAIGUA</item>
+        <item>PILAGUIN</item>
+        <item>QUISAPINCHA</item>
+        <item>SAN BARTOLOMÉ DE PINOLLOG</item>
+        <item>SAN FERNANDO</item>
+        <item>SANTA ROSA</item>
+        <item>TOTORAS</item>
+        <item>CUNCHIBAMBA</item>
+        <item>UNAMUCHO</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón BAÑOS DE AGUA SANTA -->
+    <string-array name="array_tungurahua_baños_agua">
+        <item>BAÑOS DE AGUA SANTA</item>
+        <item>LLIGUA</item>
+        <item>RÍO NEGRO</item>
+        <item>RÍO VERDE</item>
+        <item>ULBA</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón CEVALLOS -->
+    <string-array name="array_tungurahua_cevallos">
+        <item>CEVALLOS</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón MOCHA -->
+    <string-array name="array_tungurahua_mocha">
+        <item>MOCHA</item>
+        <item>PINGUILÍ</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón PATATE -->
+    <string-array name="array_tungurahua_patate">
+        <item>PATATE</item>
+        <item>EL TRIUNFO</item>
+        <item>LOS ANDES</item>
+        <item>SUCRE</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón QUERO -->
+    <string-array name="array_tungurahua_quero">
+        <item>QUERO</item>
+        <item>RUMIPAMBA</item>
+        <item>YANAYACU</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón SAN PEDRO DE PELILEO -->
+    <string-array name="array_tungurahua_pedro_pelileo">
+        <item>PELILEO</item>
+        <item>PELILEO GRNADE</item>
+        <item>BENÍTEZ</item>
+        <item>BOLÍVAR</item>
+        <item>CATALÓ</item>
+        <item>CHIQUICHA</item>
+        <item>EL ROSARIO</item>
+        <item>GARCÍA MORENO</item>
+        <item>GUAMBALÓ</item>
+        <item>SALASCA</item>
+        <item>CIUDAD NUEVA</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón SANTIAGO DE PÍLLARO -->
+    <string-array name="array_tungurahua_santiago_pillaro">
+        <item>PÍLLARO</item>
+        <item>BAQUERIZO MORENO</item>
+        <item>EMILIO MARÍA TERÁN</item>
+        <item>MARCOS ESPINEL</item>
+        <item>PRESIDENTE URBINA</item>
+        <item>SAN ANDRÉS</item>
+        <item>SAN JOSÉ POALÓ</item>
+        <item>SAN MIGUELITO</item>
+    </string-array>
+
+    <!-- Cantones de TUNGURAHUA Cantón TISALEO -->
+    <string-array name="array_tungurahua_tisaleo">
+        <item>TISALEO</item>
+        <item>QUINCHICOTO</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_zamora_cantones">
+        <item>ZAMORA</item>
+        <item>CHINCHIPE</item>
+        <item>NANGARITZA</item>
+        <item>YACUAMBI</item>
+        <item>YANTZAZA</item>
+        <item>EL PANGUI</item>
+        <item>CENTINELA DEL CÓNDOR</item>
+        <item>PALANDA</item>
+        <item>PAQUISHA</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón ZAMORA -->
+    <string-array name="array_zamora_chinchipe_zamora">
+        <item>EL LIMÓN</item>
+        <item>ZAMORA</item>
+        <item>CUMBARATZA</item>
+        <item>GUADALUPE</item>
+        <item>IMBANA</item>
+        <item>PAQUISHA</item>
+        <item>SABANILLA</item>
+        <item>TIMBARA</item>
+        <item>ZUMBI</item>
+        <item>SAN CARLOS DE LAS MINAS</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón CHINCHIPE -->
+    <string-array name="array_zamora_chinchipe_chinchipe">
+        <item>ZUMBA</item>
+        <item>CHITO</item>
+        <item>EL CHORRO</item>
+        <item>EL PORVENIR DEL CARMEN</item>
+        <item>LA CHONTA</item>
+        <item>PALANDA</item>
+        <item>PUCAPAMBA</item>
+        <item>SAN FRANCISCO DEL VERGEL</item>
+        <item>VALLADOLID</item>
+        <item>SAN ANDRÉS</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón NANGARITZA -->
+    <string-array name="array_zamora_chinchipe_nangaritza">
+        <item>GUAYSIMI</item>
+        <item>ZURMI</item>
+        <item>NUEVO PARAÍSO</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón YACUAMBI -->
+    <string-array name="array_zamora_chinchipe_yacuambi">
+        <item>28 DE MAYO</item>
+        <item>LA PAZ</item>
+        <item>TUTUPALI</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón YANTZAZA -->
+    <string-array name="array_zamora_chinchipe_yantzaza">
+        <item>YANTZAZA</item>
+        <item>CHICAÑA</item>
+        <item>EL PANGUI</item>
+        <item>LOS ENCUENTROS</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón EL PANGUI -->
+    <string-array name="array_zamora_chinchipe_pangui">
+        <item>EL PANGUI</item>
+        <item>EL GUISME</item>
+        <item>PACHICUTZA</item>
+        <item>TUNDAYME</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón EL CENTINELA DEL CÓNDOR-->
+    <string-array name="array_zamora_chinchipe_centinela_condor">
+        <item>ZUMBI</item>
+        <item>PAQUISHA</item>
+        <item>TRIUNFO-DORADO</item>
+        <item>PANGUINTZA</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón PALANDA -->
+    <string-array name="array_zamora_chinchipe_palanda">
+        <item>PALANDA</item>
+        <item>EL PORVENIR DEL CARMEN</item>
+        <item>SAN FRANCISCO DEL VERGEL</item>
+        <item>VALLADOLID</item>
+        <item>LA CANELA</item>
+    </string-array>
+
+    <!-- Cantones de ZAMORA CHINCHIPE Cantón PAQUISHA-->
+    <string-array name="array_zamora_chinchipe_paquisha">
+        <item>PAQUISHA</item>
+        <item>BELLAVISTA</item>
+        <item>NUEVO QUITO</item>
+    </string-array>
+
+    <!-- Cantones de GALÁPAGOS -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_galapagos_cantones">
+        <item>SAN CRISTÓBAL</item>
+        <item>ISABELA</item>
+        <item>SANTA CRUZ</item>
+    </string-array>
+
+    <!-- Cantones de GALÁPAGOS Cantón SAN CRISTÓBAL-->
+    <string-array name="array_galapagos_san_cristobal">
+        <item>PUERTO BAQUERIZO MORENO</item>
+        <item>EL PROGRESO</item>
+        <item>SANTA MARÍA</item>
+    </string-array>
+
+    <!-- Cantones de GALÁPAGOS Cantón SAN ISABELAL-->
+    <string-array name="array_galapagos_isabela">
+        <item>PUERTO VILLAMIL</item>
+        <item>TOMÁS DE BERLANDA</item>
+    </string-array>
+
+    <!-- Cantones de GALÁPAGOS Cantón SANTA CRUZ-->
+    <string-array name="array_galapagos_santa_cruz">
+        <item>PUERTO AYORA</item>
+        <item>BELLAVISTA</item>
+        <item>SANTA ROSA</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_sucumbios_cantones">
+        <item>LAGO AGRIO</item>
+        <item>GONZALO PIZARRO</item>
+        <item>PUTUMAYO</item>
+        <item>SHUSHUFINDI</item>
+        <item>SUCUMBÍOS</item>
+        <item>CASCALES</item>
+        <item>CUYABENO</item>
+        <item>PALANDA</item>
+        <item>PAQUISHA</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón LAGO AGRIO -->
+    <string-array name="array_sucumbios_lago_agrio">
+        <item>NUEVA LOJA</item>
+        <item>CUYABENO</item>
+        <item>DURENO</item>
+        <item>GRAL. FARFÁN</item>
+        <item>TARAPOA</item>
+        <item>EL ENO</item>
+        <item>PACAYACU</item>
+        <item>JAMBELÍ</item>
+        <item>SANTA CECILIA</item>
+        <item>AGUAS NEGRAS</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón GONZALO PIZARRO -->
+    <string-array name="array_sucumbios_gonzalo_pizarro">
+        <item>EL DORADO DE CASCALES</item>
+        <item>EL REVENTADOR</item>
+        <item>GONZALO PIZARRO</item>
+        <item>LUMBAQUÍ</item>
+        <item>PUERTO LIBRE</item>
+        <item>SANTA ROSA DE SUCUMBÍOS</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón PUTUMAYO -->
+    <string-array name="array_sucumbios_putumayo">
+        <item>PUERTO DEL CARMEN DE PUTUMAYO</item>
+        <item>PALMA ROJA</item>
+        <item>PUERTO BOLÍVAR</item>
+        <item>PUERTO RODRÍGUEZ</item>
+        <item>SANTA ELENA</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón SHUSHUFINFI -->
+    <string-array name="array_sucumbios_shushufindi">
+        <item>SHUSHUFINDI</item>
+        <item>LOMONCOCHA</item>
+        <item>PAÑACOCHA</item>
+        <item>SAN ROQUE</item>
+        <item>SAN PEDRO DE LOS COFANES</item>
+        <item>SIETE DE JULIO</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón SUCUMBÍOS -->
+    <string-array name="array_sucumbios_sucumbios">
+        <item>LA BONITA</item>
+        <item>EL PLAYÓN DE SAN FRANCISCO</item>
+        <item>LA SOFÍA</item>
+        <item>ROSA FLORIDA</item>
+        <item>SANTA BÁRVARA</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón CASCALES -->
+    <string-array name="array_sucumbios_cascales">
+        <item>EL DORADO DE CASCALES</item>
+        <item>SANTA ROSA DE SUCUMBÍOS</item>
+        <item>SEVILLA</item>
+    </string-array>
+
+    <!-- Cantones de SUCUMBÍOS Cantón CUYABENO -->
+    <string-array name="array_sucumbios_cuyabeno">
+        <item>TARAPOA</item>
+        <item>CUYABENO</item>
+        <item>AGUAS NEGRAS</item>
+    </string-array>
+
+    <!-- Cantones de ORELLANA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_orellana_cantones">
+        <item>ORELLANA</item>
+        <item>AGUARICO</item>
+        <item>LA JOYA DE LOS SACHAS</item>
+        <item>LORETO</item>
+    </string-array>
+
+    <!-- Cantones de ORELLANA Cantón ORELLANA -->
+    <string-array name="array_orellana_orellana">
+        <item>PUERTO FRNACISCO DE ORELLANA</item>
+        <item>DAYUMA</item>
+        <item>TARACOA</item>
+        <item>ALEJANDRO LABAKA</item>
+        <item>EL DORADO</item>
+        <item>EL EDÉN</item>
+        <item>GARCÍA MORENO</item>
+        <item>INÉS ARANGO</item>
+        <item>LA BELLEZA</item>
+        <item>NUEVO PARAÍSO</item>
+        <item>SAN JOSÉ DE GUAYUSA</item>
+        <item>SAN LUIS DE ARMENIA</item>
+    </string-array>
+
+    <!-- Cantones de ORELLANA Cantón AGUARICO -->
+    <string-array name="array_orellana_aguarico">
+        <item>TIPITINI</item>
+        <item>NUEVO ROCAFUERTE</item>
+        <item>CAPITÁN AUGUSTO RIVADENEYRA</item>
+        <item>CONONACO</item>
+        <item>SANTA MARÍA DE HUIRIRIMA</item>
+        <item>TIPUTINI</item>
+        <item>YASUNÍ</item>
+    </string-array>
+
+    <!-- Cantones de ORELLANA Cantón LA JOYA DE LOS SACHAS -->
+    <string-array name="array_orellana_joya_sachas">
+        <item>LA JOYA DE LOS SACHAS</item>
+        <item>ENOKANDI</item>
+        <item>POMPEYA</item>
+        <item>SAN CARLOS</item>
+        <item>SAN SEBASTIÁN DEL COCA</item>
+        <item>LAGO SAN PEDRO</item>
+        <item>RUMIPAMBA</item>
+        <item>TRES DE NOVIEMBRE</item>
+        <item>UNIÓN MILAGREÑA</item>
+    </string-array>
+
+    <!-- Cantones de ORELLANA Cantón LORETO -->
+    <string-array name="array_orellana_loreto">
+        <item>LORETO</item>
+        <item>AVILA</item>
+        <item>PUERTO MURIALDO</item>
+        <item>SAN JOSÉ DE PAYAMINO</item>
+        <item>SAN JOSÉ DE DAHUANO</item>
+        <item>SAN VICENTE DE HUATICOCHA</item>
+    </string-array>
+
+    <!-- Cantones de SANTO DOMINGO DE LOS TSACHILAS -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_santo_domingo_cantones">
+        <item>SANTO DOMINGO</item>
+    </string-array>
+
+    <!-- Cantones de SANTO DOMINGO DE LOS TSACHILAS Cantón SANTO DOMINGO  -->
+    <string-array name="array_santo_domingo_santo_domingo">
+        <item>ABRAHAM CCALAZACÓN</item>
+        <item>BOMBOLÍ</item>
+        <item>CHIGUILPE</item>
+        <item>RÍO TOACHI</item>
+        <item>RÍO VERDE</item>
+        <item>SANTO DOMINGO DE LOS COLORADOS</item>
+        <item>ZARACAY</item>
+        <item>ALLURIQUÍN</item>
+        <item>PUERTO LIMÓN</item>
+        <item>LUZ DE AMÉRICA</item>
+        <item>SAN JACINTO DEL BÚA</item>
+        <item>VALLE HERMOSO</item>
+        <item>EL ESFUERZO</item>
+        <item>SANTA MARIA DEL TOACHI</item>
+    </string-array>
+
+    <!-- Cantones de SANTA ELENA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_santa_elena_cantones">
+        <item>SANTA ELENA</item>
+        <item>LA LIBERTAD</item>
+        <item>SALINAS</item>
+    </string-array>
+
+    <!-- Cantones de SANTA ELENA Cantón SANTA ELENA  -->
+    <string-array name="array_santa_elena_santa_elena">
+        <item>BALLENITA</item>
+        <item>SANTA ELENA</item>
+        <item>ATAHUALPA</item>
+        <item>COLONCHE</item>
+        <item>CHANDUY</item>
+        <item>MANGLARALTO</item>
+        <item>SIMÓN BOLÍVAR</item>
+        <item>SAN JOSÉ DE ANCÓN</item>
+    </string-array>
+
+    <!-- Cantones de SANTA ELENA Cantón LA LIBERTAD  -->
+    <string-array name="array_santa_elena_libertad">
+        <item>LA LIBERTAD</item>
+    </string-array>
+
+    <!-- Cantones de SANTA ELENA Cantón SALINAS  -->
+    <string-array name="array_santa_elena_salinas">
+        <item>CARLOS ESPINOZA LARREA</item>
+        <item>GRAL. ALBERTO ENRÍQUEZ GALLO</item>
+        <item>VICENTE ROCAFUERTE</item>
+        <item>SANTA ROSA</item>
+        <item>SALINAS</item>
+        <item>ANCONCITO</item>
+        <item>JOSÉ LUIS TAMAYO</item>
+    </string-array>
+
+    <!-- ZONAS EN ESTUDIO -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_estudio_cantones">
+        <item>LAS GOLONDRINAS</item>
+        <item>MANGA DEL CURA</item>
+        <item>EL PIEDRERO</item>
+    </string-array>
+
+    <!-- Cantones de ZONAS EN ESTUDIO Cantón LAS GOLONDRINAS  -->
+    <string-array name="array_estudio_golondrinas">
+        <item>LAS GOLONDRINAS</item>
+    </string-array>
+
+    <!-- Cantones de ZONAS EN ESTUDIO Cantón MANGA DEL CURA  -->
+    <string-array name="array_estudio_manga_cura">
+        <item>MANGA DEL CURA</item>
+    </string-array>
+
+    <!-- Cantones de ZONAS EN ESTUDIO Cantón EL PIEDRERO  -->
+    <string-array name="array_estudio_piedrero">
+        <item>EL PIEDRERO</item>
+    </string-array>
 </resources>
