@@ -6,24 +6,32 @@ import android.content.Intent
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso04.*
+import kotlinx.android.synthetic.main.activity_add_recurso04.btnExit
+import kotlinx.android.synthetic.main.activity_add_recurso04.btnPerfil
+import kotlinx.android.synthetic.main.activity_add_recurso04.btnSave
 
 
 class addRecurso04 : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso04)
         val bundle: Bundle? =intent.extras
-        val respuesta: Array<String>? = bundle?.getStringArray("lista")
+        val respuestas01: Array<String>? = bundle?.getStringArray("respuestas01")
+        val respuestas02: Array<String>? = bundle?.getStringArray("respuestas02")
+        val respuestas03: Array<String>? = bundle?.getStringArray("respuestas03")
+        val respuestas04: Array<String>? = bundle?.getStringArray("respuestas04")
         val email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuesta ?: arrayOf()
+            respuestas01 ?: arrayOf("No data"),
+            respuestas02 ?: arrayOf("No data"),
+            respuestas03?: arrayOf("No data"),
+            respuestas04?: arrayOf("No data")
         )
+        botonera(email ?: "")
     }
-    private fun view(email:String,respuestas:Array<String>){
+    private fun view(email:String,respuestas01:Array<String>,respuestas02:Array<String>, respuestas03: Array<String>, respuestas04: Array<String>){
         val listaAtractivo = listOf("Atractivo","Conservado", "Alterado","En proceso de Deterioro","Deteriorado")
 
         val listaAlteracionNaturales = listOf("Factores de alteración y deterioro (Naturales)"
@@ -192,32 +200,52 @@ class addRecurso04 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
-            for (item: String in respuestas) {
-                println(item)
+            val listaDatos = arrayOf(
+                atractivo,
+                txtObservacionesAtractivos.text.toString(),
+                alteracionNatural,
+                alteracionAntropica,
+                txtObservacionesAlteracion.text.toString(),
+                entorno,
+                txtObservacionesEntorno.text.toString(),
+                alteracionNaturalEntorno,
+                alteracionAntropicaEntorno,
+                txtObservacionesAlteracion.text.toString(),
+                declaratoria,
+                txtObservacionesDeclaratoria.text.toString(),
+            )
+
+            val inicio: Intent = Intent(this,addRecurso05::class.java).apply {
+                putExtra("email", email)
+                putExtra("respuestas01", respuestas01)
+                putExtra("respuestas02", respuestas02)
+                putExtra("respuestas03", respuestas03)
+                putExtra("respuestas04", respuestas04)
+                putExtra("respuestas05", listaDatos)
+
             }
-            val inicio: Intent = Intent(this,Menu::class.java).apply {
+            startActivity(inicio)
+        }
+    }
+
+    private fun botonera(email:String){
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)
+        }
 
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent= Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
 
-            db.collection("atractivos").document(email).set(
-                hashMapOf("Atractivo" to atractivo,
-                    "Observaciones" to txtObservacionesAtractivos.text.toString(),
-                    "Factores de alteración y deterioro (Naturales)" to alteracionNatural,
-                    "Factores de alteración y deterioro (Antrópicos)" to alteracionAntropica,
-                    "Observaciones" to txtObservacionesAlteracion.text.toString(),
-                    "Entorno" to entorno,
-                    "Observaciones" to txtObservacionesEntorno.text.toString(),
-                    "Factores de alteración y deterioro (Naturales)" to alteracionNaturalEntorno,
-                    "Factores de alteración y deterioro (Antrópicos)" to alteracionAntropicaEntorno,
-                    "Observaciones" to txtObservacionesAlteracion.text.toString(),
-                    "Declaratoria" to declaratoria,
-                    "Declaratoria del espacio turístico asociado al atractivo" to txtObservacionesDeclaratoria.text.toString(),
-
-                    )
-            )
-
+        btnExit.setOnClickListener{
+            val saltar: Intent =Intent(this,MainActivity::class.java)
+            startActivity(saltar)
         }
     }
 }

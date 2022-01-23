@@ -46,7 +46,7 @@
         android:ems="10"
         android:fontFamily="@font/roboto_medium"
         android:hint="Contraseña"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="#949494"
         android:textColorHint="#949494"
         android:textSize="20sp"
@@ -59,18 +59,12 @@
         android:layout_width="236dp"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="#F8F6F6"
+        android:background="@drawable/rounded_corner01"
         android:drawableRight="@drawable/entrar"
         android:fontFamily="@font/roboto_medium"
-
-
         android:text="Iniciar Sesión"
         android:textAllCaps="false"
-        android:textColor="#949494"
-        android:textColorHighlight="#AF1919"
-        android:textColorHint="#772424"
-        android:textColorLink="#E6DDDD"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -118,6 +112,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRegistrar" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

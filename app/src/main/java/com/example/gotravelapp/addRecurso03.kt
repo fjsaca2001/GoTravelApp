@@ -6,8 +6,9 @@ import android.content.Intent
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso03.*
+import kotlinx.android.synthetic.main.activity_add_recurso03.btnExit
+import kotlinx.android.synthetic.main.activity_add_recurso03.btnPerfil
 import kotlinx.android.synthetic.main.activity_add_recurso03.btnSave
 import kotlinx.android.synthetic.main.activity_add_recurso03.spTipoFacilidad
 import kotlinx.android.synthetic.main.activity_add_recurso03.spPlantaTuristica
@@ -18,19 +19,23 @@ import kotlinx.android.synthetic.main.activity_add_recurso03.spGuia
 import kotlinx.android.synthetic.main.activity_add_recurso03.spAlojamiento
 
 class addRecurso03 : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso03)
         val bundle: Bundle? =intent.extras
-        val respuesta: Array<String>? = bundle?.getStringArray("lista")
+        val respuestas01: Array<String>? = bundle?.getStringArray("respuestas01")
+        val respuestas02: Array<String>? = bundle?.getStringArray("respuestas02")
+        val respuestas03: Array<String>? = bundle?.getStringArray("respuestas03")
         val email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuesta ?: arrayOf()
+            respuestas01 ?: arrayOf("No data"),
+            respuestas02 ?: arrayOf("No data"),
+            respuestas03?: arrayOf("No data")
         )
+        botonera(email ?: "")
     }
-    private fun view(email:String,respuestas:Array<String>){
+    private fun view(email:String,respuestas01:Array<String>,respuestas02:Array<String>, respuestas03: Array<String>){
         val listaPlantaTuristica = listOf("Planta Turística ","En el Atractivo", "En la ciudad o poblado cercano")
         val listaAlojamiento = listOf("Alojamiento","Hotel", "Hostal", "Hostería","Hacienda Turística","Lodge","Resort"
             ,"Refugio","Campamento Turístico","Casa de Huespedes")
@@ -184,43 +189,62 @@ class addRecurso03 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
-            for (item: String in respuestas) {
-                println(item)
+
+            val listaDatos = arrayOf(
+                planta,
+                alojamiento,
+                txtEstlacimientosRegistrados.text.toString(),
+                txtNumeroHabitaciones.text.toString(),
+                txtNumeroPlazas.text.toString(),
+                txtObservacionesEstablecimientos.text.toString(),
+                alimentos,
+                txtEstablecimientoAlimentos.text.toString(),
+                txtNumeroMesasAlimentos.text.toString(),
+                txtNumeroPlazas.text.toString(),
+                txtObservacionesAlimentos.text.toString(),
+                guia,
+                txtObservacionesGuia.text.toString(),
+                categoria,
+                tipoFacilidad,
+                txtFacilidadCantidad.text.toString(),
+                txtFacilidadCoordenadas.text.toString(),
+                txtFacilidadUniversal.text.toString(),
+                txtFacilidadEstado.text.toString(),
+                txtFacilidadObservaciones.text.toString(),
+                complementarios,
+                txtComplementariosObservaciones.text.toString()
+            )
+
+            val inicio: Intent = Intent(this,addRecurso04::class.java).apply {
+                putExtra("email", email)
+                putExtra("respuestas01", respuestas01)
+                putExtra("respuestas02", respuestas02)
+                putExtra("respuestas03", respuestas03)
+                putExtra("respuestas04", listaDatos)
+
             }
-            val inicio: Intent = Intent(this,Menu::class.java).apply {
+            startActivity(inicio)
+        }
+    }
+
+    private fun botonera(email:String){
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)
+        }
 
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent= Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
 
-            db.collection("atractivos").document(email).set(
-                hashMapOf("Planta Turística" to planta,
-                    "Alojamiento" to alojamiento,
-                    "Establecimientos Registrados" to txtEstlacimientosRegistrados.text.toString(),
-                    "Número de Habitaciones" to txtNumeroHabitaciones.text.toString(),
-                    "Número de Plazas" to txtNumeroPlazas.text.toString(),
-                    "Observaciones" to txtObservacionesEstablecimientos.text.toString(),
-                    "Alimentos y Bebidas" to alimentos,
-                    "Establecimientos Registrados" to txtEstablecimientoAlimentos.text.toString(),
-                    "Número de Mesas" to txtNumeroMesasAlimentos.text.toString(),
-                    "Número de Plazas" to txtNumeroPlazas.text.toString(),
-                    "Observaciones" to txtObservacionesAlimentos.text.toString(),
-                    "Guía" to guia,
-                    "Observaciones" to txtObservacionesGuia.text.toString(),
-                    "Categoria" to categoria,
-                    "Tipo" to tipoFacilidad,
-                    "Cantidad" to txtFacilidadCantidad.text.toString(),
-                    "Coordenadas" to txtFacilidadCoordenadas.text.toString(),
-                    "Acceso Universal" to txtFacilidadUniversal.text.toString(),
-                    "Estado " to txtFacilidadEstado.text.toString(),
-                    "Observaciones" to txtFacilidadObservaciones.text.toString(),
-                    "Complementarios de la actividad turística" to complementarios,
-                    "Observaciones" to txtComplementariosObservaciones.text.toString(),
-
-                    )
-            )
-
-
+        btnExit.setOnClickListener{
+            val saltar: Intent =Intent(this,MainActivity::class.java)
+            startActivity(saltar)
         }
     }
 }

@@ -6,25 +6,33 @@ import android.content.Intent
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_add_recurso04.*
 import kotlinx.android.synthetic.main.activity_add_recurso05.*
+import kotlinx.android.synthetic.main.activity_add_recurso05.btnExit
+import kotlinx.android.synthetic.main.activity_add_recurso05.btnPerfil
 import kotlinx.android.synthetic.main.activity_add_recurso05.btnSave
 
 class addRecurso05 : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso05)
         val bundle: Bundle? =intent.extras
-        val respuesta: Array<String>? = bundle?.getStringArray("lista")
+        val respuestas01: Array<String>? = bundle?.getStringArray("respuestas01")
+        val respuestas02: Array<String>? = bundle?.getStringArray("respuestas02")
+        val respuestas03: Array<String>? = bundle?.getStringArray("respuestas03")
+        val respuestas04: Array<String>? = bundle?.getStringArray("respuestas04")
+        val respuestas05: Array<String>? = bundle?.getStringArray("respuestas05")
         val email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuesta ?: arrayOf()
+            respuestas01 ?: arrayOf("No data"),
+            respuestas02 ?: arrayOf("No data"),
+            respuestas03?: arrayOf("No data"),
+            respuestas04?: arrayOf("No data"),
+            respuestas05?: arrayOf("No data")
         )
+        botonera(email ?: "")
     }
-    private fun view(email:String,respuestas:Array<String>){
+    private fun view(email:String,respuestas01:Array<String>,respuestas02:Array<String>, respuestas03: Array<String>, respuestas04: Array<String>, respuestas05: Array<String>){
         val listaServiciosBasicos = listOf("Servicios Básicos ","En el Atractivo", "En la ciudad o poblado cercano")
 
         val listaServicios = listOf("Servicios","Agua", "Energia Electrica", "Saneamiento","Disposición de desechos")
@@ -313,49 +321,68 @@ class addRecurso05 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
-            for (item: String in respuestas) {
-                println(item)
+            val listaDatos = arrayOf(
+                serviciosBasicos,
+                servicios,
+                txtEspecifiqueServicios.text.toString(),
+                txtObservacionesServicios.text.toString(),
+                ambiente,
+                tipoAmbiente,
+                material,
+                txtAmbienteEstado.text.toString(),
+                txtObservacionesAmbiente.text.toString(),
+                centroSalud,
+                tipoCentroSalud,
+                txtCentroSaludCantidad.text.toString(),
+                txtObservacionesCentroSalud.text.toString(),
+                seguridad,
+                txtSeguridadDetalle.text.toString(),
+                txtObservacionesSeguridad.text.toString(),
+                comunicacion,
+                telefonia,
+                internet,
+                txtObservacionesComunicacion.text.toString(),
+                radio,
+                txtObservacionesRadioPortatil.text.toString(),
+                amenaza,
+                txtPlanAmenaza.text.toString(),
+                txtInstitucionDocumento.text.toString(),
+                txtNombreDocumento.text.toString(),
+                txtElaboracionDocumento.text.toString(),
+                txtObservacionesAmenazas.text.toString()
+            )
+
+            val inicio: Intent = Intent(this,addRecurso06::class.java).apply {
+                putExtra("email", email)
+                putExtra("respuestas01", respuestas01)
+                putExtra("respuestas02", respuestas02)
+                putExtra("respuestas03", respuestas03)
+                putExtra("respuestas04", respuestas04)
+                putExtra("respuestas05", respuestas05)
+                putExtra("respuestas06", listaDatos)
             }
-            val inicio: Intent = Intent(this,Menu::class.java).apply {
+            startActivity(inicio)
+        }
+    }
+
+    private fun botonera(email:String){
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)
+        }
 
-/*
-            db.collection("atractivos").document(email).set(
-                hashMapOf("Servicios Básicos" to serviciosBasicos,
-                    "Servicios" to servicios,
-                    "Especifique" to txtEspecifiqueServicios.text.toString(),
-                    "Observaciones" to txtObservacionesServicios.text.toString(),
-                    "Ambiente" to ambiente,
-                    "Tipo Ambiente" to tipoAmbiente,
-                    "Material" to material,
-                    "Estado" to txtAmbienteEstado.text.toString(),
-                    "Observaciones" to txtObservacionesAmbiente.text.toString(),
-                    "Centro de Salud" to centroSalud,
-                    "Tipo" to tipoCentroSalud,
-                    "Cantidad" to txtCentroSaludCantidad.text.toString(),
-                    "Observaciones" to txtObservacionesCentroSalud.text.toString(),
-                    "Seguridad" to seguridad,
-                    "Detalle" to txtSeguridadDetalle.text.toString(),
-                    "Observaciones" to txtObservacionesSeguridad.text.toString(),
-                    "Seguridad" to comunicacion,
-                    "Seguridad" to telefonia,
-                    "Seguridad" to internet,
-                    "Observaciones" to txtObservacionesComunicacion.text.toString(),
-                    "Seguridad" to radio,
-                    "Observaciones" to txtObservacionesRadioPortatil.text.toString(),
-                    "Seguridad" to amenaza,
-                    "¿Existe un plan de contingencia en caso de catástrofes?" to txtPlanAmenaza.text.toString(),
-                    "Institución que elaboró el documento" to txtInstitucionDocumento.text.toString(),
-                    "Nombre del documento:" to txtNombreDocumento.text.toString(),
-                    "Año de elaboración:" to txtElaboracionDocumento.text.toString(),
-                    "Observaciones" to txtObservacionesAmenazas.text.toString(),
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent= Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
 
-                    )
-            )
-*/
-
+        btnExit.setOnClickListener{
+            val saltar: Intent =Intent(this,MainActivity::class.java)
+            startActivity(saltar)
         }
     }
 }

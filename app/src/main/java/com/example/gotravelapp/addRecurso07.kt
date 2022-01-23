@@ -6,24 +6,38 @@ import android.content.Intent
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso07.*
+import kotlinx.android.synthetic.main.activity_add_recurso07.btnExit
+import kotlinx.android.synthetic.main.activity_add_recurso07.btnPerfil
+import kotlinx.android.synthetic.main.activity_add_recurso07.btnSave
 
 
 class addRecurso07 : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso07)
         val bundle: Bundle? =intent.extras
-        val respuesta: Array<String>? = bundle?.getStringArray("lista")
+        val respuestas01: Array<String>? = bundle?.getStringArray("respuestas01")
+        val respuestas02: Array<String>? = bundle?.getStringArray("respuestas02")
+        val respuestas03: Array<String>? = bundle?.getStringArray("respuestas03")
+        val respuestas04: Array<String>? = bundle?.getStringArray("respuestas04")
+        val respuestas05: Array<String>? = bundle?.getStringArray("respuestas05")
+        val respuestas06: Array<String>? = bundle?.getStringArray("respuestas06")
+        val respuestas07: Array<String>? = bundle?.getStringArray("respuestas07")
         val email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuesta ?: arrayOf()
+            respuestas01 ?: arrayOf("No data"),
+            respuestas02 ?: arrayOf("No data"),
+            respuestas03?: arrayOf("No data"),
+            respuestas04?: arrayOf("No data"),
+            respuestas05?: arrayOf("No data"),
+            respuestas06?: arrayOf("No data"),
+            respuestas07?: arrayOf("No data")
         )
+        botonera(email ?: "")
     }
-    private fun view(email:String,respuestas:Array<String>){
+    private fun view(email:String,respuestas01:Array<String>,respuestas02:Array<String>, respuestas03: Array<String>, respuestas04: Array<String>, respuestas05: Array<String>, respuestas06: Array<String>, respuestas07: Array<String>){
         val listaPromocion = listOf("¿Existe un plan de promoción turística cantonal?",
             "Conservado", "Si","No")
 
@@ -50,8 +64,7 @@ class addRecurso07 : AppCompatActivity() {
 
         val listaDemandaDias = listOf("Demanda según  días de visita","Lunes a viernes", "Fines de semana","Días feriados")
 
-        val listaDemandaFrecuencia = listOf("Demanda según frecuencia de visita","Permanente", "Estacional"
-            ,"Esporádica","Inexistente")
+        val listaDemandaFrecuencia = listOf("Demanda según frecuencia de visita","Permanente", "Estacional","Esporádica","Inexistente")
 
 
         //val spLinea = findViewById<Spinner>(R.id.spLinea)
@@ -87,7 +100,7 @@ class addRecurso07 : AppCompatActivity() {
         spTemporabilidad.adapter=adapTemporabilidad
         spTurista.adapter=adapTurista
         spDemandaDias.adapter=adapDemandaDias
-        spDemandaDias.adapter=adapDemandaFrecuencia
+        spDemandaFrecuencia.adapter=adapDemandaFrecuencia
 
         spPromocion.onItemSelectedListener = object:
             AdapterView.OnItemSelectedListener {
@@ -250,48 +263,69 @@ class addRecurso07 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
-            for (item: String in respuestas) {
-                println(item)
+            val listaDatos = arrayOf(
+                promocion,
+                txtEspecifiquePromocion.text.toString(),
+                incluirPromocion,
+                medioPromocional,
+                txtNombreMedioPromocional.text.toString(),
+                txtPeriodicidadMedioPromocional.text.toString(),
+                oferta,
+                txtEspecifiqueOfertaAtractivo.text.toString(),
+                txtObservacionesOfertaAtractivo.text.toString(),
+                registroVisitantes,
+                txtRegistroVisitantesAnios.text.toString(),
+                estadisticasVisitantes,
+                txtEstadisticasVisitantesFrecuencia.text.toString(),
+                enTemporabilidad,
+                txtEspecifiqueTemporabilidad.text.toString(),
+                txtNumeroVisitasTemporabilidad.text.toString(),
+                txtObservacionesVisitantes.text.toString(),
+                turista,
+                txtOrigenTuristas.text.toString(),
+                txtLLegadasAnualesTuristas.text.toString(),
+                txtTotalAnualTuristas.text.toString(),
+                txtObservacionesTuristas.text.toString(),
+                txtNombreInformante.text.toString(),
+                txtContactoInformante.text.toString(),
+                demandaDias,
+                demandaFrecuencia,
+                txtObservacionesInformante.text.toString(),
+
+            )
+            val inicio: Intent = Intent(this,addRecurso08::class.java).apply {
+                putExtra("email", email)
+                putExtra("respuestas01", respuestas01)
+                putExtra("respuestas02", respuestas02)
+                putExtra("respuestas03", respuestas03)
+                putExtra("respuestas04", respuestas04)
+                putExtra("respuestas05", respuestas05)
+                putExtra("respuestas06", respuestas06)
+                putExtra("respuestas07", respuestas07)
+                putExtra("respuestas08", listaDatos)
             }
-            val inicio: Intent = Intent(this,Menu::class.java).apply {
+            startActivity(inicio)
+        }
+    }
+
+    private fun botonera(email:String){
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)
+        }
 
-/*
-            db.collection("atractivos").document(email).set(
-                hashMapOf("¿Existe un plan de promoción turística cantonal?" to promocion,
-                    "Especifique" to txtEspecifiquePromocion.text.toString(),
-                    "¿El Atractivo se encuentra incluido en el plan de promoción turístico cantonal?" to incluirPromocion,
-                    "Medio Promocional" to medioPromocional,
-                    "Dirreción y nombre de los medios promocionales" to txtNombreMedioPromocional.text.toString(),
-                    "Periodicidad de la promoción" to txtPeriodicidadMedioPromocional.text.toString(),
-                    "El atractivo forma parte de una oferta establecida (paquete turístico)" to oferta,
-                    "Especifique" to txtEspecifiqueOfertaAtractivo.text.toString(),
-                    "Observaciones" to txtObservacionesOfertaAtractivo.text.toString(),
-                    "¿Posee un sistema de registro de visitantes?" to registroVisitantes,
-                    "Años de Registro" to txtRegistroVisitantesAnios.text.toString(),
-                    "¿Se genera reporte de estadísticas de visita al atractivo?" to estadisticasVisitantes,
-                    "Frecuencia" to txtEstadisticasVisitantesFrecuencia.text.toString(),
-                    "Temporalidad de visita al atractivo" to enTemporabilidad,
-                    "Especifique" to txtEspecifiqueTemporabilidad.text.toString(),
-                    "Número de Visitantes" to txtNumeroVisitasTemporabilidad.text.toString(),
-                    "Observaciones" to txtObservacionesVisitantes.text.toString(),
-                    "Turista" to turista,
-                    "Ciudad / País de Origen" to txtOrigenTuristas.text.toString(),
-                    "Llegadas mensuales" to txtLLegadasAnualesTuristas.text.toString(),
-                    "Total Anual" to txtTotalAnualTuristas.text.toString(),
-                    "Observaciones" to txtObservacionesTuristas.text.toString(),
-                    "Nombre del Informante Clave" to txtNombreInformante.text.toString(),
-                    "Contacto" to txtContactoInformante.text.toString(),
-                    "Demanda según  días de visita" to demandaDias,
-                    "Demanda según frecuencia de visita" to demandaFrecuencia,
-                    "Observaciones" to txtObservacionesInformante.text.toString(),
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent= Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
 
-                    )
-            )
-*/
-
+        btnExit.setOnClickListener{
+            val saltar: Intent =Intent(this,MainActivity::class.java)
+            startActivity(saltar)
         }
     }
 }

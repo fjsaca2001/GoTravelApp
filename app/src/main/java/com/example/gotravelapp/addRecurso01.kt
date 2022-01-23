@@ -6,24 +6,23 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso01.*
 
 class addRecurso01 : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso01)
-        val bundle: Bundle? =intent.extras
-        val respuesta: Array<String>? = bundle?.getStringArray("lista")
-        val email:String? = bundle?.getString("email")
+        var bundle: Bundle? =intent.extras
+        var respuestas01: Array<String>? = bundle?.getStringArray("respuestas")
+        var email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuesta ?: arrayOf()
+            respuestas01?: arrayOf("No data")
         )
+        botonera(email ?: "")
     }
 
-    private fun view(email:String,respuestas:Array<String>){
+    private fun view(email:String,respuestas01:Array<String>){
         val listaLineaProducto = listOf("Linea de producto al que pertenece","Cultura", "Naturaleza", "Aventura")
         val listaEscenario = listOf("Escenario donde se localiza","Prístimo", "Primitivo", "Rústico Natural")
         val listaTipoIn = listOf("Tipo de ingreso","Libre", "Restringido", "Pagado")
@@ -60,7 +59,6 @@ class addRecurso01 : AppCompatActivity() {
                 id: Long
             ) {
                 lista = listaLineaProducto[position]
-                println(listaLineaProducto[position])
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -76,7 +74,6 @@ class addRecurso01 : AppCompatActivity() {
                 id: Long
             ) {
                 escenario = listaEscenario[position]
-                println(listaEscenario[position])
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -92,7 +89,6 @@ class addRecurso01 : AppCompatActivity() {
                 id: Long
             ) {
                 tipoIn = listaTipoIn[position]
-                println(listaTipoIn[position])
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -108,7 +104,6 @@ class addRecurso01 : AppCompatActivity() {
                 id: Long
             ) {
                 atencion = listaAtencion[position]
-                println(listaAtencion[position])
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -124,7 +119,6 @@ class addRecurso01 : AppCompatActivity() {
                 id: Long
             ) {
                 formaP = listaFormaP[position]
-                println(listaFormaP[position])
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -132,32 +126,47 @@ class addRecurso01 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
-            for (item: String in respuestas) {
-                println(item)
+            val listaDatos = arrayOf(
+                txtClima.text.toString(),
+                txtTemperatura.text.toString(),
+                txtPrecipitacion.text.toString(),
+                lista,
+                escenario,
+                tipoIn,
+                txtHoraIn.text.toString(),
+                txtHoraSal.text.toString(),
+                atencion,
+                formaP,
+                txtMeses.text.toString(),
+                txtObserva.text.toString()
+            )
+            val inicio: Intent = Intent(this,addRecurso02::class.java).apply {
+                putExtra("email", email)
+                putExtra("respuestas01", respuestas01)
+                putExtra("respuestas02", listaDatos)
             }
-            val inicio: Intent = Intent(this,Menu::class.java).apply {
+            startActivity(inicio)
+        }
+    }
+
+    private fun botonera(email:String){
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)
-            /*
-            db.collection("atractivos").document(email).set(
-                hashMapOf("Clima" to txtClima.text.toString(),
-                    "Temperatura" to txtTemp.text.toString(),
-                    "Precipitacion pluvimetrica" to txtPresi.text.toString(),
-                    "Linea de producto" to lista,
-                    "Escenario donde se localiza" to escenario,
-                    "Tipo de ingreso" to tipoIn,
-                    "Hora de Ingreso" to txtHoraIn.text.toString(),
-                    "Hora de Salida" to txtHoraIn.text.toString(),
-                    "Atencion" to atencion,
-                    "Formas de pago" to formaP,
-                    "Meses recomendados" to txtMeses.text.toString(),
-                    "Observaciones" to txtObserva.text.toString()
+        }
 
-                    )
-            )
-            */
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent= Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
 
+        btnExit.setOnClickListener{
+            val saltar: Intent =Intent(this,MainActivity::class.java)
+            startActivity(saltar)
         }
     }
 }

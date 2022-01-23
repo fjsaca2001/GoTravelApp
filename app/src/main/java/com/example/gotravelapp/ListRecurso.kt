@@ -1,5 +1,6 @@
 package com.example.gotravelapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
@@ -14,6 +15,7 @@ class ListRecurso : AppCompatActivity() {
         val email:String? = bundle?.getString("email")
         vista(email?:"")
         setContentView(R.layout.activity_list_recurso)
+        botonera(email?:"")
     }
 
     private fun vista(email: String) {
@@ -23,5 +25,28 @@ class ListRecurso : AppCompatActivity() {
             obtenerCanton.setText(it.get("Canton") as String?)
         }
 
+
+
+    }
+
+    private fun botonera(email: String){
+        btnHome01.setOnClickListener(){
+            val inicio: Intent = Intent(this,Menu::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
+
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent = Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
+
+        btnExit.setOnClickListener{
+            val saltar: Intent = Intent(this,MainActivity::class.java)
+            startActivity(saltar)
+        }
     }
 }

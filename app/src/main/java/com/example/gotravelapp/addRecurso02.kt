@@ -6,24 +6,28 @@ import android.content.Intent
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso02.*
-
+import kotlinx.android.synthetic.main.activity_add_recurso02.btnExit
+import kotlinx.android.synthetic.main.activity_add_recurso02.btnHome
+import kotlinx.android.synthetic.main.activity_add_recurso02.btnPerfil
+import kotlinx.android.synthetic.main.activity_add_recurso02.btnSave
 
 class addRecurso02 : AppCompatActivity() {
-    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso02)
         val bundle: Bundle? =intent.extras
-        val respuesta: Array<String>? = bundle?.getStringArray("lista")
+        val respuestas01: Array<String>? = bundle?.getStringArray("respuestas01")
+        val respuestas02: Array<String>? = bundle?.getStringArray("respuestas02")
         val email:String? = bundle?.getString("email")
         view(
             email ?: "",
-            respuesta ?: arrayOf()
+            respuestas01 ?: arrayOf("No data"),
+            respuestas02 ?: arrayOf("No data"),
         )
+        botonera(email?:"")
     }
-    private fun view(email:String,respuestas:Array<String>){
+    private fun view(email:String,respuestas01:Array<String>,respuestas02:Array<String>){
         val listaLineaAccesoTierra = listOf("Tipo de Via ","Primer Orden", "Segundo Orden", "Tercer Orden")
         val listaAcuatico = listOf("Tipo","Maritimo", "Lacustre", "Rústico Fluvial")
         val listaTipo = listOf("Tipo","Nacional", "Internacional")
@@ -70,7 +74,7 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 acceso = listaLineaAccesoTierra[position]
-                println(listaLineaAccesoTierra[position])
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -86,7 +90,7 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 acuatico = listaAcuatico[position]
-                println(listaAcuatico[position])
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -102,7 +106,7 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 tipo = listaTipo[position]
-                println(listaTipo[position])
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -118,7 +122,7 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 transporte = listaTransporte[position]
-                println(listaTransporte[position])
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -134,7 +138,7 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 frecuencia = listaFrecuencia[position]
-                println(listaFrecuencia[position])
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -150,7 +154,6 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 accesibilidad = listaAccesibilidad[position]
-                println(listaAccesibilidad[position])
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -166,7 +169,7 @@ class addRecurso02 : AppCompatActivity() {
                 id: Long
             ) {
                 señalizacion = listaseñalizacion[position]
-                println(listaseñalizacion[position])
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -174,48 +177,69 @@ class addRecurso02 : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener(){
-            for (item: String in respuestas) {
-                println(item)
+
+            val listaDatos = arrayOf(
+                txtPoblado.text.toString(),
+                txtDistanciaPoblado.text.toString(),
+                txtTiempoAuto.text.toString(),
+                txtCoordenadas.text.toString(),
+                txtObservacionPoblado.text.toString(),
+                acceso,
+                txtCoordenadasInicio.text.toString(),
+                txtCoordenadasFinal.text.toString(),
+                txtDistanciaAccesoTerrestre.text.toString(),
+                txtAccesoTerrestreMaterial.text.toString(),
+                txtAccesoTerrestreEstado.text.toString(),
+                txtAccesoTerrestreObservaciones.text.toString(),
+                acuatico,
+                txtPuertoIncio.text.toString(),
+                txtPuertoLlegada.text.toString(),
+                txtAccesoAcuaticoObservaciones.text.toString(),
+                tipo,
+                txtAccesoAereoObservaciones.text.toString(),
+                transporte,
+                txtTransporteObservaciones.text.toString(),
+                txtDetalleTransporte.text.toString(),
+                txtEstacionTransporte.text.toString(),
+                frecuencia,
+                accesibilidad,
+                txtDetallesTraslado.text.toString(),
+                señalizacion,
+                txtAccesibilidadObservaciones.text.toString(),
+                txtSeñalizacionObservaciones.text.toString(),
+            )
+
+
+            val inicio: Intent = Intent(this,addRecurso03::class.java).apply {
+                putExtra("email", email)
+                putExtra("respuestas01", respuestas01)
+                putExtra("respuestas02", respuestas02)
+                putExtra("respuestas03", listaDatos)
+
             }
-            val inicio: Intent = Intent(this,Menu::class.java).apply {
+            startActivity(inicio)
+
+        }
+    }
+
+    private fun botonera(email:String){
+        btnHome.setOnClickListener(){
+            val inicio: Intent= Intent(this,Menu::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)
-            /*
-            db.collection("atractivos").document(email).set(
-                hashMapOf("Ciudad o Poblado más Cercano" to txtPoblado.text.toString(),
-                    "Distancia desde la ciudad o poblado más cercano" to txtDistanciaPoblado.text.toString(),
-                    "Tiempo Estimado de dezsplazamiento en auto" to txtTiempoAuto.text.toString(),
-                    "Coordenadas (Latitud/Longitud)" to txtCoordenadas.text.toString(),
-                    "Observaciones" to txtObservacionPoblado.text.toString(),
-                    "Tipo de Via" to acceso,
-                    "Coordenadas de Inicio" to txtCoordenadasInicio.text.toString(),
-                    "Coordenadas de Fin" to txtCoordenadasFinal.text.toString(),
-                    "Distancia (Km)" to txtDistanciaAccesoTerrestre.text.toString(),
-                    "Material" to txtAccesoTerrestreMaterial.text.toString(),
-                    "Estado" to txtAccesoTerrestreEstado.text.toString(),
-                    "Observaciones" to txtAccesoTerrestreObservaciones.text.toString(),
-                    "Tipo" to acuatico,
-                    "Puerto/Muelle de Salida" to txtPuertoIncio.text.toString(),
-                    "Puerto/Muelle de LLegada" to txtPuertoLlegada.text.toString(),
-                    "Observaciones" to txtAccesoAcuaticoObservaciones.text.toString(),
-                    "Tipo" to tipo,
-                    "Observaciones" to txtAccesoAereoObservaciones.text.toString(),
-                    "Transporte" to transporte,
-                    "Observaciones" to txtTransporteObservaciones.text.toString(),
-                    "Cooperativa o Asociación que presta el servicio" to txtDetalleTransporte.text.toString(),
-                    "Estación / Terminal" to txtEstacionTransporte.text.toString(),
-                    "Frecuencia" to frecuencia,
-                    "Traslado origen / Destino" to txtDetallesTraslado.text.toString(),
-                    "Accesibilidad para personas con discapacidad" to accesibilidad,
-                    "Observaciones" to txtAccesibilidadObservaciones.text.toString(),
-                    "Estado de Señalización" to señalizacion,
-                    "Observaciones" to txtSeñalizacionObservaciones.text.toString(),
+        }
 
-                    )
-            )
-*/
+        btnPerfil.setOnClickListener(){
+            val inicio: Intent= Intent(this,Perfil::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
 
+        btnExit.setOnClickListener{
+            val saltar: Intent =Intent(this,MainActivity::class.java)
+            startActivity(saltar)
         }
     }
 }
