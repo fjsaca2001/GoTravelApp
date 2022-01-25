@@ -54,23 +54,6 @@
         app:layout_constraintStart_toStartOf="@+id/txtUser"
         app:layout_constraintTop_toBottomOf="@+id/txtUser" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="236dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/rounded_corner01"
-        android:backgroundTint="#5CA493"
-        android:drawableRight="@drawable/entrar"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Iniciar Sesión"
-        android:textAllCaps="false"
-        android:textColor="#949494"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPass" />
 
     <TextView
         android:id="@+id/textView3"
@@ -114,7 +97,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRegistrar" />
 
-
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass"
+        app:srcCompat="@drawable/iniciosesion" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
