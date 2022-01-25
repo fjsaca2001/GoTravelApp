@@ -16,6 +16,7 @@ class Menu : AppCompatActivity() {
         reportes()
         listarRecursos()
         clickAddRecurso()
+        clickBuscar()
     }
 
     private fun reportes() {
@@ -69,6 +70,17 @@ class Menu : AppCompatActivity() {
         var email=objetoIntent.getStringExtra("email")
         btnAddRecurso.setOnClickListener(){
             val inicio: Intent= Intent(this, addRecurso::class.java).apply {
+                putExtra("email", email)
+            }
+            startActivity(inicio)
+        }
+    }
+
+    private fun clickBuscar(){
+        val objetoIntent: Intent =intent
+        var email=objetoIntent.getStringExtra("email")
+        btnBuscarL.setOnClickListener(){
+            val inicio: Intent= Intent(this, buscar::class.java).apply {
                 putExtra("email", email)
             }
             startActivity(inicio)

@@ -192,7 +192,7 @@
                 app:srcCompat="@drawable/boton3" />
 
             <ImageButton
-                android:id="@+id/imageButton12"
+                android:id="@+id/btnBuscarL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E5E5E5"

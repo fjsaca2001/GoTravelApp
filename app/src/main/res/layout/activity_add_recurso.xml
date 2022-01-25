@@ -391,8 +391,8 @@
             <ImageButton
                 android:id="@+id/btnGuardar01"
                 android:layout_marginTop="10dp"
-                android:layout_width="53dp"
-                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/next" />
         </LinearLayout>

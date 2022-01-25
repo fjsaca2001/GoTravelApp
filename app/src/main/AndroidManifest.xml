@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoTravelApp">
         <activity
+            android:name=".resultadoBuscar"
+            android:exported="false" />
+        <activity
+            android:name=".buscar"
+            android:exported="false" />
+        <activity
             android:name=".Reports"
             android:exported="false" />
         <activity
