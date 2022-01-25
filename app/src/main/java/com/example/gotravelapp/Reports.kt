@@ -38,7 +38,7 @@ class Reports : AppCompatActivity() {
             obtenerTotalAtractivos.setText(progreso)
             total = (progreso.toInt()*100)/172
             //obtenerPorcentajes.setText(total.toString())
-            obtenerPorcentajes.text=("%${total.toString()}")
+            obtenerPorcentajes.text=("${total.toString()}%")
             ObjectAnimator.ofInt(progressBar,"progress",progreso.toInt())
                 .setDuration(2000)
                 .start()
