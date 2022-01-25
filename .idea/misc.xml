@@ -17,10 +17,6 @@
         <entry key="..\:/7_Ciclo/Plataformas/ProyectFn/GoTravelApp/app/src/main/res/layout/activity_add_recurso04.xml" value="0.25416666666666665" />
         <entry key="..\:/7_Ciclo/Plataformas/ProyectFn/GoTravelApp/app/src/main/res/layout/activity_add_recurso05.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/andre/Desktop/GoT/GoTravelApp/app/src/main/res/layout/activity_add_recurso.xml" value="0.14" />
-        <entry key="..\:/Users/andre/Desktop/GoT/GoTravelApp/app/src/main/res/layout/activity_list_recurso.xml" value="0.33" />
-        <entry key="..\:/Users/andre/Desktop/GoT/GoTravelApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/andre/Desktop/GoT/GoTravelApp/app/src/main/res/layout/activity_menu.xml" value="0.33" />
-        <entry key="..\:/Users/andre/Desktop/GoT/GoTravelApp/app/src/main/res/layout/activity_resultado_buscar.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/drawable/boarder.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/drawable/borderbeta.xml" value="0.2203125" />
         <entry key="..\:/Users/andre/Desktop/GoTravel/GoTravelApp/app/src/main/res/drawable/borderbetabottom.xml" value="0.2203125" />
@@ -50,11 +46,13 @@
         <entry key="app/src/main/res/layout/activity_add_recurso06.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_add_recurso07.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_add_recurso08.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/activity_buscar.xml" value="0.1828125" />
         <entry key="app/src/main/res/layout/activity_list_recurso.xml" value="0.42988929889298894" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.6016427104722792" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/activity_perfil.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/activity_reports.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_resultado_buscar.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22418478260869565" />
       </map>
     </option>

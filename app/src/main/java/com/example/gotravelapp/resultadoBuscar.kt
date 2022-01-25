@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_list_recurso.*
+import kotlinx.android.synthetic.main.activity_resultado_buscar.*
 
 class resultadoBuscar : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
