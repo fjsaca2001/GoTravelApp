@@ -47,101 +47,18 @@
 
     </LinearLayout>
 
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:text="Reportes"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="409dp"
-        android:layout_height="75dp"
-        android:background="#E5E5E5"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.166">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/txtNombreProvincia"
-                android:layout_width="217dp"
-                android:layout_height="wrap_content"
-                android:background="#E5E5E5"
-                android:paddingLeft="22dp"
-                android:text="Total Atractivos"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/obtenerTotalAtractivos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#E5E5E5"
-                android:paddingLeft="20dp"
-                android:text="TextView"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center">
-
-            <TextView
-                android:id="@+id/txtNombreAtractivo"
-                android:layout_width="165dp"
-                android:layout_height="match_parent"
-                android:background="#E5E5E5"
-                android:gravity="center"
-                android:paddingLeft="4dp"
-                android:text="Nombre del Atractivo: "
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/obtenerAtractivoNombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#E5E5E5"
-                android:paddingLeft="8dp"
-                android:text="TextView"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-        </TableRow>
-
-
-    </TableLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:scaleY="4"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
-        app:layout_constraintVertical_bias="0.094" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -170,5 +87,113 @@
             android:backgroundTint="#E5E5E5"
             app:srcCompat="@drawable/perfil" />
     </LinearLayout>
+
+    <TableLayout
+        android:layout_width="395dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:background="#5CA493"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.17000002">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtNombreAtractivo"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:background="#5CA493"
+                android:text="Nombre del Atractivo: "
+                android:textAlignment="viewStart"
+                android:textColor="#FFFDFD"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/obtenerAtractivoNombre"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:background="#5CA493"
+                android:paddingLeft="8dp"
+                android:textAlignment="center"
+                android:textColor="#FFFDFD"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txtNombreProvincia"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:background="#5CA493"
+                android:text="Campos realizados"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFDFD"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/obtenerTotalAtractivos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5CA493"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFDFD"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:scaleY="4"
+                android:layout_marginTop="5dp"
+                android:progressBackgroundTint="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+                app:layout_constraintVertical_bias="0.094" />
+
+            <TextView
+                android:id="@+id/obtenerPorcentajes"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFDFD"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="124dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/file" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.view.View
+import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_add_recurso06.*
@@ -14,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_add_recurso06.btnSave
 
 class addRecurso06 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_recurso06)
         val bundle: Bundle? =intent.extras

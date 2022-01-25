@@ -42,6 +42,14 @@ class addRecurso08 : AppCompatActivity() {
     }
     private fun view(email:String,respuestas01:Array<String>,respuestas02:Array<String>, respuestas03: Array<String>, respuestas04: Array<String>, respuestas05: Array<String>, respuestas06: Array<String>, respuestas07: Array<String>, respuestas08: Array<String>){
 
+
+        val conteo = respuestas01?.count{it.isNotEmpty()}.toInt() + respuestas02?.count{it.isNotEmpty()}.toInt()
+        +respuestas03?.count{it.isNotEmpty()}.toInt() + respuestas04?.count{it.isNotEmpty()}.toInt()
+        + respuestas05?.count{it.isNotEmpty()}.toInt() + respuestas06?.count{it.isNotEmpty()}.toInt()
+        +respuestas07?.count{it.isNotEmpty()}.toInt() + respuestas08?.count{it.isNotEmpty()}.toInt()
+
+        println(conteo)
+
         val listaInstruccion = listOf("Instrucción","Primaria","Secundaria","Tercer Nivel",
             "Cuarto Nivel","Otro")
 
@@ -305,6 +313,7 @@ class addRecurso08 : AppCompatActivity() {
                     "Idioma" to idioma,
                     "Observaciones" to txtObservacionesRecuroHumano.text.toString(),
                     "Descripcion del Atractico" to txtDescripcionAtractivo.text.toString(),
+                    "Total" to conteo.toString(),
                     )
             )
         }
