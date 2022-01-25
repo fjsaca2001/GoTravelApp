@@ -23,7 +23,7 @@ class Perfil : AppCompatActivity() {
         val objIntent: Intent = intent
         title ="Perfíl"
         var txtMail = findViewById<TextView>(R.id.txtBienvenido)
-        txtMail.text=("Bienvenido: $email")
+        txtMail.text=(email)
 
 
         btnGuardar.setOnClickListener(){

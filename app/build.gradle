@@ -49,4 +49,5 @@ dependencies {
     // Agregamos la biblioteca de ubicacion de google
     implementation 'com.google.android.gms:play-services-location:19.0.1'
     implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
 }

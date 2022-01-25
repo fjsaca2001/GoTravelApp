@@ -44,7 +44,7 @@ class Menu : AppCompatActivity() {
     private fun begin (){
         val objetoIntent: Intent =intent
         var email=objetoIntent.getStringExtra("email")
-        txtBienvenido.text=("Bienvenido : $email")
+        txtBienvenido.text=(email)
     }
     private fun exit (){
         var salida = findViewById<ImageButton>(R.id.btnExit)
