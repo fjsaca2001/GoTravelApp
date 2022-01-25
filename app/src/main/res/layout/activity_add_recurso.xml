@@ -93,50 +93,77 @@
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/txtTipo"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="2dp"
                 android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Tipo"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
+                android:ems="10">
 
-            <EditText
-                android:id="@+id/txtCategoria"
-                android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Categoría"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
 
-            <EditText
-                android:id="@+id/txtSubtipo"
+                <AutoCompleteTextView
+                    android:id="@+id/categoria_atractivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Categoría"
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="359dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="2dp"
                 android:background="#9900785D"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:hint="Subtipo"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="italic" />
+                android:ems="10">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/tipo_atractivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tipo "
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="359dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="2dp"
+                android:background="#9900785D"
+                android:ems="10">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/subtipo_atractivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Subtipo "
+                    android:inputType="none"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/txtUbicacion"

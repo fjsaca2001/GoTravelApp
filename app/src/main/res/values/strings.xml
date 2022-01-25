@@ -1,6 +1,62 @@
 <resources>
     <string name="app_name">GoTravelApp</string>
 
+    <!-- ATRACTIVO TURÍSTICO -->
+    <string-array name="array_atractivo">
+        <item>ATRACTIVO NATURAL</item>
+        <item>MANISFESTACIONES CULTURALES</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO - ATRACTIVO NATURAL ///////////////////-->
+    <string-array name="array_atractivo_natural">
+        <item>MONTAÑAS</item>
+        <item>DESIERTOS</item>
+        <item>AMBIENTES LACUSTRES</item>
+        <item>RÍOS</item>
+        <item></item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO MONTAÑAS-->
+    <string-array name="array_atractivo_montania">
+        <item>ALTA MONTAÑA</item>
+        <item>MEDIA MONTAÑA</item>
+        <item>BAJA MONTAÑA</item>
+        <item></item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO DESIERTOS-->
+    <string-array name="array_atractivo_desiertos">
+        <item>COSTERO</item>
+        <item>DEL INTERIOR</item>
+        <item></item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO AMBIENTES LACUSTRES-->
+    <string-array name="array_atractivo_ambientes_lacustres">
+        <item>LAGO</item>
+        <item>LAGUNA</item>
+        <item>PANTANO</item>
+        <item>POZA</item>
+        <item>HUMEDAL</item>
+        <item>VAYO</item>
+        <item>PLAYA DE LAGUNA</item>
+        <item></item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO RÍOS-->
+    <string-array name="array_atractivo_rios">
+        <item>LAGO</item>
+        <item>LAGUNA</item>
+        <item>PANTANO</item>
+        <item>POZA</item>
+        <item>HUMEDAL</item>
+        <item>VAYO</item>
+        <item>PLAYA DE LAGUNA</item>
+        <item></item>
+    </string-array>
+
+
+    <!-- PROVINCIAS ////////////////////////////////////////////////-->
     <string-array name="array_provincias">
         <item>AZUAY</item>
         <item>BOLÍVAR</item>
@@ -2602,4 +2658,95 @@
     <string-array name="array_estudio_piedrero">
         <item>EL PIEDRERO</item>
     </string-array>
+
+
+    <!-- ACTIVIDAD RECURSO 03 -->
+    <!-- CATEGORÍA -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_categoria">
+        <item>DE APOYO A LA GESTIÓN TURÍSTICA</item>
+        <item>DE OBSERVACIÓN Y VIGILANCIA</item>
+        <item>DE RECORRIDO Y DESCANSO</item>
+        <item>DE SERVICIO</item>
+    </string-array>
+
+    <!-- CATEGORIA  DE APOYO A LA GESTIÓN TURÍSTICA-->
+    <string-array name="array_categoria_gestion">
+        <item>PUNTO DE INFORMACIÓN</item>
+        <item>CENTRO DE INTERPRETACIÓN</item>
+        <item>CENTRO DE FACILITACIÓN TURÍSTICA</item>
+        <item>CENTRO DE RECEPCIÓN DE VISITANTES</item>
+    </string-array>
+
+    <!-- CATEGORIA  DE  OBSERVACIÓN Y VIGILANCIA-->
+    <string-array name="array_categoria_observ_vigila">
+        <item>GARITAS DE GUARDIANÍA</item>
+        <item>MIRADORES</item>
+        <item>TORRES DE AVISTAMIENTO DE AVES</item>
+        <item>TORRES DE VIGILANCIA PARA SALVAVIDAS</item>
+    </string-array>
+
+    <!-- CATEGORIA  DE RECORRIDO Y DESCANSO-->
+    <string-array name="array_categoria_reco_desc">
+        <item>SENDEROS</item>
+        <item>ESTACIONES DE SOMBRA Y DESCANSO</item>
+        <item>ÁREAS DE ACAMPAR</item>
+        <item>REFUGIO DE ALTA MONTAÑA</item>
+    </string-array>
+
+    <!-- CATEGORIA  DE SERVICIO-->
+    <string-array name="array_categoria_servicio">
+        <item>BAGTERÍAS SANITARIAS</item>
+        <item>ESTACIONAMIENTOS</item>
+    </string-array>
+
+    <!-- ACTIVIDAD RECURSO 05 -->
+    <!-- AMBIENTE -//////////////////////////////////////////////////////////////////////-->
+    <string-array name="array_ambiente">
+        <item>EN ÁREAS URBANAS</item>
+        <item>EN ÁREAS NATURALES</item>
+        <item>LETREROS INFORMATIVOS</item>
+        <item>SEÑALÉTICA INTERNA DE SEGURIDAD</item>
+    </string-array>
+
+    <!-- AMBIENTE  LA ÁREAS URBANAS-->
+    <string-array name="array_ambiente_areas_urbanas">
+        <item>PICTOGRAMA DE ATRACTIVOS NATURALES</item>
+        <item>PICTOGRAMSA DE ATRACTIVOS CULTURALES</item>
+        <item>PICTOGRAMA DE ACTIVIDADES TURÍSTICAS</item>
+        <item>PICTOGRAMA DE SERCIVIOS DE APOYO</item>
+        <item>PICTOGRAMA DE RESTRICCIÓN</item>
+        <item>TÓTEMS DE ATRACTIVOS TURÍSTICAS</item>
+        <item>TÓTEMS DE SITIO</item>
+        <item>TÓTEMS DIRECCIONALES</item>
+    </string-array>
+
+    <!-- AMBIENTE  LA ÁREAS NATURALES-->
+    <string-array name="array_ambiente_areas_naturales">
+        <item>PICTOGRAMA DE ATRACTIVOS NATURALES</item>
+        <item>PICTOGRAMSA DE ATRACTIVOS CULTURALES</item>
+        <item>PICTOGRAMA DE ACTIVIDADES TURÍSTICAS</item>
+        <item>PICTOGRAMA DE SERCIVIOS DE APOYO</item>
+        <item>PICTOGRAMA DE RESTRICCIÓN</item>
+        <item>PICTOGRAMA DE APROXIMACIÓN</item>
+        <item>PANELES DE DIRECCIONAMIENTO HACIA ATRACTIVOS</item>
+        <item>PANEL INFORMATIVO DE DIRECCIONAMIENTO HACIA
+            ATRACTIVOS,SERVICIOS Y ACTIVIDADES</item>
+        <item>MESAS INTERPRETATIVAS</item>
+        <item>TÓTEM DE SITIO</item>
+        <item>TOTEM DE DIRECCIONAMIENTO</item>
+    </string-array>
+
+    <!-- AMBIENTE  LETREROS INFORMATIVOS-->
+    <string-array name="array_ambiente_letreros_info">
+        <item>DE INFORMACIÓN BOTÁNICA</item>
+        <item>NORMATIVOS DE CONCIENCIACIÓN</item>
+    </string-array>
+
+    <!-- AMBIENTE  SEÑALÉTICA INTERNA DE SEGURIDAD-->
+    <string-array name="array_ambiente_senialetica_seguridad">
+        <item>PROTECCIÓN DE LOS ELEMENTOS DEL ATRACTIVO</item>
+    </string-array>
+
+
+
 </resources>

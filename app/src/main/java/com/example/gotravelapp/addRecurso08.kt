@@ -134,9 +134,9 @@ class addRecurso08 : AppCompatActivity() {
                 hashMapOf(
                     // Recurso 1
                     "Nombre del Lugar" to respuestas01.get(0),
-                    "Tipo" to respuestas01.get(1),
-                    "Categoria" to respuestas01.get(2),
-                    "Subtipo" to respuestas01.get(3),
+                    "Tipo Atractivo" to respuestas01.get(1),
+                    "Categoria Atractivo" to respuestas01.get(2),
+                    "Subtipo Atractivo" to respuestas01.get(3),
                     "Provincia" to respuestas01.get(4),
                     "Canton" to respuestas01.get(5),
                     "Parroquia" to respuestas01.get(6),
