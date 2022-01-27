@@ -82,7 +82,7 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
     private fun editar(email: String, isEdit: Boolean){
         if(isEdit){
             db.collection("atractivos").document(email).get().addOnSuccessListener {
-                txtNombreLugar.setText(it.get("Nombre del Lugar") as String?)
+                txtNombreLugar.setText(it.get("NombredelLugar") as String?)
                 //txtTipo.setText(it.get("Tipo") as String?)
                 //txtCategoria.setText(it.get("Categoria") as String?)
                 //txtSubtipo.setText(it.get("Subtipo") as String?)

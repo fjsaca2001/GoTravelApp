@@ -48,7 +48,9 @@ class addRecurso08 : AppCompatActivity() {
         + respuestas05?.count{it.isNotEmpty()}.toInt() + respuestas06?.count{it.isNotEmpty()}.toInt()
         +respuestas07?.count{it.isNotEmpty()}.toInt() + respuestas08?.count{it.isNotEmpty()}.toInt()
 
-        println(conteo)
+        var porcentaje =  (conteo*100)/172
+
+
 
         val listaInstruccion = listOf("Instrucción","Primaria","Secundaria","Tercer Nivel",
             "Cuarto Nivel","Otro")
@@ -130,10 +132,14 @@ class addRecurso08 : AppCompatActivity() {
             startActivity(inicio)
 
 
+            val rnds = (0..999).random()
+
+
             db.collection("atractivos").document(email).set(
                 hashMapOf(
                     // Recurso 1
-                    "Nombre del Lugar" to respuestas01.get(0),
+                    "email" to email,
+                    "NombredelLugar" to respuestas01.get(0),
                     "Tipo Atractivo" to respuestas01.get(1),
                     "Categoria Atractivo" to respuestas01.get(2),
                     "Subtipo Atractivo" to respuestas01.get(3),
@@ -314,6 +320,7 @@ class addRecurso08 : AppCompatActivity() {
                     "Observaciones" to txtObservacionesRecuroHumano.text.toString(),
                     "Descripcion del Atractico" to txtDescripcionAtractivo.text.toString(),
                     "Total" to conteo.toString(),
+                    "Porcentaje" to porcentaje.toString(),
                     )
             )
         }

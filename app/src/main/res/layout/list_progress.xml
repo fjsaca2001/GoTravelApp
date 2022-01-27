@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E5E5E5"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5CA493"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtNombreAtractivo"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="#5CA493"
+                    android:text="Nombre del Atractivo: "
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFDFD"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/obtenerAtractivoNombre"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:background="#5CA493"
+                    android:paddingLeft="8dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFDFD"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtNombreProvincia"
+                    android:layout_width="203dp"
+                    android:layout_height="wrap_content"
+                    android:background="#5CA493"
+                    android:text="Campos realizados"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFDFD"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/obtenerTotalAtractivos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#5CA493"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFDFD"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:progressBackgroundTint="#FFFFFF"
+                    android:scaleY="4" />
+
+                <TextView
+                    android:id="@+id/obtenerPorcentajes"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFDFD"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

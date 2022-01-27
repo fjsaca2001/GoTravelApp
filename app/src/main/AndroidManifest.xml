@@ -3,13 +3,15 @@
     package="com.example.gotravelapp">
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="GoTravelApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoTravelApp">
+        <activity
+            android:name=".user_list"
+            android:exported="false" />
         <activity
             android:name=".resultadoBuscar"
             android:exported="false" />
@@ -48,8 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".addRecurso"
-            android:exported="false"
-           />
+            android:exported="false" />
         <activity
             android:name=".Perfil"
             android:exported="false" />
@@ -69,7 +70,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>
