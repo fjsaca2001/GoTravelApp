@@ -6,6 +6,7 @@ import android.content.Intent
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_recurso08.*
 import kotlinx.android.synthetic.main.activity_add_recurso08.btnExit
@@ -323,6 +324,7 @@ class addRecurso08 : AppCompatActivity() {
                     "Porcentaje" to porcentaje.toString(),
                     )
             )
+            Toast.makeText(this, "Atractivo Guardado. Correctamente.", Toast.LENGTH_LONG).show()
         }
     }
     private fun botonera(email:String){

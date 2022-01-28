@@ -436,7 +436,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:padding="5dp"
-                android:text="Traslado origen / Destino"
+                android:hint="Traslado origen / Destino"
                 android:textColor="@color/white"
                 android:textColorHint="#FFFFFF"
                 android:textSize="15sp"

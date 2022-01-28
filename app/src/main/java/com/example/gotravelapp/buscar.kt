@@ -25,7 +25,7 @@ class buscar() : AppCompatActivity() {
         btnBuscar.setOnClickListener(){
             var textoAbuscar = txtBuscar.text.toString()
             db.collection("atractivos").document(email).get().addOnSuccessListener {
-                if (textoAbuscar.equals(it.get("Nombre del Lugar"))) {
+                if (textoAbuscar.equals(it.get("NombredelLugar"))) {
                     val inicio: Intent = Intent(this, resultadoBuscar::class.java).apply {
                         putExtra("email", email)
                     }

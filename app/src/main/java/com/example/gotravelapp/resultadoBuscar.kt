@@ -20,7 +20,7 @@ class resultadoBuscar : AppCompatActivity() {
     }
     private fun view(email: String){
         db.collection("atractivos").document(email).get().addOnSuccessListener {
-            obtenerAtractivo.setText(it.get("Nombre del Lugar") as String?)
+            obtenerAtractivo.setText(it.get("NombredelLugar") as String?)
             obtenerProvincia.setText(it.get("Provincia") as String?)
             obtenerCanton.setText(it.get("Canton") as String?)
         }

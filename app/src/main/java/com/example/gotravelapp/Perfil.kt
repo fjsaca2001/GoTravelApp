@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,19 +26,17 @@ class Perfil : AppCompatActivity() {
         var txtMail = findViewById<TextView>(R.id.txtBienvenido)
         txtMail.text=(email)
 
+        db.collection("users").document(email).get().addOnSuccessListener {
+            txtDir.setText(it.get("Direccion") as String?)
+            txtApe.setText(it.get("Apellido") as String?)
+            txtNombre.setText(it.get("Nombre") as String?)
+        }
 
         btnGuardar.setOnClickListener(){
             db.collection("users").document(email).set(
                 hashMapOf("Nombre" to txtNombre.text.toString(), "Apellido" to txtApe.text.toString(), "Direccion" to txtDir.text.toString())
             )
-
-        }
-        btnRecuperar.setOnClickListener(){
-            db.collection("users").document(email).get().addOnSuccessListener {
-                txtDir.setText(it.get("Direccion") as String?)
-                txtApe.setText(it.get("Apellido") as String?)
-                txtNombre.setText(it.get("Nombre") as String?)
-            }
+            Toast.makeText(this, "Datos Guardados, Correctamente.", Toast.LENGTH_LONG).show()
         }
 
         btnExit.setOnClickListener(){
