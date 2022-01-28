@@ -140,8 +140,8 @@ class addRecurso08 : AppCompatActivity() {
                     // Recurso 1
                     "email" to email,
                     "NombredelLugar" to respuestas01.get(0),
-                    "Tipo Atractivo" to respuestas01.get(1),
-                    "Categoria Atractivo" to respuestas01.get(2),
+                    "Categoria Atractivo" to respuestas01.get(1),
+                    "Tipo Atractivo" to respuestas01.get(2),
                     "Subtipo Atractivo" to respuestas01.get(3),
                     "Provincia" to respuestas01.get(4),
                     "Canton" to respuestas01.get(5),

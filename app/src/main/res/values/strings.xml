@@ -13,7 +13,13 @@
         <item>DESIERTOS</item>
         <item>AMBIENTES LACUSTRES</item>
         <item>RÍOS</item>
-        <item></item>
+        <item>BOSQUES</item>
+        <item>AGUAS SUBTERRÁNEAS</item>
+        <item>FENÓMENOS ESPELEOLÓGICOS</item>
+        <item>FENÓMENOS GEOLÓGICOS</item>
+        <item>COSTAS O LITORALES</item>
+        <item>AMBIENTES MARINOS</item>
+        <item>TIERRAS INSULARES</item>
     </string-array>
 
     <!-- ATRACTIVO TURÍSTICO MONTAÑAS-->
@@ -40,19 +46,129 @@
         <item>HUMEDAL</item>
         <item>VAYO</item>
         <item>PLAYA DE LAGUNA</item>
-        <item></item>
     </string-array>
 
     <!-- ATRACTIVO TURÍSTICO RÍOS-->
     <string-array name="array_atractivo_rios">
-        <item>LAGO</item>
-        <item>LAGUNA</item>
-        <item>PANTANO</item>
-        <item>POZA</item>
-        <item>HUMEDAL</item>
-        <item>VAYO</item>
-        <item>PLAYA DE LAGUNA</item>
-        <item></item>
+        <item>RÍO</item>
+        <item>RIACHUELO</item>
+        <item>RÁPIDO</item>
+        <item>CASCADA</item>
+        <item>RIBERA</item>
+        <item>PLAYA DEL RÍO</item>
+        <item>DELTA</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO BOSQUES-->
+    <string-array name="array_atractivo_bosques">
+        <item>EN PÁRAMO</item>
+        <item>CEJA DE SELVA</item>
+        <item>NUBLADO</item>
+        <item>MONTANO BAJO</item>
+        <item>HÚMEDO TROPICAL</item>
+        <item>MANGLAR</item>
+        <item>SECO</item>
+        <item>PETRIFICADO</item>
+        <item>PETRIFICADO</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO AGUAS SUBTERRÁNEAS-->
+    <string-array name="array_atractivo_subterraneas">
+        <item>MANANTIAL DE AGUA MINERAL</item>
+        <item>MANANTIAL DE AGUA TERMAL</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO FENÓMENOS ESPELEOLÓGICOS -->
+    <string-array name="array_atractivo_espeleleologicos">
+        <item>CUEVA O CAVERNA</item>
+        <item>RÍO SUBTERRÁNEO</item>
+    </string-array>
+
+    <!-- ATRACTIVO FENÓMENOS GEOLÓGICOS-->
+    <string-array name="array_atractivo_geologicos">
+        <item>FLUJO DE LAVA</item>
+        <item>TUBO DE LAVA</item>
+        <item>ESCARPA DE FALLA</item>
+        <item>CAÑÓN</item>
+        <item>QUEBRADA</item>
+        <item>GRIETA</item>
+    </string-array>
+
+    <!-- ATRACTIVO COSTAS O LITORALES-->
+    <string-array name="array_atractivo_litoraales">
+        <item>PLAYA</item>
+        <item>ACANTILADO</item>
+        <item>GOLFO</item>
+        <item>BAHÍA</item>
+        <item>ENSENADA</item>
+        <item>CANAL</item>
+        <item>ESTAURIO</item>
+        <item>ESTERO</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO AMBIENTES MARINOS -->
+    <string-array name="array_atractivo_marinos">
+        <item>ARRECIFE DE CORAL</item>
+        <item>CUEVA</item>
+        <item>CRÁTER</item>
+        <item>ACANTILADO</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO TIERRAS INSULARES -->
+    <string-array name="array_atractivo_insulares">
+        <item>ISLA CONTINENTAL</item>
+        <item>ISLA OCEÁNICA</item>
+        <item>ISLOTE</item>
+        <item>ROCA</item>
+    </string-array>
+
+    <!-- ATRACTIVO TURÍSTICO - MANIFESTACIONES CULTURALES ////////////////-->
+    <string-array name="array_atractivo_cultural">
+        <item>ARQUITECTURA</item>
+        <item>ACERVO CULTURAL Y POPULAR</item>
+        <item>REALIZACIONES TÉCNICAS Y CIENTÍFICAS</item>
+        <item>ACONTECIMIENTOS PROGRAMADOS</item>
+    </string-array>
+
+    <!-- ATRACTIVO CULTURAL  ARQUITECTURA-->
+    <string-array name="array_cultural_arquitectura">
+        <item>HISTÓRICA / VERNÁCULA</item>
+        <item>INFRAESTRUCTURA CULTURAL</item>
+        <item>INFRAESTRUCTURA RECREATIVA</item>
+        <item>OTRAS INFRAESTRUCTURAS SOCIALES</item>
+        <item>ÁREA HISTÓRICA</item>
+        <item>ÁREA ARQUEOLÓGICA</item>
+        <item>MONUMENTOS</item>
+        <item>ESPACIO PÚBLICO</item>
+    </string-array>
+
+    <!-- ATRACTIVO CULTURAL  ACERVO CULTURAL Y POPULAR-->
+    <string-array name="array_cultural_acervo_popular">
+        <item>PUEBLO Y/O NACIONALIDAD</item>
+        <item>FIESTAS RELIGIOSAS, TRADICIONALES Y CREENCIAS POPULARES</item>
+        <item>ARTESANÍAS Y ARTES</item>
+        <item>MEDICINA ANCESTRAL</item>
+        <item>FERIAS Y MERCADOS</item>
+        <item>MÚSICA Y DANZA</item>
+        <item>GASTRONOMÍA</item>
+    </string-array>
+
+    <!-- ATRACTIVO CULTURAL  REALIZACIONES TÉCNICAS Y CIENTÍFICAS-->
+    <string-array name="array_cultural_tecnicas_cientificas">
+        <item>OBRAS DE INGENIERÍA</item>
+        <item>CENTROS ASTRONÓMICOS</item>
+        <item>CENTROS DE EXHIBICIÓN DE FLORA Y FAUNA</item>
+        <item>CENTROS DE RESCATE DE FAUNA Y SILVESTRE</item>
+        <item>CENTROS AGROPECUARIOS Y PESQUEROS</item>
+        <item>CENTROS INDUSTRIALES</item>
+    </string-array>
+
+    <!-- ATRACTIVO CULTURAL  ACONTECIMIENTOS PROGRAMADOS-->
+    <string-array name="array_cultural_aconte_programados">
+        <item>EVENTOS ARTÍSTICOS</item>
+        <item>CONVENCIONES, FERIAS</item>
+        <item>EVENTOS DEPORTIVOS</item>
+        <item>EVENTOS GASTRONÓMICOS</item>
     </string-array>
 
 

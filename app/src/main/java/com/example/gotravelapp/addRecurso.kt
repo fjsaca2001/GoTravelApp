@@ -49,15 +49,12 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
 
             val listaDatos = arrayOf(
                 txtNombreLugar.text.toString(),
-                //txtTipo.text.toString(),
-                //txtCategoria.text.toString(),
-                //txtSubtipo.text.toString(),
-                tipo_atract,
-                categ_atract,
-                subtipo_atr,
-                prov,
-                cant,
-                parro,
+                categoria_atractivo.text.toString(),
+                tipo_atractivo.text.toString(),
+                subtipo_atractivo.text.toString(),
+                provincia.text.toString(),
+                canton.text.toString(),
+                parroquia.text.toString(),
                 txtCalleP.text.toString(),
                 txtNumero.text.toString(),
                 txtTrans.text.toString(),
@@ -83,11 +80,8 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
         if(isEdit){
             db.collection("atractivos").document(email).get().addOnSuccessListener {
                 txtNombreLugar.setText(it.get("NombredelLugar") as String?)
-                //txtTipo.setText(it.get("Tipo") as String?)
-                //txtCategoria.setText(it.get("Categoria") as String?)
-                //txtSubtipo.setText(it.get("Subtipo") as String?)
-                categoria_atractivo.setText(it.get("Tipo Atractivo") as String?)
-                tipo_atractivo.setText(it.get("Categoria Atractivo") as String?)
+                categoria_atractivo.setText(it.get("Categoria Atractivo") as String?)
+                tipo_atractivo.setText(it.get("Tipo Atractivo") as String?)
                 subtipo_atractivo.setText(it.get("Subtipo Atractivo") as String?)
                 provincia.setText(it.get("Provincia") as String?)
                 canton.setText(it.get("Canton") as String?)
@@ -127,25 +121,14 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
         }
     }
 
-    // variables globales de los atractivos características, tipos y subtipos
-    var categ_atract = ""
-    var tipo_atract = ""
-    var subtipo_atr = ""
-
-    // variables globales de las provincias, cantones, parroquias
-    var prov = ""
-    var cant = ""
-    var parro = ""
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
         val item = parent?.getItemAtPosition(position).toString()
-        /* val item_atract = parent?.getItemAtPosition(position).toString()*/
 
         if (item == "ATRACTIVO NATURAL") {
-            categ_atract = "ATRACTIVO NATURAL"
-            var cant = resources.getStringArray(R.array.array_atractivo_natural)
-            val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+            var natural = resources.getStringArray(R.array.array_atractivo_natural)
+            val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, natural)
             with(tipo_atractivo) {
                 setAdapter(adapter)
                 onItemClickListener = this@addRecurso
@@ -153,7 +136,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
             }
         } else {
             if (item == "MONTAÑAS") {
-                tipo_atract = "MONTAÑAS"
                 var cant = resources.getStringArray(R.array.array_atractivo_montania)
                 val adapter =
                     ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
@@ -161,11 +143,9 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                     setAdapter(adapter)
                     onItemClickListener = this@addRecurso
                 }
-                subtipo_atr = "ALTA MONTAÑA"
 
             } else {
                 if (item == "DESIERTOS") {
-                    tipo_atract = "DESIERTOS"
                     var cant = resources.getStringArray(R.array.array_atractivo_desiertos)
                     val adapter =
                         ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
@@ -174,10 +154,8 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                         onItemClickListener = this@addRecurso
 
                     }
-                    subtipo_atr = "COSTERO"
                 } else {
                     if (item == "AMBIENTES LACUSTRES") {
-                        tipo_atract = "AMBIENTES LACUSTRES"
                         var cant =
                             resources.getStringArray(R.array.array_atractivo_ambientes_lacustres)
                         val adapter =
@@ -186,21 +164,157 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                             setAdapter(adapter)
                             onItemClickListener = this@addRecurso
                         }
-                        subtipo_atr = "LAGO"
+                    } else{
+                        if (item == "RÍOS") {
+                            var cant =
+                                resources.getStringArray(R.array.array_atractivo_rios)
+                            val adapter =
+                                ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                            with(subtipo_atractivo) {
+                                setAdapter(adapter)
+                                onItemClickListener = this@addRecurso
+                            }
+                        } else{
+                            if (item == "BOSQUES") {
+                                var cant =
+                                    resources.getStringArray(R.array.array_atractivo_bosques)
+                                val adapter =
+                                    ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                with(subtipo_atractivo) {
+                                    setAdapter(adapter)
+                                    onItemClickListener = this@addRecurso
+                                }
+                            } else {
+                                if (item == "AGUAS SUBTERRÁNEAS") {
+                                    var cant =
+                                        resources.getStringArray(R.array.array_atractivo_subterraneas)
+                                    val adapter =
+                                        ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                    with(subtipo_atractivo) {
+                                        setAdapter(adapter)
+                                        onItemClickListener = this@addRecurso
+                                    }
+                                } else {
+                                    if (item == "FENÓMENOS ESPELEOLÓGICOS") {
+                                        var cant =
+                                            resources.getStringArray(R.array.array_atractivo_espeleleologicos)
+                                        val adapter =
+                                            ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                        with(subtipo_atractivo) {
+                                            setAdapter(adapter)
+                                            onItemClickListener = this@addRecurso
+                                        }
+                                    } else {
+                                        if (item == "FENÓMENOS GEOLÓGICOS") {
+                                            var cant =
+                                                resources.getStringArray(R.array.array_atractivo_geologicos)
+                                            val adapter =
+                                                ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                            with(subtipo_atractivo) {
+                                                setAdapter(adapter)
+                                                onItemClickListener = this@addRecurso
+                                            }
+                                        } else {
+                                            if (item == "COSTAS O LITORALES") {
+                                                var cant =
+                                                    resources.getStringArray(R.array.array_atractivo_litoraales)
+                                                val adapter =
+                                                    ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                with(subtipo_atractivo) {
+                                                    setAdapter(adapter)
+                                                    onItemClickListener = this@addRecurso
+                                                }
+                                            } else {
+                                                if (item == "AMBIENTES MARINOS") {
+                                                    var cant =
+                                                        resources.getStringArray(R.array.array_atractivo_marinos)
+                                                    val adapter =
+                                                        ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                    with(subtipo_atractivo) {
+                                                        setAdapter(adapter)
+                                                        onItemClickListener = this@addRecurso
+                                                    }
+                                                } else {
+                                                    if (item == "TIERRAS INSULARES") {
+                                                        var cant =
+                                                            resources.getStringArray(R.array.array_atractivo_insulares)
+                                                        val adapter =
+                                                            ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                        with(subtipo_atractivo) {
+                                                            setAdapter(adapter)
+                                                            onItemClickListener = this@addRecurso
+                                                        }
+                                                    } else {
+                                                        if (item == "MANISFESTACIONES CULTURALES") {
+                                                            var cultural =
+                                                                resources.getStringArray(R.array.array_atractivo_cultural)
+                                                            val adapter =
+                                                                ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cultural)
+                                                            with(tipo_atractivo) {
+                                                                setAdapter(adapter)
+                                                                onItemClickListener = this@addRecurso
+                                                            }
+                                                        } else {
+                                                            if (item == "ARQUITECTURA") {
+                                                                var cant =
+                                                                    resources.getStringArray(R.array.array_cultural_arquitectura)
+                                                                val adapter =
+                                                                    ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                                with(subtipo_atractivo) {
+                                                                    setAdapter(adapter)
+                                                                    onItemClickListener = this@addRecurso
+                                                                }
+                                                            } else {
+                                                                if (item == "ACERVO CULTURAL Y POPULAR") {
+                                                                    var cant =
+                                                                        resources.getStringArray(R.array.array_cultural_acervo_popular)
+                                                                    val adapter =
+                                                                        ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                                    with(subtipo_atractivo) {
+                                                                        setAdapter(adapter)
+                                                                        onItemClickListener = this@addRecurso
+                                                                    }
+                                                                } else {
+                                                                    if (item == "REALIZACIONES TÉCNICAS Y CIENTÍFICAS") {
+                                                                        var cant =
+                                                                            resources.getStringArray(R.array.array_cultural_tecnicas_cientificas)
+                                                                        val adapter =
+                                                                            ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                                        with(subtipo_atractivo) {
+                                                                            setAdapter(adapter)
+                                                                            onItemClickListener = this@addRecurso
+                                                                        }
+                                                                    } else {
+                                                                        if (item == "ACONTECIMIENTOS PROGRAMADOS") {
+                                                                            var cant =
+                                                                                resources.getStringArray(R.array.array_cultural_aconte_programados)
+                                                                            val adapter =
+                                                                                ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
+                                                                            with(subtipo_atractivo) {
+                                                                                setAdapter(adapter)
+                                                                                onItemClickListener = this@addRecurso
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
 
 
-        print("categoria" + categ_atract)
-        print("tipo" + tipo_atract)
-        print("subtipo" + subtipo_atr)
-
-
 
         if (item == "AZUAY") {
-            prov = "AZUAY"
             var cant = resources.getStringArray(R.array.array_azuay_cantones)
             val adapter =
                 ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, cant)
@@ -211,31 +325,27 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
             }
         } else {
             if (item == "CUENCA") {
-                cant = "CUENCA"
                 var parr = resources.getStringArray(R.array.array_azuay_cant_cuenca)
                 val adapter =
                     ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, parr)
                 with(parroquia) {
                     setAdapter(adapter)
                     onItemClickListener = this@addRecurso
-                    //parro = "EL VECINO"
 
                 }
 
             } else {
                 if (item == "GIRÓN") {
-                    cant = "GIRÓN"
                     var parr = resources.getStringArray(R.array.array_azuay_cant_girón)
                     val adapter =
                         ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, parr)
                     with(parroquia) {
                         setAdapter(adapter)
                         onItemClickListener = this@addRecurso
-                        //parro = "SAN GERARDO"
+
                     }
                 } else {
                     if (item == "GUALACEO") {
-                        cant = "GUALACEO"
                         var parr = resources.getStringArray(R.array.array_azuay_cant_gualaceo)
                         val adapter =
                             ArrayAdapter(
@@ -246,11 +356,10 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                         with(parroquia) {
                             setAdapter(adapter)
                             onItemClickListener = this@addRecurso
-                            //parro = "CHORDELEG"
+
                         }
                     } else {
                         if (item == "NABÓN") {
-                            cant = "NABÓN"
                             var parr = resources.getStringArray(R.array.array_azuay_cant_nabón)
                             val adapter =
                                 ArrayAdapter(
@@ -265,7 +374,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                             }
                         } else {
                             if (item == "PAUTE") {
-                                cant = "PAUTE"
                                 var parr =
                                     resources.getStringArray(R.array.array_azuay_cant_paute)
                                 val adapter =
@@ -280,7 +388,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                 }
                             } else {
                                 if (item == "PUCARA") {
-                                    cant = "PUCARA"
                                     var parr =
                                         resources.getStringArray(R.array.array_azuay_cant_pucara)
                                     val adapter =
@@ -295,7 +402,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                     }
                                 } else {
                                     if (item == "SAN FERNANDO") {
-                                        cant = "SAN FERNANDO"
                                         var parr =
                                             resources.getStringArray(R.array.array_azuay_cant_san_fernando)
                                         val adapter =
@@ -310,7 +416,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                         }
                                     } else {
                                         if (item == "SANTA ISABEL") {
-                                            cant = "SANTA ISABEL"
                                             var parr =
                                                 resources.getStringArray(R.array.array_azuay_cant_santa_isabel)
                                             val adapter =
@@ -325,7 +430,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                             }
                                         } else {
                                             if (item == "SIGSIG") {
-                                                cant = "SIGSIG"
                                                 var parr =
                                                     resources.getStringArray(R.array.array_azuay_cant_sigsig)
                                                 val adapter =
@@ -340,7 +444,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                 }
                                             } else {
                                                 if (item == "OÑA") {
-                                                    cant = "OÑA"
                                                     var parr =
                                                         resources.getStringArray(R.array.array_azuay_cant_onia)
                                                     val adapter =
@@ -355,7 +458,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                     }
                                                 } else {
                                                     if (item == "CHORDELEG") {
-                                                        cant = "CHORDELEG"
                                                         var parr =
                                                             resources.getStringArray(R.array.array_azuay_cant_chordeleg)
                                                         val adapter =
@@ -371,7 +473,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                         }
                                                     } else {
                                                         if (item == "EL PAN") {
-                                                            cant = "EL PAN"
                                                             var parr =
                                                                 resources.getStringArray(R.array.array_azuay_cant_el_pan)
                                                             val adapter =
@@ -387,7 +488,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                             }
                                                         } else {
                                                             if (item == "SEVILLA DE ORO") {
-                                                                cant = "SEVILLA DE ORO"
                                                                 var parr =
                                                                     resources.getStringArray(R.array.array_azuay_cant_sevilla_oro)
                                                                 val adapter =
@@ -403,7 +503,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                 }
                                                             } else {
                                                                 if (item == "GUACHAPALA") {
-                                                                    cant = "GUACHAPALA"
                                                                     var parr =
                                                                         resources.getStringArray(
                                                                             R.array.array_azuay_cant_guachapala
@@ -421,8 +520,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                     }
                                                                 } else {
                                                                     if (item == "CAMILO PONCE ENRIQUEZ") {
-                                                                        cant =
-                                                                            "CAMILO PONCE ENRIQUEZ"
                                                                         var parr =
                                                                             resources.getStringArray(
                                                                                 R.array.array_azuay_cant_camilo_enriquez
@@ -440,7 +537,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                         }
                                                                     } else {
                                                                         if (item == "BOLÍVAR") {
-                                                                            cant = "BOLIVAR"
                                                                             var cant =
                                                                                 resources.getStringArray(
                                                                                     R.array.array_bolivar_cantones
@@ -460,8 +556,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                             }
                                                                         } else {
                                                                             if (item == "GUARANDA") {
-                                                                                prov =
-                                                                                    "GUARANDA"
                                                                                 var parr =
                                                                                     resources.getStringArray(
                                                                                         R.array.array_bolivar_guaranda
@@ -481,8 +575,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                 }
                                                                             } else {
                                                                                 if (item == "CHILLANES") {
-                                                                                    cant =
-                                                                                        "CHILLANES"
                                                                                     var parr =
                                                                                         resources.getStringArray(
                                                                                             R.array.array_bolivar_chillanes
@@ -504,8 +596,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                     }
                                                                                 } else {
                                                                                     if (item == "CHIMBO") {
-                                                                                        cant =
-                                                                                            "CHIMBO"
                                                                                         var parr =
                                                                                             resources.getStringArray(
                                                                                                 R.array.array_bolivar_chimbo
@@ -527,8 +617,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                         }
                                                                                     } else {
                                                                                         if (item == "ECHEANDÍA") {
-                                                                                            cant =
-                                                                                                "ECHEANDÍA"
                                                                                             var parr =
                                                                                                 resources.getStringArray(
                                                                                                     R.array.array_bolivar_echeandia
@@ -550,8 +638,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                             }
                                                                                         } else {
                                                                                             if (item == "SAN MIGUEL") {
-                                                                                                cant =
-                                                                                                    "SAN MIGUEL"
                                                                                                 var parr =
                                                                                                     resources.getStringArray(
                                                                                                         R.array.array_bolivar_san_miguel
@@ -573,8 +659,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                 }
                                                                                             } else {
                                                                                                 if (item == "CALUMA") {
-                                                                                                    cant =
-                                                                                                        "CALUMA"
                                                                                                     var parr =
                                                                                                         resources.getStringArray(
                                                                                                             R.array.array_bolivar_caluma
@@ -596,8 +680,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                     }
                                                                                                 } else {
                                                                                                     if (item == "LAS NAVES") {
-                                                                                                        cant =
-                                                                                                            "LAS NAVES"
                                                                                                         var parr =
                                                                                                             resources.getStringArray(
                                                                                                                 R.array.array_bolivar_las_naves
@@ -619,8 +701,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                         }
                                                                                                     } else {
                                                                                                         if (item == "CAÑAR") {
-                                                                                                            prov =
-                                                                                                                "CAÑAR"
                                                                                                             var cant =
                                                                                                                 resources.getStringArray(
                                                                                                                     R.array.array_caniar_cantones
@@ -642,8 +722,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                             }
                                                                                                         } else {
                                                                                                             if (item == "AZOGUES") {
-                                                                                                                cant =
-                                                                                                                    "AZOGUES"
                                                                                                                 var parr =
                                                                                                                     resources.getStringArray(
                                                                                                                         R.array.array_caniar_azogues
@@ -665,8 +743,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                 }
                                                                                                             } else {
                                                                                                                 if (item == "BIBLIÁN") {
-                                                                                                                    cant =
-                                                                                                                        "BIBLIÁN"
                                                                                                                     var parr =
                                                                                                                         resources.getStringArray(
                                                                                                                             R.array.array_caniar_biblian
@@ -688,8 +764,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                     }
                                                                                                                 } else {
                                                                                                                     if (item == "CAÑAR.") {
-                                                                                                                        cant =
-                                                                                                                            "CAÑAR."
                                                                                                                         var parr =
                                                                                                                             resources.getStringArray(
                                                                                                                                 R.array.array_caniar_caniar
@@ -711,8 +785,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                         }
                                                                                                                     } else {
                                                                                                                         if (item == "LA TRONCAL") {
-                                                                                                                            cant =
-                                                                                                                                "LA TRONCAL"
                                                                                                                             var parr =
                                                                                                                                 resources.getStringArray(
                                                                                                                                     R.array.array_caniar_la_troncal
@@ -734,8 +806,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                             }
                                                                                                                         } else {
                                                                                                                             if (item == "EL TAMBO") {
-                                                                                                                                cant =
-                                                                                                                                    "EL TAMBO"
                                                                                                                                 var parr =
                                                                                                                                     resources.getStringArray(
                                                                                                                                         R.array.array_caniar_el_tambo
@@ -757,8 +827,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                 }
                                                                                                                             } else {
                                                                                                                                 if (item == "DÉLEG") {
-                                                                                                                                    cant =
-                                                                                                                                        "DÉLEG"
                                                                                                                                     var parr =
                                                                                                                                         resources.getStringArray(
                                                                                                                                             R.array.array_caniar_deleg
@@ -780,8 +848,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                     }
                                                                                                                                 } else {
                                                                                                                                     if (item == "SUSCAL") {
-                                                                                                                                        cant =
-                                                                                                                                            "SUSCAL"
                                                                                                                                         var parr =
                                                                                                                                             resources.getStringArray(
                                                                                                                                                 R.array.array_caniar_suscal
@@ -803,8 +869,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                         }
                                                                                                                                     } else {
                                                                                                                                         if (item == "CARCHI") {
-                                                                                                                                            prov =
-                                                                                                                                                "CARCHI"
                                                                                                                                             var cant =
                                                                                                                                                 resources.getStringArray(
                                                                                                                                                     R.array.array_carchi_cantones
@@ -826,8 +890,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                             }
                                                                                                                                         } else {
                                                                                                                                             if (item == "TULCÁN") {
-                                                                                                                                                cant =
-                                                                                                                                                    "TULCÁN"
                                                                                                                                                 var parr =
                                                                                                                                                     resources.getStringArray(
                                                                                                                                                         R.array.array_carchi_tulcan
@@ -849,8 +911,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                                 }
                                                                                                                                             } else {
                                                                                                                                                 if (item == "LOJA") {
-                                                                                                                                                    prov =
-                                                                                                                                                        "LOJA"
                                                                                                                                                     var cant =
                                                                                                                                                         resources.getStringArray(
                                                                                                                                                             R.array.array_loja_cantones
@@ -872,8 +932,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                                     }
                                                                                                                                                 } else {
                                                                                                                                                     if (item == "CATAMAYO") {
-                                                                                                                                                        cant =
-                                                                                                                                                            "CATAMAYO"
                                                                                                                                                         var parr =
                                                                                                                                                             resources.getStringArray(
                                                                                                                                                                 R.array.array_loja_catamayo
@@ -896,8 +954,6 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                                                                                                                                                         }
                                                                                                                                                     } else {
                                                                                                                                                         if (item == "CELICA") {
-                                                                                                                                                            cant =
-                                                                                                                                                                "CELICA"
                                                                                                                                                             var parr =
                                                                                                                                                                 resources.getStringArray(
                                                                                                                                                                     R.array.array_loja_celica
@@ -957,13 +1013,7 @@ class addRecurso : AppCompatActivity(), AdapterView.OnItemClickListener {
                 }
 
             }
-
         }
-
-        parro = item
-        println("provincia: " + prov)
-        println("canton: " + cant)
-        println("parroquia: " + parro)
 
     }
 
